@@ -76,7 +76,7 @@ namespace Client
             {
                 try
                 {
-                    client_ip_port = new IPEndPoint(IPAddress.Parse(Ipclient_textbox.Text), 11000);
+                    client_ip_port = new IPEndPoint(IPAddress.Parse(Ipclient_textbox.Text), Int32.Parse(client_port_textbox.Text));
                     client_socket.Bind(client_ip_port);
                 }
                 catch (SocketException)
@@ -102,12 +102,18 @@ namespace Client
             }
             Establish_Connection();
             send_button.Enabled = true;
+            send_bytes(hostname_textbox.Text);
         }
 
         private void send_button_Click(object sender, EventArgs e)
         {
+           send_bytes(hostname_textbox.Text,send_textbox.Text);
+            chat_listbox.Items.Add(send_textbox.Text);
+        }
+        void send_bytes(string hostname,string text=null)
+        {
             byte[] bytes_converted_from_string = new byte[256];
-            bytes_converted_from_string = Encoding.UTF8.GetBytes(send_textbox.Text);
+            bytes_converted_from_string = Encoding.UTF8.GetBytes(hostname+": " + text);
             client_socket.Send(bytes_converted_from_string);
         }
 

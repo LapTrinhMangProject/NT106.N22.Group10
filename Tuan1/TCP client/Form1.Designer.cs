@@ -41,6 +41,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.Ipclient_textbox = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.label5 = new System.Windows.Forms.Label();
+            this.client_port_textbox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.hostname_textbox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // port_textbox
@@ -54,7 +58,7 @@
             // 
             // IP_textbox
             // 
-            this.IP_textbox.Location = new System.Drawing.Point(663, 62);
+            this.IP_textbox.Location = new System.Drawing.Point(675, 45);
             this.IP_textbox.Name = "IP_textbox";
             this.IP_textbox.Size = new System.Drawing.Size(113, 22);
             this.IP_textbox.TabIndex = 1;
@@ -72,7 +76,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(610, 65);
+            this.label2.Location = new System.Drawing.Point(610, 45);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 16);
             this.label2.TabIndex = 3;
@@ -81,7 +85,7 @@
             // 
             // connect_buton
             // 
-            this.connect_buton.Location = new System.Drawing.Point(603, 90);
+            this.connect_buton.Location = new System.Drawing.Point(603, 73);
             this.connect_buton.Name = "connect_buton";
             this.connect_buton.Size = new System.Drawing.Size(188, 23);
             this.connect_buton.TabIndex = 4;
@@ -127,7 +131,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(600, 197);
+            this.label4.Location = new System.Drawing.Point(600, 200);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(57, 16);
             this.label4.TabIndex = 9;
@@ -135,7 +139,7 @@
             // 
             // Ipclient_textbox
             // 
-            this.Ipclient_textbox.Location = new System.Drawing.Point(663, 194);
+            this.Ipclient_textbox.Location = new System.Drawing.Point(663, 197);
             this.Ipclient_textbox.Name = "Ipclient_textbox";
             this.Ipclient_textbox.Size = new System.Drawing.Size(131, 22);
             this.Ipclient_textbox.TabIndex = 10;
@@ -147,11 +151,48 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(600, 175);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(67, 16);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Client Port";
+            // 
+            // client_port_textbox
+            // 
+            this.client_port_textbox.Location = new System.Drawing.Point(673, 172);
+            this.client_port_textbox.Name = "client_port_textbox";
+            this.client_port_textbox.Size = new System.Drawing.Size(100, 22);
+            this.client_port_textbox.TabIndex = 12;
+            this.client_port_textbox.Text = "11000";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(609, 233);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(72, 16);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "HostName";
+            // 
+            // hostname_textbox
+            // 
+            this.hostname_textbox.Location = new System.Drawing.Point(687, 231);
+            this.hostname_textbox.Name = "hostname_textbox";
+            this.hostname_textbox.Size = new System.Drawing.Size(100, 22);
+            this.hostname_textbox.TabIndex = 14;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 286);
+            this.Controls.Add(this.hostname_textbox);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.client_port_textbox);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.Ipclient_textbox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -185,6 +226,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox Ipclient_textbox;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox client_port_textbox;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox hostname_textbox;
     }
 }
 
