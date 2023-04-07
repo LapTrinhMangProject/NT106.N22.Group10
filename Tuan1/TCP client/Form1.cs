@@ -108,7 +108,7 @@ namespace Client
         private void send_button_Click(object sender, EventArgs e)
         {
            send_bytes(hostname_textbox.Text,send_textbox.Text);
-            chat_listbox.Items.Add(send_textbox.Text);
+            chat_listbox.Items.Add(hostname_textbox.Text+": "+ send_textbox.Text);
         }
         void send_bytes(string hostname,string text=null)
         {

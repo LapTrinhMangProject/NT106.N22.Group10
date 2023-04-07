@@ -27,7 +27,7 @@ namespace Server
         void Server_Listener()
         {
                 TcpListener server;
-                TcpClient establish_connection_to_client;
+                TcpClient information_about_the_client;
                 try
                 {
                     server = new TcpListener(IPAddress.Parse(severip_textbox.Text), 8080);
@@ -44,44 +44,42 @@ namespace Server
             }));
             while (true)
             {
-
-                establish_connection_to_client = server.AcceptTcpClient();
-                Thread thread1 = new Thread(() => chat_server(establish_connection_to_client));
+                // đoạn lệnh xử lí multiconnection
+                information_about_the_client = server.AcceptTcpClient();
+                Thread thread1 = new Thread(() => chat_server(information_about_the_client));
+                thread1.IsBackground = true;
                 thread1.Start();
                 
             }
-            void chat_server(TcpClient establish_connection_to_client_multi)
+            void chat_server(TcpClient information_about_the_client_multi)
             {
-                NetworkStream getStream_from_connection;
-                TcpClient connection = establish_connection_to_client;
-                getStream_from_connection = connection.GetStream();
+                NetworkStream stream_between_server_client;
+                stream_between_server_client = information_about_the_client_multi.GetStream(); // create stream betwwen server and client
                  Byte[] bytes_received = new byte[256];
                  string string_converted_from_bytes = null;
-                string hostname = null;
+                string hostname_of_client = null;
                     while (true)
                     {
-                        int get_bytes = 0;
                         try
                         {
-                            get_bytes = getStream_from_connection.Read(bytes_received, 0, bytes_received.Length);
-             
+                            stream_between_server_client.Read(bytes_received, 0, bytes_received.Length);
                         }
                         catch (IOException e)
                         {
-                            MessageBox.Show(hostname+" dong ket noi", "Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                            MessageBox.Show(hostname_of_client+" disconnected", "Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                             List_connection.Invoke(new MethodInvoker(delegate
                             {
-                                List_connection.Items.Add("Disconnected from "+hostname);
+                                List_connection.Items.Add("Disconnected from "+hostname_of_client);
                             }));
                         return;
                         }
                     string_converted_from_bytes = Encoding.UTF8.GetString(bytes_received);
-                    if (hostname == null)
+                    if (hostname_of_client == null)
                     {
-                        hostname = string_converted_from_bytes.Split(':')[0];
+                        hostname_of_client = string_converted_from_bytes.Split(':')[0];
                         List_connection.Invoke(new MethodInvoker(delegate
                         {
-                            List_connection.Items.Add("Connected to " + hostname);
+                            List_connection.Items.Add("Connected to " + hostname_of_client);
                         }));
                     }
                     else
@@ -106,8 +104,10 @@ namespace Server
         }
         private void runserver_button_Click(object sender, EventArgs e)
         {
-            Thread Thread1 = new Thread(Server_Listener);            
+            Thread Thread1 = new Thread(Server_Listener);
+            Thread1.IsBackground = true;
             Thread1.Start();
+            runserver_button.Text = "Running";
             runserver_button.Enabled = false;
         }
 
