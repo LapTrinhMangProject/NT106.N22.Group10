@@ -1,0 +1,55 @@
+1)Định nghĩa, công dụng và tầm quan trọng của Use case diagram?
+
+- Use case diagram là một loại biểu đồ trong UML (Unified Modeling Language) được sử dụng để mô tả các chức năng hoặc hành vi của một hệ thống hoặc ứng dụng. Use case diagram được sử dụng để mô tả các tác nhân (actors) và các use case liên quan đến họ.
+
+- Trong use case diagram, tác nhân được đại diện bởi các hình dạng như con người, hệ thống khác, hoặc bên thứ ba. Use case được đại diện bởi các hình ellipse và mô tả các hành động và chức năng của hệ thống hoặc ứng dụng. Use case diagram cũng có thể bao gồm các kết nối và mối quan hệ giữa các use case, tác nhân và hệ thống.
+
+- Một use case diagram có thể được sử dụng để hiểu và mô tả các yêu cầu chức năng của hệ thống, định nghĩa phạm vi của dự án, hoặc để dẫn dắt thiết kế chi tiết của hệ thống.
+
+- Use case diagram là một công cụ hữu ích trong quá trình phát triển phần mềm và được sử dụng trong các giai đoạn khác nhau của quy trình phát triển phần mềm, từ phân tích yêu cầu đến thiết kế và triển khai.
+
+2)Thực hiện Use case diagram của project: "A tournament tracker"
+
++) Mô tả các actor:
+
+- Administrator: Người quản trị hệ thống, có thể thêm, sửa đổi và xóa người dùng và sự kiện.
+
+-User: Người dùng của ứng dụng, có thể đăng ký, đăng nhập, đăng ký cho sự kiện, tạo và chỉnh sửa thông tin cá nhân.
+
+-Tournament Organizer: Tổ chức các sự kiện và quản lý các thông tin về các giải đấu.
+
++) Mô tả các use case(không mô tả theo thứ tự):
+
+- Register: Người dùng có thể đăng ký tài khoản mới trong hệ thống.
+- Login: Người dùng có thể đăng nhập vào hệ thống bằng tài khoản đã đăng ký.
+- Create Event: Người quản trị hoặc Tournament Organizer có thể tạo sự kiện mới trong hệ thống.
+- Modify Event: Người quản trị hoặc Tournament Organizer có thể sửa đổi thông tin của sự kiện đã được tạo.
+- Delete Event: Người quản trị hoặc Tournament Organizer có thể xóa sự kiện khỏi hệ thống.
+- Register for Event: Người dùng có thể đăng ký tham gia một sự kiện đã được tạo.
+- Modify Profile: Người dùng có thể chỉnh sửa thông tin cá nhân của mình.
+- View Event Details: Người dùng có thể xem thông tin chi tiết về một sự kiện đã được tạo.
+- View User Profile: Người dùng có thể xem thông tin cá nhân của người dùng khác.
+- View Event Results: Người dùng có thể xem kết quả của một sự kiện đã diễn ra.
+- Publish Results: Người quản trị hoặc Tournament Organizer có thể công bố kết quả của một sự kiện.
+- Các mối tương tác giữa các actor và các use case được mô tả trên biểu đồ.
+
+3) Các bước thực hiện xây dựng use case diagram trên draw.io
+Bước 1: Truy cập vào trang web draw.io và bấm vào nút "Create New Diagram".
+
+Bước 2: Chọn "UML" trong danh sách các loại sơ đồ.
+
+Bước 3: Chọn "Use Case Diagram" để tạo ra sơ đồ sử dụng.
+
+Bước 4: Kéo và thả các hình ảnh từ thanh công cụ bên trái vào bảng vẽ để tạo use case diagram. Bạn có thể tùy chỉnh màu sắc, kích thước và các thuộc tính khác của các hình ảnh này bằng cách sử dụng các công cụ trên thanh công cụ bên phải.
+
+Bước 5: Thêm các use case bằng cách sử dụng hình ảnh "Ellipse". Viết tên use case vào bên trong hình ảnh.
+
+Bước 6: Thêm các actor bằng cách sử dụng hình ảnh "Stick Figure". Viết tên actor vào bên dưới hình ảnh.
+
+Bước 7: Kết nối các use case với actor bằng cách sử dụng đường thẳng và mũi tên. Chỉ định loại tương tác giữa actor và use case (ví dụ: "include", "extend", "generalization",...).
+
+Bước 8: Thêm các note và mô tả chi tiết cho các use case bằng cách sử dụng tính năng "Text" trên thanh công cụ bên trên.
+
+Bước 9: Lưu và chia sẻ use case diagram của bạn bằng cách nhấp vào nút "Save" hoặc "Export", tùy thuộc vào sự lựa chọn của bạn.
+
+*Lưu ý: Đây chỉ là hướng dẫn chung cách thực hiện xây dựng use case diagram trên draw.io
