@@ -1,11 +1,11 @@
-<mxfile host="Electron" modified="2023-04-11T02:24:20.610Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.1.2 Chrome/106.0.5249.199 Electron/21.4.3 Safari/537.36" etag="AZFjBG0-6jSHQpPo37O5" version="21.1.2" type="device">
+<mxfile host="Electron" modified="2023-04-11T02:38:15.950Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.1.2 Chrome/106.0.5249.199 Electron/21.4.3 Safari/537.36" etag="wTYbFiDAQmvQTROMSV08" version="21.1.2" type="device">
   <diagram name="Page-1" id="4D2QLF0WzecQQkKjmwuA">
-    <mxGraphModel dx="1036" dy="1754" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1295" dy="1918" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="4vfo15WaHHj-bs0f3VLk-1" value="A football tournament tracker" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" parent="1" vertex="1">
-          <mxGeometry x="205" y="-400" width="680" height="1120" as="geometry" />
+          <mxGeometry x="222.5" y="-380.97" width="680" height="1120" as="geometry" />
         </mxCell>
         <mxCell id="4vfo15WaHHj-bs0f3VLk-2" value="tournament organizers" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="100" y="260" width="60" height="100" as="geometry" />
@@ -19,32 +19,11 @@
         <mxCell id="4vfo15WaHHj-bs0f3VLk-6" value="Verify login" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="622" y="274.03" width="80" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="4vfo15WaHHj-bs0f3VLk-7" value="Server" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
-          <mxGeometry x="910" y="214.03" width="90" height="110" as="geometry" />
-        </mxCell>
-        <mxCell id="4vfo15WaHHj-bs0f3VLk-9" value="SQL Server database football" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/sql_server.svg;" parent="1" vertex="1">
-          <mxGeometry x="1060" y="210" width="73.9" height="95.97" as="geometry" />
-        </mxCell>
-        <mxCell id="4vfo15WaHHj-bs0f3VLk-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="4vfo15WaHHj-bs0f3VLk-7" target="4vfo15WaHHj-bs0f3VLk-9" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="690" y="370" as="sourcePoint" />
-            <mxPoint x="740" y="320" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="4vfo15WaHHj-bs0f3VLk-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="4vfo15WaHHj-bs0f3VLk-7" target="4vfo15WaHHj-bs0f3VLk-6" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="480" y="370" as="sourcePoint" />
-            <mxPoint x="530" y="320" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="4vfo15WaHHj-bs0f3VLk-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="4vfo15WaHHj-bs0f3VLk-5" target="4vfo15WaHHj-bs0f3VLk-6" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="480" y="370" as="sourcePoint" />
             <mxPoint x="530" y="320" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="4vfo15WaHHj-bs0f3VLk-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="4vfo15WaHHj-bs0f3VLk-16" target="4vfo15WaHHj-bs0f3VLk-7" edge="1">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4vfo15WaHHj-bs0f3VLk-85" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="4vfo15WaHHj-bs0f3VLk-16" target="4vfo15WaHHj-bs0f3VLk-29" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -57,9 +36,6 @@
             <mxPoint x="400" y="360" as="sourcePoint" />
             <mxPoint x="450" y="310" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="4vfo15WaHHj-bs0f3VLk-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="4vfo15WaHHj-bs0f3VLk-27" target="4vfo15WaHHj-bs0f3VLk-7" edge="1">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4vfo15WaHHj-bs0f3VLk-27" value="Check overview of the tournament" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="470" y="520" width="152" height="60" as="geometry" />
@@ -128,27 +104,14 @@
         <mxCell id="4vfo15WaHHj-bs0f3VLk-40" value="New Team" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="150" y="-237.5" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4vfo15WaHHj-bs0f3VLk-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="4vfo15WaHHj-bs0f3VLk-43" target="4vfo15WaHHj-bs0f3VLk-7" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="315" y="225" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="4vfo15WaHHj-bs0f3VLk-43" value="View information about the match" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="240" y="144.03" width="150" height="70" as="geometry" />
         </mxCell>
         <mxCell id="4vfo15WaHHj-bs0f3VLk-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="4vfo15WaHHj-bs0f3VLk-45" target="4vfo15WaHHj-bs0f3VLk-48" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="4vfo15WaHHj-bs0f3VLk-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="4vfo15WaHHj-bs0f3VLk-45" target="4vfo15WaHHj-bs0f3VLk-7" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="4vfo15WaHHj-bs0f3VLk-45" value="Update Score of the match" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="475" y="610" width="140" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="4vfo15WaHHj-bs0f3VLk-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="4vfo15WaHHj-bs0f3VLk-48" target="4vfo15WaHHj-bs0f3VLk-7" edge="1">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4vfo15WaHHj-bs0f3VLk-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="4vfo15WaHHj-bs0f3VLk-48" target="4vfo15WaHHj-bs0f3VLk-39" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -173,13 +136,6 @@
         </mxCell>
         <mxCell id="4vfo15WaHHj-bs0f3VLk-48" value="email about creating an account successfully or an update on the match score." style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="650" y="-110" width="200" height="130" as="geometry" />
-        </mxCell>
-        <mxCell id="4vfo15WaHHj-bs0f3VLk-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.3333333333333333;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="4vfo15WaHHj-bs0f3VLk-61" target="4vfo15WaHHj-bs0f3VLk-7" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1000" y="179" />
-            </Array>
-          </mxGeometry>
         </mxCell>
         <mxCell id="4vfo15WaHHj-bs0f3VLk-61" value="Edit member infor, status" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="487.5" y="144.03" width="150" height="70" as="geometry" />
@@ -275,14 +231,8 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="4vfo15WaHHj-bs0f3VLk-94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="4vfo15WaHHj-bs0f3VLk-88" target="4vfo15WaHHj-bs0f3VLk-7" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="4vfo15WaHHj-bs0f3VLk-88" value="Check valid name team, email&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="697.5" y="-355.97" width="130" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="4vfo15WaHHj-bs0f3VLk-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="4vfo15WaHHj-bs0f3VLk-89" target="4vfo15WaHHj-bs0f3VLk-7" edge="1">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4vfo15WaHHj-bs0f3VLk-89" value="Check if there are any slots left in the tournament?" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="700" y="-270" width="125" height="125" as="geometry" />
