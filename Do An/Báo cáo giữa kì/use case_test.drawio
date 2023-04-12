@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2023-04-11T02:38:15.950Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.1.2 Chrome/106.0.5249.199 Electron/21.4.3 Safari/537.36" etag="wTYbFiDAQmvQTROMSV08" version="21.1.2" type="device">
+<mxfile host="Electron" modified="2023-04-12T14:31:16.975Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.1.2 Chrome/106.0.5249.199 Electron/21.4.3 Safari/537.36" etag="fR4qQSueBlyFBQwbjZCP" version="21.1.2" type="device">
   <diagram name="Page-1" id="4D2QLF0WzecQQkKjmwuA">
-    <mxGraphModel dx="1295" dy="1918" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1219" dy="1869" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -184,12 +184,6 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="4vfo15WaHHj-bs0f3VLk-110" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="4vfo15WaHHj-bs0f3VLk-76" target="4vfo15WaHHj-bs0f3VLk-89" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="4vfo15WaHHj-bs0f3VLk-111" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="4vfo15WaHHj-bs0f3VLk-76" target="4vfo15WaHHj-bs0f3VLk-88" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="4vfo15WaHHj-bs0f3VLk-124" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="4vfo15WaHHj-bs0f3VLk-76" target="4vfo15WaHHj-bs0f3VLk-48" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -230,12 +224,6 @@
             <mxPoint x="300" y="-200" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="4vfo15WaHHj-bs0f3VLk-88" value="Check valid name team, email&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="697.5" y="-355.97" width="130" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="4vfo15WaHHj-bs0f3VLk-89" value="Check if there are any slots left in the tournament?" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="700" y="-270" width="125" height="125" as="geometry" />
         </mxCell>
         <mxCell id="4vfo15WaHHj-bs0f3VLk-99" value="Each of member infor" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="240" y="-160" width="97.5" height="60" as="geometry" />
