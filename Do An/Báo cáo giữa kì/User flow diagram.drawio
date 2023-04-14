@@ -1,11 +1,11 @@
-<mxfile host="Electron" modified="2023-04-14T13:26:24.571Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.1.2 Chrome/106.0.5249.199 Electron/21.4.3 Safari/537.36" etag="b92clsbaA-qszF-5iYBK" version="21.1.2" type="device" pages="2">
+<mxfile host="Electron" modified="2023-04-14T13:32:36.636Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.1.2 Chrome/106.0.5249.199 Electron/21.4.3 Safari/537.36" etag="8Loddhrj8Ho0o-V9xcXX" version="21.1.2" type="device" pages="2">
   <diagram name="Page-1" id="GeRozXnJejvfCvaCAolX">
     <mxGraphModel dx="1036" dy="654" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="VJVuNcSgWlH3RRMYubbN-1" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;TOURNAMENT ORGANIZER&lt;/b&gt;&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
-          <mxGeometry x="298" y="40" width="255" height="40" as="geometry" />
+          <mxGeometry x="298" y="440" width="255" height="40" as="geometry" />
         </mxCell>
         <mxCell id="VJVuNcSgWlH3RRMYubbN-13" value="valid" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="VJVuNcSgWlH3RRMYubbN-5" target="VJVuNcSgWlH3RRMYubbN-11" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -30,25 +30,17 @@
         <mxCell id="VJVuNcSgWlH3RRMYubbN-11" value="Tournament dashboard form" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="360.5" y="1040" width="130" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="qGVa5Dwb6UpMmpyqMpC1-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="VJVuNcSgWlH3RRMYubbN-24" target="VJVuNcSgWlH3RRMYubbN-27" edge="1">
+        <mxCell id="LXAsMdhGthyySvENzLGG-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="VJVuNcSgWlH3RRMYubbN-24" target="VJVuNcSgWlH3RRMYubbN-27">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="VJVuNcSgWlH3RRMYubbN-24" value="Create tournament" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
-          <mxGeometry x="209.94" y="1380" width="130" height="60" as="geometry" />
+          <mxGeometry x="190" y="1210" width="130" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="VJVuNcSgWlH3RRMYubbN-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="VJVuNcSgWlH3RRMYubbN-27" target="VJVuNcSgWlH3RRMYubbN-31" edge="1">
+        <mxCell id="LXAsMdhGthyySvENzLGG-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="VJVuNcSgWlH3RRMYubbN-27" target="VJVuNcSgWlH3RRMYubbN-31">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="VJVuNcSgWlH3RRMYubbN-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="VJVuNcSgWlH3RRMYubbN-27" target="VJVuNcSgWlH3RRMYubbN-24" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="139.94" y="1580" />
-              <mxPoint x="139.94" y="1410" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="VJVuNcSgWlH3RRMYubbN-27" value="Valid information?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="219.94" y="1530" width="110" height="100" as="geometry" />
+          <mxGeometry x="200" y="1350" width="110" height="100" as="geometry" />
         </mxCell>
         <mxCell id="VJVuNcSgWlH3RRMYubbN-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="VJVuNcSgWlH3RRMYubbN-31" target="qGVa5Dwb6UpMmpyqMpC1-37" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -56,10 +48,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="VJVuNcSgWlH3RRMYubbN-31" value="Create tournament successfully!" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="209.94" y="1720" width="130" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="VJVuNcSgWlH3RRMYubbN-33" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="269.94" y="1630" width="40" height="30" as="geometry" />
+          <mxGeometry x="190" y="1600" width="130" height="60" as="geometry" />
         </mxCell>
         <mxCell id="qGVa5Dwb6UpMmpyqMpC1-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="VJVuNcSgWlH3RRMYubbN-60" target="qGVa5Dwb6UpMmpyqMpC1-32" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -78,9 +67,6 @@
         </mxCell>
         <mxCell id="VJVuNcSgWlH3RRMYubbN-62" value="Does tournament exists?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="550" y="1360" width="110" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="VJVuNcSgWlH3RRMYubbN-97" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="187.94" y="1550" width="40" height="30" as="geometry" />
         </mxCell>
         <mxCell id="qGVa5Dwb6UpMmpyqMpC1-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="qGVa5Dwb6UpMmpyqMpC1-3" target="qGVa5Dwb6UpMmpyqMpC1-21" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -106,10 +92,10 @@
         <mxCell id="qGVa5Dwb6UpMmpyqMpC1-28" value="Login" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="360.5" y="720" width="130" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="X0L1DLR2RLc3gcCXuG_f-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="qGVa5Dwb6UpMmpyqMpC1-32" target="qGVa5Dwb6UpMmpyqMpC1-37">
+        <mxCell id="LXAsMdhGthyySvENzLGG-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="qGVa5Dwb6UpMmpyqMpC1-32" target="qGVa5Dwb6UpMmpyqMpC1-37">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="820" y="1860" />
+              <mxPoint x="820" y="1770" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -117,7 +103,7 @@
           <mxGeometry x="760" y="1600" width="130" height="60" as="geometry" />
         </mxCell>
         <mxCell id="qGVa5Dwb6UpMmpyqMpC1-37" value="Exit" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" parent="1" vertex="1">
-          <mxGeometry x="545" y="1820" width="120" height="80" as="geometry" />
+          <mxGeometry x="545" y="1730" width="120" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
