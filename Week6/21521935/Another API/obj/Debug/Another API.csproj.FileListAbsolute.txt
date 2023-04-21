@@ -1,0 +1,14 @@
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week6\21521935\Another API\bin\Debug\Another API.exe.config
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week6\21521935\Another API\bin\Debug\Another API.exe
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week6\21521935\Another API\bin\Debug\Another API.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week6\21521935\Another API\obj\Debug\Another API.csproj.AssemblyReference.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week6\21521935\Another API\obj\Debug\Another API.csproj.SuggestedBindingRedirects.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week6\21521935\Another API\obj\Debug\Another_API.Properties.Resources.resources
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week6\21521935\Another API\obj\Debug\Another API.csproj.GenerateResource.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week6\21521935\Another API\obj\Debug\Another API.csproj.CoreCompileInputs.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week6\21521935\Another API\obj\Debug\Another API.exe
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week6\21521935\Another API\obj\Debug\Another API.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week6\21521935\Another API\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week6\21521935\Another API\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week6\21521935\Another API\obj\Debug\Another API.csproj.CopyComplete
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week6\21521935\Another API\obj\Debug\Another_API.Weather.resources
