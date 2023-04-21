@@ -1,0 +1,15 @@
+C:\Users\acer\Desktop\GetAPI\GetAPI\obj\Debug\GetAPI.csproj.AssemblyReference.cache
+C:\Users\acer\Desktop\GetAPI\GetAPI\obj\Debug\GetAPI.csproj.SuggestedBindingRedirects.cache
+C:\Users\acer\Desktop\GetAPI\GetAPI\obj\Debug\GetAPI.Form1.resources
+C:\Users\acer\Desktop\GetAPI\GetAPI\obj\Debug\GetAPI.Properties.Resources.resources
+C:\Users\acer\Desktop\GetAPI\GetAPI\obj\Debug\GetAPI.csproj.GenerateResource.cache
+C:\Users\acer\Desktop\GetAPI\GetAPI\obj\Debug\GetAPI.csproj.CoreCompileInputs.cache
+C:\Users\acer\Desktop\GetAPI\GetAPI\bin\Debug\GetAPI.exe.config
+C:\Users\acer\Desktop\GetAPI\GetAPI\bin\Debug\GetAPI.exe
+C:\Users\acer\Desktop\GetAPI\GetAPI\bin\Debug\GetAPI.pdb
+C:\Users\acer\Desktop\GetAPI\GetAPI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\acer\Desktop\GetAPI\GetAPI\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\acer\Desktop\GetAPI\GetAPI\bin\Debug\Newtonsoft.Json.xml
+C:\Users\acer\Desktop\GetAPI\GetAPI\obj\Debug\GetAPI.csproj.CopyComplete
+C:\Users\acer\Desktop\GetAPI\GetAPI\obj\Debug\GetAPI.exe
+C:\Users\acer\Desktop\GetAPI\GetAPI\obj\Debug\GetAPI.pdb
