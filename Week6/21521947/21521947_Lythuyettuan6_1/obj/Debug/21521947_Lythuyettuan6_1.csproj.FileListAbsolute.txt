@@ -12,3 +12,17 @@ C:\Users\thanh\Downloads\Laptrinhmangcanban\21521947_Lythuyettuan6_1\21521947_Ly
 C:\Users\thanh\Downloads\Laptrinhmangcanban\21521947_Lythuyettuan6_1\21521947_Lythuyettuan6_1\obj\Debug\21521947_Lythuyettuan6_1.csproj.CopyComplete
 C:\Users\thanh\Downloads\Laptrinhmangcanban\21521947_Lythuyettuan6_1\21521947_Lythuyettuan6_1\obj\Debug\21521947_Lythuyettuan6_1.exe
 C:\Users\thanh\Downloads\Laptrinhmangcanban\21521947_Lythuyettuan6_1\21521947_Lythuyettuan6_1\obj\Debug\21521947_Lythuyettuan6_1.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week6\21521947\21521947_Lythuyettuan6_1\bin\Debug\21521947_Lythuyettuan6_1.exe.config
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week6\21521947\21521947_Lythuyettuan6_1\bin\Debug\21521947_Lythuyettuan6_1.exe
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week6\21521947\21521947_Lythuyettuan6_1\bin\Debug\21521947_Lythuyettuan6_1.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week6\21521947\21521947_Lythuyettuan6_1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week6\21521947\21521947_Lythuyettuan6_1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week6\21521947\21521947_Lythuyettuan6_1\obj\Debug\21521947_Lythuyettuan6_1.csproj.AssemblyReference.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week6\21521947\21521947_Lythuyettuan6_1\obj\Debug\21521947_Lythuyettuan6_1.csproj.SuggestedBindingRedirects.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week6\21521947\21521947_Lythuyettuan6_1\obj\Debug\_21521947_Lythuyettuan6_1.Form1.resources
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week6\21521947\21521947_Lythuyettuan6_1\obj\Debug\_21521947_Lythuyettuan6_1.Properties.Resources.resources
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week6\21521947\21521947_Lythuyettuan6_1\obj\Debug\21521947_Lythuyettuan6_1.csproj.GenerateResource.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week6\21521947\21521947_Lythuyettuan6_1\obj\Debug\21521947_Lythuyettuan6_1.csproj.CoreCompileInputs.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week6\21521947\21521947_Lythuyettuan6_1\obj\Debug\21521947_Lythuyettuan6_1.csproj.CopyComplete
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week6\21521947\21521947_Lythuyettuan6_1\obj\Debug\21521947_Lythuyettuan6_1.exe
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week6\21521947\21521947_Lythuyettuan6_1\obj\Debug\21521947_Lythuyettuan6_1.pdb
