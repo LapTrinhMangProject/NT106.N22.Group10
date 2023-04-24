@@ -17,7 +17,6 @@ namespace Server
 {
     public partial class Server : Form
     {
-        root_teams_and_venue teams_and_venues;
         public Server()
         {
             InitializeComponent();
@@ -28,6 +27,7 @@ namespace Server
 
         }
 
+        root_teams_and_venue teams_and_venues;
         private async void button1_Click(object sender, EventArgs e)
         {
             var client = new HttpClient();
@@ -37,7 +37,7 @@ namespace Server
                 RequestUri = new Uri("https://api-football-v1.p.rapidapi.com/v3/teams?league=39&season=2022"),
                 Headers =
     {
-        { "X-RapidAPI-Key", "23bef34f7emshb79a95e739f4a1ep1e36cdjsnab3db44eb3eb" },
+        { "X-RapidAPI-Key", "759c532019msh63e52ce5ea468afp113769jsnc64419692369" },
         { "X-RapidAPI-Host", "api-football-v1.p.rapidapi.com" },
     },
             };
