@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-24T08:36:02.109Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="XdY0TMRzJ9l9spDsNP0J" version="21.2.1" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-24T09:39:45.968Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="HEd4_BE-dIZ5SUZLNVox" version="21.2.1" type="github">
   <diagram name="Page-1" id="hmIhWxgauYHtvwoBBr1-">
     <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -197,7 +197,7 @@
           <mxGeometry x="449.85" y="3450" width="160" height="50" as="geometry" />
         </mxCell>
         <mxCell id="pxkompHGLgKoY_9hvoZM-84" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="40" y="3800" width="760" height="470" as="geometry" />
+          <mxGeometry x="40" y="3820" width="760" height="450" as="geometry" />
         </mxCell>
         <mxCell id="pxkompHGLgKoY_9hvoZM-86" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;&lt;b&gt;League standings&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="304.7" y="3830" width="230" height="40" as="geometry" />
@@ -208,7 +208,7 @@
         <mxCell id="pxkompHGLgKoY_9hvoZM-89" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;Team name&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="190" y="3880" width="100" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="pxkompHGLgKoY_9hvoZM-90" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;Change team name&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+        <mxCell id="pxkompHGLgKoY_9hvoZM-90" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;Point&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="310" y="3880" width="100" height="50" as="geometry" />
         </mxCell>
         <mxCell id="pxkompHGLgKoY_9hvoZM-91" value="&lt;span style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;Number of win game&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
