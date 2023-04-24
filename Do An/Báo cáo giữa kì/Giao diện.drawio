@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-24T09:39:45.968Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="HEd4_BE-dIZ5SUZLNVox" version="21.2.1" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-24T09:44:28.119Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="oIMA-Vv3-7FHwyaXL-Y3" version="21.2.1" type="github">
   <diagram name="Page-1" id="hmIhWxgauYHtvwoBBr1-">
     <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -349,7 +349,7 @@
         <mxCell id="pxkompHGLgKoY_9hvoZM-137" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 24px;&quot;&gt;&lt;b&gt;Dashboard:&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="40" y="3730" width="230" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="pxkompHGLgKoY_9hvoZM-138" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 24px;&quot;&gt;&lt;b&gt;Main_menu:&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="pxkompHGLgKoY_9hvoZM-138" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 24px;&quot;&gt;&lt;b&gt;Login page:&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="40" y="4410" width="230" height="50" as="geometry" />
         </mxCell>
         <mxCell id="pxkompHGLgKoY_9hvoZM-140" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 24px;&quot;&gt;&lt;b&gt;Match_info:&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
