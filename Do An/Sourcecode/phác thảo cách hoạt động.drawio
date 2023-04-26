@@ -1,0 +1,134 @@
+<mxfile host="Electron" modified="2023-04-25T16:51:40.538Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.1 Chrome/112.0.5615.87 Electron/24.1.2 Safari/537.36" etag="EjZ8OeS10LLQFXCSAdVK" version="21.2.1" type="device">
+  <diagram name="Page-1" id="gulnAhSd-MEJH2aOjpCI">
+    <mxGraphModel dx="1418" dy="868" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uA1uEdvYPMPQBxOfveHI-1" value="Server: lắng nghe từ Client" style="image;html=1;image=img/lib/clip_art/computers/Server_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="610" y="370" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uA1uEdvYPMPQBxOfveHI-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uA1uEdvYPMPQBxOfveHI-2" target="uA1uEdvYPMPQBxOfveHI-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uA1uEdvYPMPQBxOfveHI-2" value="giao tiếp với Client&amp;nbsp;" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="370" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uA1uEdvYPMPQBxOfveHI-3" value="Client gửi yêu cầu cho Server" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/laptop_client.svg;" vertex="1" parent="1">
+          <mxGeometry x="190" y="380" width="45" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uA1uEdvYPMPQBxOfveHI-4" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uA1uEdvYPMPQBxOfveHI-1" target="uA1uEdvYPMPQBxOfveHI-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="470" as="sourcePoint" />
+            <mxPoint x="450" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uA1uEdvYPMPQBxOfveHI-5" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="uA1uEdvYPMPQBxOfveHI-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="470" as="sourcePoint" />
+            <mxPoint x="230" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uA1uEdvYPMPQBxOfveHI-6" value="SQL Server" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/sql_server.svg;" vertex="1" parent="1">
+          <mxGeometry x="1510" y="267.08000000000004" width="81.5" height="105.84" as="geometry" />
+        </mxCell>
+        <mxCell id="uA1uEdvYPMPQBxOfveHI-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="uA1uEdvYPMPQBxOfveHI-7" target="uA1uEdvYPMPQBxOfveHI-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uA1uEdvYPMPQBxOfveHI-7" value="Các chức năng Server thực hiện được để gửi trả về cho Client" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="379.99999999999994" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uA1uEdvYPMPQBxOfveHI-8" value="Tìm kiếm tên giải đấu" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="980" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uA1uEdvYPMPQBxOfveHI-9" value="Tìm kiếm tên cầu thủ" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="160.00000000000006" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uA1uEdvYPMPQBxOfveHI-10" value="Tìm kiếm câu lạc bộ&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uA1uEdvYPMPQBxOfveHI-11" value="Làm thế nào để Server có thể hiểu Client muốn cái gì&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="497.9199999999999" width="200" height="122.08" as="geometry" />
+        </mxCell>
+        <mxCell id="uA1uEdvYPMPQBxOfveHI-13" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="uA1uEdvYPMPQBxOfveHI-1" target="uA1uEdvYPMPQBxOfveHI-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="460" as="sourcePoint" />
+            <mxPoint x="650" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uA1uEdvYPMPQBxOfveHI-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="uA1uEdvYPMPQBxOfveHI-14" target="uA1uEdvYPMPQBxOfveHI-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uA1uEdvYPMPQBxOfveHI-14" value="Xây dựng data structure sao cho cả 2 bên có thể hiểu&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="710" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uA1uEdvYPMPQBxOfveHI-17" value="Include" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="uA1uEdvYPMPQBxOfveHI-9" target="uA1uEdvYPMPQBxOfveHI-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="740" y="250" as="sourcePoint" />
+            <mxPoint x="790" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uA1uEdvYPMPQBxOfveHI-18" value="Include" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="uA1uEdvYPMPQBxOfveHI-10" target="uA1uEdvYPMPQBxOfveHI-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="970" y="230" as="sourcePoint" />
+            <mxPoint x="1050" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uA1uEdvYPMPQBxOfveHI-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="uA1uEdvYPMPQBxOfveHI-20" target="uA1uEdvYPMPQBxOfveHI-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uA1uEdvYPMPQBxOfveHI-20" value="Sử dụng truy vấn đến SQL Server để hiện thị gợi ý trên thanh tìm kiếm&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1230" y="245" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="uA1uEdvYPMPQBxOfveHI-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uA1uEdvYPMPQBxOfveHI-21" target="uA1uEdvYPMPQBxOfveHI-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="840" y="85" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uA1uEdvYPMPQBxOfveHI-21" value="Sử dụng API để trả về thông tin chi tiết" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="30" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="uA1uEdvYPMPQBxOfveHI-26" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uA1uEdvYPMPQBxOfveHI-8" target="uA1uEdvYPMPQBxOfveHI-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1210" y="380" as="sourcePoint" />
+            <mxPoint x="1260" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uA1uEdvYPMPQBxOfveHI-27" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uA1uEdvYPMPQBxOfveHI-20" target="uA1uEdvYPMPQBxOfveHI-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1210" y="380" as="sourcePoint" />
+            <mxPoint x="1260" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uA1uEdvYPMPQBxOfveHI-29" value="Teams(id,name,code)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1650" y="169.99999999999997" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uA1uEdvYPMPQBxOfveHI-30" value="League(id,name)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1650" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uA1uEdvYPMPQBxOfveHI-31" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uA1uEdvYPMPQBxOfveHI-29" target="uA1uEdvYPMPQBxOfveHI-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1220" y="380" as="sourcePoint" />
+            <mxPoint x="1270" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uA1uEdvYPMPQBxOfveHI-32" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uA1uEdvYPMPQBxOfveHI-30" target="uA1uEdvYPMPQBxOfveHI-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1670" y="270" as="sourcePoint" />
+            <mxPoint x="1610" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uA1uEdvYPMPQBxOfveHI-33" value="Player(id,name)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1650" y="395" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uA1uEdvYPMPQBxOfveHI-35" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uA1uEdvYPMPQBxOfveHI-33" target="uA1uEdvYPMPQBxOfveHI-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1660" y="330" as="sourcePoint" />
+            <mxPoint x="1601" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
