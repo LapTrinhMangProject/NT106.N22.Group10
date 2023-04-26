@@ -27,7 +27,7 @@ namespace Server
 
         }
 
-        root_teams_and_venue teams_and_venues;
+        Root_teams_and_venue teams_and_venues;
         private async void button1_Click(object sender, EventArgs e)
         {
             var client = new HttpClient();
@@ -46,7 +46,7 @@ namespace Server
                 response.EnsureSuccessStatusCode();
                 var body = await response.Content.ReadAsStringAsync();
                 MessageBox.Show(body);
-                teams_and_venues = JsonConvert.DeserializeObject<root_teams_and_venue>(body);
+                teams_and_venues = JsonConvert.DeserializeObject<Root_teams_and_venue>(body);
             }
 
             FileStream myfile = new FileStream("test.txt", FileMode.Create, FileAccess.Write);
