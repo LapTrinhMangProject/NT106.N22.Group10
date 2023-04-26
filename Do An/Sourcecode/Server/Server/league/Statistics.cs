@@ -25,9 +25,9 @@ namespace Library_football
     }
     public class Games
     {
-        public int Appearances { get; set; }
-        public int Lineups { get; set; }
-        public int Minutes { get; set; }
+        public int? Appearances { get; set; }
+        public int? Lineups { get; set; }
+        public int? Minutes { get; set; }
         public int? Number { get; set; }
         public string Position { get; set; }
         public float? Rating { get; set; }
@@ -36,9 +36,9 @@ namespace Library_football
 
     public class Substitutes
     {
-        public int In { get; set; }
-        public int Out { get; set; }
-        public int Bench { get; set; }
+        public int? In { get; set; }
+        public int? Out { get; set; }
+        public int? Bench { get; set; }
     }
 
     public class Shots
@@ -49,8 +49,8 @@ namespace Library_football
 
     public class Goals
     {
-        public int Total { get; set; }
-        public int Conceded { get; set; }
+        public int? Total { get; set; }
+        public int? Conceded { get; set; }
         public int? Assists { get; set; }
         public int? Saves { get; set; }
     }
@@ -90,17 +90,17 @@ namespace Library_football
 
     public class Cards
     {
-        public int Yellow { get; set; }
-        public int YellowRed { get; set; }
-        public int Red { get; set; }
+        public int? Yellow { get; set; }
+        public int? YellowRed { get; set; }
+        public int? Red { get; set; }
     }
 
     public class Penalty
     {
         public int? Won { get; set; }
         public int? Committed { get; set; }
-        public int Scored { get; set; }
-        public int Missed { get; set; }
+        public int? Scored { get; set; }
+        public int? Missed { get; set; }
         public int? Saved { get; set; }
     }
 }

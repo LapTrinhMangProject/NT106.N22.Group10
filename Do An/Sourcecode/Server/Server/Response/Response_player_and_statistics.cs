@@ -9,11 +9,11 @@ namespace Response
 {
     public class Response_player_and_statistics
     {
-        Player Player { get; set; }
-        Statistics Statistics { get; set; }
+       public Player Player { get; set; }
+        public Statistics[] Statistics { get; set; }
     }
     public class Root_Response_player_and_statistics
     {
-        public Response_player_and_statistics response { get; set; }
+        public Response_player_and_statistics[] response { get; set; }
     }
 }
