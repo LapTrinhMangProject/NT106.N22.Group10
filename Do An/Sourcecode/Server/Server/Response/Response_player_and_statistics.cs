@@ -15,5 +15,6 @@ namespace Response
     public class Root_Response_player_and_statistics
     {
         public Response_player_and_statistics[] response { get; set; }
+        public Page paging { get; set; }
     }
 }
