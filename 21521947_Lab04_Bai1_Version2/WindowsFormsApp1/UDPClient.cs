@@ -21,13 +21,14 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-
         private void button1_Click_1(object sender, EventArgs e)
         {
-                udpClient = new UdpClient();
-                byte[] sendBytes = Encoding.ASCII.GetBytes(display.Text);
-                udpClient.Send(sendBytes, sendBytes.Length, "127.0.0.1", 8080);
-                udpClient.Close();
+            udpClient = new UdpClient();
+            byte[] sendBytes = Encoding.ASCII.GetBytes(display.Text);
+            string ip = IPremote.Text;
+            int port = int.Parse(Port.Text);
+            udpClient.Send(sendBytes, sendBytes.Length, ip, port);
+            udpClient.Close();
         }
     }
 }

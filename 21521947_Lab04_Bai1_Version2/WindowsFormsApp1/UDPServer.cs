@@ -20,18 +20,23 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-        private void UDPServer_Load(object sender, EventArgs e)
+
+        private void ListenButton_Click(object sender, EventArgs e)
         {
-            udpServer = new UdpClient(8080);
+            int port = int.Parse(PortTB.Text);
+            udpServer = new UdpClient(int.Parse(PortTB.Text));
             udpServer.BeginReceive(new AsyncCallback(ReceiveCallback), null);
+            display.AppendText("Port "+ port + " connected" + Environment.NewLine);
         }
         private void ReceiveCallback(IAsyncResult ar)
         {
             IPEndPoint remoteEP = new IPEndPoint(IPAddress.Any, 0);
             byte[] receivedBytes = udpServer.EndReceive(ar, ref remoteEP);
             string receivedString = Encoding.ASCII.GetString(receivedBytes);
-            this.Invoke(new Action(() => display.AppendText(receivedString + Environment.NewLine)));
+            this.Invoke(new Action(() => display.AppendText(remoteEP + ": "+ receivedString + Environment.NewLine)));
             udpServer.BeginReceive(new AsyncCallback(ReceiveCallback), null);
         }
+
+
     }
 }
