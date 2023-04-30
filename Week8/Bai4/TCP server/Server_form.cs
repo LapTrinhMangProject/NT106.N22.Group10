@@ -28,7 +28,7 @@ namespace Server
         TcpListener server;
         static readonly object _lock = new object();
         static readonly List<TcpClient> _clients = new List<TcpClient>();
-        static readonly Dictionary<string, TcpClient> mapping = new Dictionary<string, TcpClient>();
+        static readonly List<Mess> _mess = new List<Mess>();
         void Server_Listener()
         {
             try
@@ -74,7 +74,7 @@ namespace Server
             Mess mess = new Mess();
                 // Convert the data bytes to a string
                 string data = Encoding.UTF8.GetString(bytes, 0, i);
-                MessageBox.Show(data);
+                MessageBox.Show(data,"server read:");
                 string code = data.Substring(0, 2);
                 switch (code)
                 {
@@ -84,7 +84,7 @@ namespace Server
                         List_connection.Invoke(new Action(() => {
                             List_connection.Items.Add("Connected from " + mess.sender_name);
                         }));
-                        mapping[mess.sender_name] = client;
+                        _mess.Add(mess);
                         break;
                     case "01":
                      //   MessageBox.Show(data.Substring(2));
@@ -94,7 +94,7 @@ namespace Server
                         }));
                         Broadcast(mess, client);
                         break;
-                    case "10":
+                   /* case "10":
                         MessageBox.Show(data.Substring(2));
 
                         mess = JsonConvert.DeserializeObject<Mess>(data.Substring(2));
@@ -108,13 +108,12 @@ namespace Server
                             stream_forwarding.Write(bytes, 0, bytes.Length);
                             stream_forwarding.Flush();
                         }
-                        break;
+                        break;*/
                     case "11":
-                        string data_clients = "11";
-                        foreach (string name in mapping.Keys)
-                           
-                            data_clients += name+" ";
-                        bytes = Encoding.UTF8.GetBytes(data_clients);   
+                        string code_return = "11";
+                            string json_data = JsonConvert.SerializeObject(_mess);
+                       string data_return = code+json_data;
+                        bytes = Encoding.UTF8.GetBytes(data_return);   
                         stream.Write(bytes, 0, bytes.Length);
                         stream.Flush();
                         break;

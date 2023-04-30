@@ -104,14 +104,14 @@ namespace Client
                 }));
                         break;
                     case "11":
-                        var listname = data.Substring(2).Split(' ');
-                        foreach (string name in listname)
+                        List<Mess> list = JsonConvert.DeserializeObject<List<Mess>>(data.Substring(2));
+                       foreach(Mess name in list)
                         {
-                            if (name == mess.sender_name)
+                            if (name.sender_name == mess.sender_name)
                                 continue;
                             list_client_listbox.Invoke(new Action(() =>
                             {
-                            list_client_listbox.Items.Add(name);
+                                list_client_listbox.Items.Add(name.sender_name);
                             }));
                         }
                         break;
