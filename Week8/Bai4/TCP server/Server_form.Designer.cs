@@ -42,7 +42,7 @@
             // 
             this.chat.FormattingEnabled = true;
             this.chat.Location = new System.Drawing.Point(9, 16);
-            this.chat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chat.Margin = new System.Windows.Forms.Padding(2);
             this.chat.Name = "chat";
             this.chat.Size = new System.Drawing.Size(351, 212);
             this.chat.TabIndex = 0;
@@ -51,7 +51,7 @@
             // runserver_button
             // 
             this.runserver_button.Location = new System.Drawing.Point(428, 46);
-            this.runserver_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.runserver_button.Margin = new System.Windows.Forms.Padding(2);
             this.runserver_button.Name = "runserver_button";
             this.runserver_button.Size = new System.Drawing.Size(56, 19);
             this.runserver_button.TabIndex = 1;
@@ -62,7 +62,7 @@
             // severport_textbox
             // 
             this.severport_textbox.Location = new System.Drawing.Point(489, 16);
-            this.severport_textbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.severport_textbox.Margin = new System.Windows.Forms.Padding(2);
             this.severport_textbox.Name = "severport_textbox";
             this.severport_textbox.ReadOnly = true;
             this.severport_textbox.Size = new System.Drawing.Size(76, 20);
@@ -72,11 +72,11 @@
             // severip_textbox
             // 
             this.severip_textbox.Location = new System.Drawing.Point(410, 16);
-            this.severip_textbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.severip_textbox.Margin = new System.Windows.Forms.Padding(2);
             this.severip_textbox.Name = "severip_textbox";
             this.severip_textbox.Size = new System.Drawing.Size(76, 20);
             this.severip_textbox.TabIndex = 3;
-            this.severip_textbox.Text = "192.168.1.9";
+            this.severip_textbox.Text = "192.168.1.7";
             // 
             // label1
             // 
@@ -91,7 +91,7 @@
             // status_textbox
             // 
             this.status_textbox.Location = new System.Drawing.Point(404, 85);
-            this.status_textbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.status_textbox.Margin = new System.Windows.Forms.Padding(2);
             this.status_textbox.Name = "status_textbox";
             this.status_textbox.Size = new System.Drawing.Size(182, 20);
             this.status_textbox.TabIndex = 8;
@@ -110,7 +110,7 @@
             // 
             this.List_connection.FormattingEnabled = true;
             this.List_connection.Location = new System.Drawing.Point(364, 110);
-            this.List_connection.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.List_connection.Margin = new System.Windows.Forms.Padding(2);
             this.List_connection.Name = "List_connection";
             this.List_connection.Size = new System.Drawing.Size(228, 121);
             this.List_connection.TabIndex = 10;
@@ -129,7 +129,7 @@
             this.Controls.Add(this.severport_textbox);
             this.Controls.Add(this.runserver_button);
             this.Controls.Add(this.chat);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Server_form";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

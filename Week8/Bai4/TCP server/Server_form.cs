@@ -28,6 +28,7 @@ namespace Server
         TcpListener server;
         static readonly object _lock = new object();
         static readonly List<TcpClient> _clients = new List<TcpClient>();
+        static readonly Dictionary<string, TcpClient> mapping = new Dictionary<string, TcpClient>();
         void Server_Listener()
         {
             try
@@ -63,32 +64,64 @@ namespace Server
         }
         void Establish(TcpClient client)
         {
-            Mess mess;
-            byte[] bytes = new byte[254];
+            byte[] bytes = new byte[1024];
             NetworkStream stream = client.GetStream();
 
             // Loop to receive all the data sent by the client
-            bool first_time = true;
             int i;
             while ((i = stream.Read(bytes, 0, bytes.Length)) != 0)
             {
+            Mess mess = new Mess();
                 // Convert the data bytes to a string
-                string json_data = Encoding.UTF8.GetString(bytes, 0, i);
-                mess = JsonConvert.DeserializeObject<Mess>(json_data);
-               
-                if (first_time)
+                string data = Encoding.UTF8.GetString(bytes, 0, i);
+                MessageBox.Show(data);
+                string code = data.Substring(0, 2);
+                switch (code)
                 {
+                    case "00":
+                        mess = JsonConvert.DeserializeObject<Mess>(data.Substring(2));
 
-                    List_connection.Invoke(new Action(() => {
-                        List_connection.Items.Add("Connected from " + mess.sender_name);
-                    }));
-                    first_time = false;
-                    continue;
+                        List_connection.Invoke(new Action(() => {
+                            List_connection.Items.Add("Connected from " + mess.sender_name);
+                        }));
+                        mapping[mess.sender_name] = client;
+                        break;
+                    case "01":
+                     //   MessageBox.Show(data.Substring(2));
+                      mess = JsonConvert.DeserializeObject<Mess>(data.Substring(2));
+                        chat.Invoke(new Action(() => {
+                            chat.Items.Add($"{mess.sender_name}: {mess.body}");
+                        }));
+                        Broadcast(mess, client);
+                        break;
+                    case "10":
+                        MessageBox.Show(data.Substring(2));
+
+                        mess = JsonConvert.DeserializeObject<Mess>(data.Substring(2));
+
+                        TcpClient client_forward;
+                        if (mapping.TryGetValue(mess.recipient_name, out client_forward))
+                        {
+                            string json_data = JsonConvert.SerializeObject(mess);
+                            bytes = Encoding.UTF8.GetBytes(json_data);
+                            Stream stream_forwarding = client_forward.GetStream();
+                            stream_forwarding.Write(bytes, 0, bytes.Length);
+                            stream_forwarding.Flush();
+                        }
+                        break;
+                    case "11":
+                        string data_clients = "11";
+                        foreach (string name in mapping.Keys)
+                           
+                            data_clients += name+" ";
+                        bytes = Encoding.UTF8.GetBytes(data_clients);   
+                        stream.Write(bytes, 0, bytes.Length);
+                        stream.Flush();
+                        break;
                 }
-                chat.Invoke(new Action(() => {
-                    chat.Items.Add($"{mess.sender_name}: {mess.body}");
-                }));
-                Broadcast(mess, client);
+               
+               
+               
             }
         }
         private void runserver_button_Click(object sender, EventArgs e)
@@ -102,8 +135,9 @@ namespace Server
         void Broadcast(Mess mess,TcpClient exclude)
         {
             string json_data = JsonConvert.SerializeObject(mess);
+            string data = "01" + json_data;
             byte[] bytes = new byte[254];
-            bytes = Encoding.UTF8.GetBytes(json_data);
+            bytes = Encoding.UTF8.GetBytes(data);
             lock (_lock)
             {
                 foreach (TcpClient c in _clients)

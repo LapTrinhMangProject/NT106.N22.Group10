@@ -41,6 +41,10 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.label6 = new System.Windows.Forms.Label();
             this.hostname_textbox = new System.Windows.Forms.TextBox();
+            this.list_client_listbox = new System.Windows.Forms.ListBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.specific_client_check_box = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // port_textbox
@@ -60,7 +64,7 @@
             this.IP_textbox.Name = "IP_textbox";
             this.IP_textbox.Size = new System.Drawing.Size(86, 20);
             this.IP_textbox.TabIndex = 1;
-            this.IP_textbox.Text = "192.168.1.9";
+            this.IP_textbox.Text = "192.168.1.7";
             // 
             // label1
             // 
@@ -105,7 +109,7 @@
             // 
             // send_textbox
             // 
-            this.send_textbox.Location = new System.Drawing.Point(58, 187);
+            this.send_textbox.Location = new System.Drawing.Point(58, 179);
             this.send_textbox.Margin = new System.Windows.Forms.Padding(2);
             this.send_textbox.Name = "send_textbox";
             this.send_textbox.Size = new System.Drawing.Size(335, 20);
@@ -113,7 +117,7 @@
             // 
             // send_button
             // 
-            this.send_button.Location = new System.Drawing.Point(396, 187);
+            this.send_button.Location = new System.Drawing.Point(397, 178);
             this.send_button.Margin = new System.Windows.Forms.Padding(2);
             this.send_button.Name = "send_button";
             this.send_button.Size = new System.Drawing.Size(56, 34);
@@ -125,7 +129,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(28, 187);
+            this.label3.Location = new System.Drawing.Point(11, 179);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(28, 13);
@@ -141,7 +145,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(455, 190);
+            this.label6.Location = new System.Drawing.Point(455, 92);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(57, 13);
@@ -150,17 +154,58 @@
             // 
             // hostname_textbox
             // 
-            this.hostname_textbox.Location = new System.Drawing.Point(516, 187);
+            this.hostname_textbox.Location = new System.Drawing.Point(516, 89);
             this.hostname_textbox.Margin = new System.Windows.Forms.Padding(2);
             this.hostname_textbox.Name = "hostname_textbox";
             this.hostname_textbox.Size = new System.Drawing.Size(76, 20);
             this.hostname_textbox.TabIndex = 14;
             // 
+            // list_client_listbox
+            // 
+            this.list_client_listbox.FormattingEnabled = true;
+            this.list_client_listbox.Location = new System.Drawing.Point(461, 140);
+            this.list_client_listbox.Name = "list_client_listbox";
+            this.list_client_listbox.Size = new System.Drawing.Size(130, 95);
+            this.list_client_listbox.TabIndex = 15;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(465, 268);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(123, 23);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Update client";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(474, 124);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(38, 13);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Clients";
+            // 
+            // specific_client_check_box
+            // 
+            this.specific_client_check_box.AutoSize = true;
+            this.specific_client_check_box.Location = new System.Drawing.Point(470, 241);
+            this.specific_client_check_box.Name = "specific_client_check_box";
+            this.specific_client_check_box.Size = new System.Drawing.Size(118, 17);
+            this.specific_client_check_box.TabIndex = 18;
+            this.specific_client_check_box.Text = "Send specific client";
+            this.specific_client_check_box.UseVisualStyleBackColor = true;
+            // 
             // Client_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 232);
+            this.ClientSize = new System.Drawing.Size(600, 320);
+            this.Controls.Add(this.specific_client_check_box);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.list_client_listbox);
             this.Controls.Add(this.hostname_textbox);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
@@ -195,6 +240,10 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox hostname_textbox;
+        private System.Windows.Forms.ListBox list_client_listbox;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.CheckBox specific_client_check_box;
     }
 }
 

@@ -48,23 +48,41 @@ namespace Client
             thread1.Start();
             connect_buton.Enabled = false;
             connect_buton.Text = "Connected";
-            send_bytes();
+            send_bytes("00");
             send_button.Enabled = true;
+           
         }
 
         private void send_button_Click(object sender, EventArgs e)
         {
-            send_bytes(send_textbox.Text);
-            chat_listbox.Items.Add($"You: {send_textbox.Text}");
+            if (specific_client_check_box.Checked)
+            {
+                mess.recipient_name = list_client_listbox.SelectedItems.ToString();
+                send_bytes("10", send_textbox.Text);
+            }
+            else
+            {
+                send_bytes("01", send_textbox.Text);
+                chat_listbox.Items.Add($"You: {send_textbox.Text}");
+            }
         }
-        void send_bytes(string text=null)
+        void send_bytes(string code,string text=null)
         {
-            mess.body = text;
-            string json_data = JsonConvert.SerializeObject(mess);
-            byte[] bytes = new byte[254];
-            bytes = Encoding.UTF8.GetBytes(json_data);
-            stream.Write(bytes, 0, bytes.Length);
-            stream.Flush();
+            byte[] bytes = new byte[1024];
+            if (code == "11")
+            {
+                bytes = Encoding.UTF8.GetBytes("11");
+
+            }
+            else
+            {
+                mess.body = text;
+                string data = code + JsonConvert.SerializeObject(mess);
+                bytes = Encoding.UTF8.GetBytes(data);
+            }
+
+                stream.Write(bytes, 0, bytes.Length);
+         stream.Flush();
         }
 
         void Client_listening(NetworkStream stream)
@@ -74,19 +92,51 @@ namespace Client
             byte[] bytes = new byte[254];
             while ((i = stream.Read(bytes, 0, bytes.Length)) != 0)
             {
-                // Convert the data bytes to a string
-                string json_data = Encoding.UTF8.GetString(bytes, 0, i);
+                string data = Encoding.UTF8.GetString(bytes, 0, i);
+                string code = data.Substring(0, 2);
+               switch (code)
+                {
+                    case "01":
+                        string json_data = data.Substring(2);
                 mess_from_server = JsonConvert.DeserializeObject<Mess>(json_data);
                 chat_listbox.Invoke(new Action(() => {
                     chat_listbox.Items.Add($"{mess_from_server.sender_name}: {mess_from_server.body}");
                 }));
+                        break;
+                    case "11":
+                        var listname = data.Substring(2).Split(' ');
+                        foreach (string name in listname)
+                        {
+                            if (name == mess.sender_name)
+                                continue;
+                            list_client_listbox.Invoke(new Action(() =>
+                            {
+                            list_client_listbox.Items.Add(name);
+                            }));
+                        }
+                        break;
+                }
 
             }
             }
-
+        void request_update_clients()
+        {
+          
+                list_client_listbox.Invoke(new Action(() =>
+                {
+                    list_client_listbox.Items.Clear();
+                }));
+                send_bytes("11");
+            
+        }
         private void label2_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            request_update_clients();
         }
     }
 }
