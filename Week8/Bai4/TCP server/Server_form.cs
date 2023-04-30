@@ -29,6 +29,7 @@ namespace Server
         static readonly object _lock = new object();
         static readonly List<TcpClient> _clients = new List<TcpClient>();
         static readonly List<Mess> _mess = new List<Mess>();
+        static readonly Dictionary<string, TcpClient> _mapping = new Dictionary<string, TcpClient>();
         void Server_Listener()
         {
             try
@@ -85,6 +86,7 @@ namespace Server
                             List_connection.Items.Add("Connected from " + mess.sender_name);
                         }));
                         _mess.Add(mess);
+                        _mapping[mess.sender_name] = client;
                         break;
                     case "01":
                      //   MessageBox.Show(data.Substring(2));
@@ -94,23 +96,22 @@ namespace Server
                         }));
                         Broadcast(mess, client);
                         break;
-                   /* case "10":
+                    case "10":
                         MessageBox.Show(data.Substring(2));
 
                         mess = JsonConvert.DeserializeObject<Mess>(data.Substring(2));
 
                         TcpClient client_forward;
-                        if (mapping.TryGetValue(mess.recipient_name, out client_forward))
+                        if (_mapping.TryGetValue(mess.recipient_name, out client_forward))
                         {
-                            string json_data = JsonConvert.SerializeObject(mess);
-                            bytes = Encoding.UTF8.GetBytes(json_data);
+                          
+                            bytes = Encoding.UTF8.GetBytes("01"+data.Substring(2));
                             Stream stream_forwarding = client_forward.GetStream();
                             stream_forwarding.Write(bytes, 0, bytes.Length);
                             stream_forwarding.Flush();
                         }
-                        break;*/
+                        break;
                     case "11":
-                        string code_return = "11";
                             string json_data = JsonConvert.SerializeObject(_mess);
                        string data_return = code+json_data;
                         bytes = Encoding.UTF8.GetBytes(data_return);   

@@ -57,7 +57,7 @@ namespace Client
         {
             if (specific_client_check_box.Checked)
             {
-                mess.recipient_name = list_client_listbox.SelectedItems.ToString();
+                mess.recipient_name = list_client_listbox.SelectedItems[0].ToString();
                 send_bytes("10", send_textbox.Text);
             }
             else
