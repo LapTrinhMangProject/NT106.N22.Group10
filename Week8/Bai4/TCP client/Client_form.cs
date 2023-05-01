@@ -90,7 +90,7 @@ namespace Client
         {
             Mess mess_from_server = new Mess();
             int i;
-            byte[] bytes = new byte[254];
+            byte[] bytes = new byte[1024];
             while ((i = stream.Read(bytes, 0, bytes.Length)) != 0)
             {
                 string data = Encoding.UTF8.GetString(bytes, 0, i);
@@ -105,6 +105,7 @@ namespace Client
                 }));
                         break;
                     case "11":
+                        MessageBox.Show(data.Substring(2), "update client");
                         List<Mess> list = JsonConvert.DeserializeObject<List<Mess>>(data.Substring(2));
                        foreach(Mess name in list)
                         {
@@ -116,7 +117,7 @@ namespace Client
                             }));
                         }
                         break;
-                    case "ft":
+                    case "fs":
                         mess_from_server = JsonConvert.DeserializeObject<Mess>(data.Substring(2));
                         chat_listbox.Invoke(new Action(() =>
                         {
@@ -163,7 +164,12 @@ namespace Client
             {
                 string filePath = openFileDialog.FileName;
                 string fileName = Path.GetFileName(filePath);
-                string code = "ft";
+                string code = "fb";
+                if (specific_client_check_box.Checked)
+                {
+                    code = "fs";
+                    mess.recipient_name = list_client_listbox.SelectedItems[0].ToString();
+                }
                 mess.file.fileName = fileName;
                 FileStream file = new FileStream(filePath, FileMode.Open, FileAccess.ReadWrite);
                 StreamReader reader = new StreamReader(file);
@@ -172,7 +178,7 @@ namespace Client
                 while ((line = reader.ReadLine())!=null)
                     mess.file.content.Add(line);
                 
-                send_bytes("ft");
+                send_bytes(code);
                 reader.Close();
                 file.Close();
            

@@ -97,36 +97,56 @@ namespace Server
                         Broadcast(mess, client, "01");
                         break;
                     case "10":
-                        MessageBox.Show(data.Substring(2));
 
                         mess = JsonConvert.DeserializeObject<Mess>(data.Substring(2));
 
                         TcpClient client_forward;
-                        if (_mapping.TryGetValue(mess.recipient_name, out client_forward))
+                        lock (_lock)
                         {
-                          
-                            bytes = Encoding.UTF8.GetBytes("01"+data.Substring(2));
-                            Stream stream_forwarding = client_forward.GetStream();
-                            stream_forwarding.Write(bytes, 0, bytes.Length);
-                            stream_forwarding.Flush();
+                            if (_mapping.TryGetValue(mess.recipient_name, out client_forward))
+                            {
+
+                                bytes = Encoding.UTF8.GetBytes("01" + data.Substring(2));
+                                Stream stream_forwarding = client_forward.GetStream();
+                                stream_forwarding.Write(bytes, 0, bytes.Length);
+                                stream_forwarding.Flush();
+                            }
                         }
                         break;
                     case "11":
-                            string json_data = JsonConvert.SerializeObject(_mess);
+                        string json_data = JsonConvert.SerializeObject(_mess);
                        string data_return = code+json_data;
                         bytes = Encoding.UTF8.GetBytes(data_return);   
                         stream.Write(bytes, 0, bytes.Length);
                         stream.Flush();
                         break;
-                    case "ft":
+                    case "fb":
                         mess = JsonConvert.DeserializeObject<Mess>(data.Substring(2));
                         chat.Invoke(new Action(() =>
                         {
                             chat.Items.Add($"Server nhan duoc file {mess.file.fileName} tu {mess.sender_name}");
                         }));
-                        Broadcast(mess, client,"ft");
+                        Broadcast(mess, client,"fs");
                             break;
+                    case "fs":
+                        mess = JsonConvert.DeserializeObject<Mess>(data.Substring(2));
+                        chat.Invoke(new Action(() =>
+                        {
+                            chat.Items.Add($"Server nhan duoc file {mess.file.fileName} tu {mess.sender_name}");
+                        }));
+                        TcpClient client_forward_file;
+                        lock (_lock)
+                        {
+                            if (_mapping.TryGetValue(mess.recipient_name, out client_forward_file))
+                            {
 
+                                bytes = Encoding.UTF8.GetBytes("fs" + data.Substring(2));
+                                Stream stream_forwarding = client_forward_file.GetStream();
+                                stream_forwarding.Write(bytes, 0, bytes.Length);
+                                stream_forwarding.Flush();
+                            }
+                        }
+                        break;
 
                 }
 
