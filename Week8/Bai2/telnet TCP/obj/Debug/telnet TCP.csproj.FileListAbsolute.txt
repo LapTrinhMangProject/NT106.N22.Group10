@@ -1,0 +1,11 @@
+C:\Users\acer\Desktop\telnet TCP\telnet TCP\bin\Debug\telnet TCP.exe.config
+C:\Users\acer\Desktop\telnet TCP\telnet TCP\bin\Debug\telnet TCP.exe
+C:\Users\acer\Desktop\telnet TCP\telnet TCP\bin\Debug\telnet TCP.pdb
+C:\Users\acer\Desktop\telnet TCP\telnet TCP\obj\Debug\telnet TCP.csproj.AssemblyReference.cache
+C:\Users\acer\Desktop\telnet TCP\telnet TCP\obj\Debug\telnet TCP.csproj.SuggestedBindingRedirects.cache
+C:\Users\acer\Desktop\telnet TCP\telnet TCP\obj\Debug\telnet_TCP.Form1.resources
+C:\Users\acer\Desktop\telnet TCP\telnet TCP\obj\Debug\telnet_TCP.Properties.Resources.resources
+C:\Users\acer\Desktop\telnet TCP\telnet TCP\obj\Debug\telnet TCP.csproj.GenerateResource.cache
+C:\Users\acer\Desktop\telnet TCP\telnet TCP\obj\Debug\telnet TCP.csproj.CoreCompileInputs.cache
+C:\Users\acer\Desktop\telnet TCP\telnet TCP\obj\Debug\telnet TCP.exe
+C:\Users\acer\Desktop\telnet TCP\telnet TCP\obj\Debug\telnet TCP.pdb
