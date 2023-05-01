@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Net;
@@ -115,6 +116,21 @@ namespace Client
                             }));
                         }
                         break;
+                    case "ft":
+                        mess_from_server = JsonConvert.DeserializeObject<Mess>(data.Substring(2));
+                        chat_listbox.Invoke(new Action(() =>
+                        {
+                            chat_listbox.Items.Add($"Ban nhan duoc file {mess_from_server.file.fileName} tu {mess_from_server.sender_name}");
+                            chat_listbox.Items.Add("Noi dung:");
+                            
+                        }));
+                        for(int index_list = 0; index_list< mess_from_server.file.content.Count; index_list++ )
+                        chat_listbox.Invoke(new Action(() =>
+                        {
+                            chat_listbox.Items.Add($"{mess_from_server.file.content[index_list]}");
+
+                        }));
+                        break;
                 }
 
             }
@@ -137,6 +153,31 @@ namespace Client
         private void button1_Click(object sender, EventArgs e)
         {
             request_update_clients();
+        }
+
+        private void send_file_button_Click(object sender, EventArgs e)
+        {
+            mess.file.content.Clear();
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string filePath = openFileDialog.FileName;
+                string fileName = Path.GetFileName(filePath);
+                string code = "ft";
+                mess.file.fileName = fileName;
+                FileStream file = new FileStream(filePath, FileMode.Open, FileAccess.ReadWrite);
+                StreamReader reader = new StreamReader(file);
+                
+                string line = null;
+                while ((line = reader.ReadLine())!=null)
+                    mess.file.content.Add(line);
+                
+                send_bytes("ft");
+                reader.Close();
+                file.Close();
+           
+         
+            }
         }
     }
 }

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.port_textbox = new System.Windows.Forms.TextBox();
             this.IP_textbox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -38,13 +37,14 @@
             this.send_textbox = new System.Windows.Forms.TextBox();
             this.send_button = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip();
             this.label6 = new System.Windows.Forms.Label();
             this.hostname_textbox = new System.Windows.Forms.TextBox();
             this.list_client_listbox = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.specific_client_check_box = new System.Windows.Forms.CheckBox();
+            this.send_file_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // port_textbox
@@ -64,7 +64,7 @@
             this.IP_textbox.Name = "IP_textbox";
             this.IP_textbox.Size = new System.Drawing.Size(86, 20);
             this.IP_textbox.TabIndex = 1;
-            this.IP_textbox.Text = "192.168.1.7";
+            this.IP_textbox.Text = "192.168.1.9";
             // 
             // label1
             // 
@@ -197,11 +197,22 @@
             this.specific_client_check_box.Text = "Send specific client";
             this.specific_client_check_box.UseVisualStyleBackColor = true;
             // 
+            // send_file_button
+            // 
+            this.send_file_button.Location = new System.Drawing.Point(397, 217);
+            this.send_file_button.Name = "send_file_button";
+            this.send_file_button.Size = new System.Drawing.Size(58, 41);
+            this.send_file_button.TabIndex = 19;
+            this.send_file_button.Text = "Send file";
+            this.send_file_button.UseVisualStyleBackColor = true;
+            this.send_file_button.Click += new System.EventHandler(this.send_file_button_Click);
+            // 
             // Client_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 320);
+            this.Controls.Add(this.send_file_button);
             this.Controls.Add(this.specific_client_check_box);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
@@ -244,6 +255,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.CheckBox specific_client_check_box;
+        private System.Windows.Forms.Button send_file_button;
     }
 }
 

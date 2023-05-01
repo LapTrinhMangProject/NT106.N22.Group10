@@ -94,7 +94,7 @@ namespace Server
                         chat.Invoke(new Action(() => {
                             chat.Items.Add($"{mess.sender_name}: {mess.body}");
                         }));
-                        Broadcast(mess, client);
+                        Broadcast(mess, client, "01");
                         break;
                     case "10":
                         MessageBox.Show(data.Substring(2));
@@ -118,10 +118,20 @@ namespace Server
                         stream.Write(bytes, 0, bytes.Length);
                         stream.Flush();
                         break;
+                    case "ft":
+                        mess = JsonConvert.DeserializeObject<Mess>(data.Substring(2));
+                        chat.Invoke(new Action(() =>
+                        {
+                            chat.Items.Add($"Server nhan duoc file {mess.file.fileName} tu {mess.sender_name}");
+                        }));
+                        Broadcast(mess, client,"ft");
+                            break;
+
+
                 }
-               
-               
-               
+
+
+
             }
         }
         private void runserver_button_Click(object sender, EventArgs e)
@@ -132,10 +142,10 @@ namespace Server
             runserver_button.Text = "Running";
             runserver_button.Enabled = false;
         }
-        void Broadcast(Mess mess,TcpClient exclude)
+        void Broadcast(Mess mess,TcpClient exclude,string code)
         {
             string json_data = JsonConvert.SerializeObject(mess);
-            string data = "01" + json_data;
+            string data = code + json_data;
             byte[] bytes = new byte[254];
             bytes = Encoding.UTF8.GetBytes(data);
             lock (_lock)
