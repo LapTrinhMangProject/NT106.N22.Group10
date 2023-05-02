@@ -1,9 +1,0 @@
-C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Bai4\Mess\bin\Debug\Mess.dll
-C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Bai4\Mess\bin\Debug\Mess.pdb
-C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Bai4\Mess\bin\Debug\Newtonsoft.Json.dll
-C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Bai4\Mess\bin\Debug\Newtonsoft.Json.xml
-C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Bai4\Mess\obj\Debug\TCP_Connection.csproj.AssemblyReference.cache
-C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Bai4\Mess\obj\Debug\TCP_Connection.csproj.CoreCompileInputs.cache
-C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Bai4\Mess\obj\Debug\TCP_Connection.csproj.CopyComplete
-C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Bai4\Mess\obj\Debug\Mess.dll
-C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Bai4\Mess\obj\Debug\Mess.pdb
