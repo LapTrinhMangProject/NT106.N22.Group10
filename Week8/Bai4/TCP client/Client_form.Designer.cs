@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.port_textbox = new System.Windows.Forms.TextBox();
             this.IP_textbox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,7 +38,7 @@
             this.send_textbox = new System.Windows.Forms.TextBox();
             this.send_button = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.label6 = new System.Windows.Forms.Label();
             this.hostname_textbox = new System.Windows.Forms.TextBox();
             this.list_client_listbox = new System.Windows.Forms.ListBox();
@@ -45,6 +46,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.specific_client_check_box = new System.Windows.Forms.CheckBox();
             this.send_file_button = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // port_textbox
@@ -207,11 +210,21 @@
             this.send_file_button.UseVisualStyleBackColor = true;
             this.send_file_button.Click += new System.EventHandler(this.send_file_button_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(29, 217);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(351, 321);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 20;
+            this.pictureBox1.TabStop = false;
+            // 
             // Client_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 320);
+            this.ClientSize = new System.Drawing.Size(600, 577);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.send_file_button);
             this.Controls.Add(this.specific_client_check_box);
             this.Controls.Add(this.label4);
@@ -232,6 +245,7 @@
             this.Name = "Client_form";
             this.Text = "Client";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,6 +270,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.CheckBox specific_client_check_box;
         private System.Windows.Forms.Button send_file_button;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

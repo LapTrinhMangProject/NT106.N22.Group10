@@ -40,6 +40,8 @@ namespace Client
                 ipAddress = IPAddress.Parse(IP_textbox.Text);
                 // Create a TcpClient object and connect to the server
                 client = new TcpClient();
+            client.ReceiveBufferSize = 1048576;
+            client.SendBufferSize = 1048576;
                 client.Connect(ipAddress, Int32.Parse(port_textbox.Text));
                 // Get a stream object for reading and writing
             mess.sender_name = hostname_textbox.Text;
@@ -69,7 +71,7 @@ namespace Client
         }
         void send_bytes(string code,string text=null)
         {
-            byte[] bytes = new byte[1024];
+            byte[] bytes;
             if (code == "11")
             {
                 bytes = Encoding.UTF8.GetBytes("11");
@@ -81,59 +83,98 @@ namespace Client
                 string data = code + JsonConvert.SerializeObject(mess);
                 bytes = Encoding.UTF8.GetBytes(data);
             }
+            byte[] header = BitConverter.GetBytes(bytes.Length);
+            stream.Write(header, 0, header.Length);
 
-                stream.Write(bytes, 0, bytes.Length);
-         stream.Flush();
+              stream.Write(bytes, 0, bytes.Length);
+        stream.Flush();
         }
 
         void Client_listening(NetworkStream stream)
         {
             Mess mess_from_server = new Mess();
             int i;
-            byte[] bytes = new byte[1024];
-            while ((i = stream.Read(bytes, 0, bytes.Length)) != 0)
-            {
-                string data = Encoding.UTF8.GetString(bytes, 0, i);
-                string code = data.Substring(0, 2);
-               switch (code)
-                {
-                    case "01":
-                        string json_data = data.Substring(2);
-                mess_from_server = JsonConvert.DeserializeObject<Mess>(json_data);
-                chat_listbox.Invoke(new Action(() => {
-                    chat_listbox.Items.Add($"{mess_from_server.sender_name}: {mess_from_server.body}");
-                }));
-                        break;
-                    case "11":
-                        MessageBox.Show(data.Substring(2), "update client");
-                        List<Mess> list = JsonConvert.DeserializeObject<List<Mess>>(data.Substring(2));
-                       foreach(Mess name in list)
-                        {
-                            if (name.sender_name == mess.sender_name)
-                                continue;
-                            list_client_listbox.Invoke(new Action(() =>
+            while (client.Connected) {
+              
+                    int bytes_read = 0;
+                    byte[] header = new byte[4];
+                    while (bytes_read < 4)
+                    {
+                        bytes_read += stream.Read(header, 0, header.Length);
+                    }
+                    int length = BitConverter.ToInt32(header, 0);
+                    bytes_read = 0;
+                    byte[] buffer = new byte[length];
+                    while (bytes_read<length) 
+                    {
+                        bytes_read += stream.Read(buffer, bytes_read, length - bytes_read);
+                    }
+                    string data = Encoding.UTF8.GetString(buffer, 0, buffer.Length);
+                    string code = data.Substring(0, 2);
+                    switch (code)
+                    {
+                        case "01":
+                            string json_data = data.Substring(2);
+                            mess_from_server = JsonConvert.DeserializeObject<Mess>(json_data);
+                            chat_listbox.Invoke(new Action(() =>
                             {
-                                list_client_listbox.Items.Add(name.sender_name);
+                                chat_listbox.Items.Add($"{mess_from_server.sender_name}: {mess_from_server.body}");
                             }));
-                        }
-                        break;
-                    case "fs":
-                        mess_from_server = JsonConvert.DeserializeObject<Mess>(data.Substring(2));
-                        chat_listbox.Invoke(new Action(() =>
-                        {
-                            chat_listbox.Items.Add($"Ban nhan duoc file {mess_from_server.file.fileName} tu {mess_from_server.sender_name}");
-                            chat_listbox.Items.Add("Noi dung:");
-                            
-                        }));
-                        for(int index_list = 0; index_list< mess_from_server.file.content.Count; index_list++ )
-                        chat_listbox.Invoke(new Action(() =>
-                        {
-                            chat_listbox.Items.Add($"{mess_from_server.file.content[index_list]}");
+                            break;
+                        case "11":
+                            MessageBox.Show(data.Substring(2), "update client");
+                            List<Mess> list = JsonConvert.DeserializeObject<List<Mess>>(data.Substring(2));
+                            foreach (Mess name in list)
+                            {
+                                if (name.sender_name == mess.sender_name)
+                                    continue;
+                                list_client_listbox.Invoke(new Action(() =>
+                                {
+                                    list_client_listbox.Items.Add(name.sender_name);
+                                }));
+                            }
+                            break;
+                        case "fs":
+                            mess_from_server = JsonConvert.DeserializeObject<Mess>(data.Substring(2));
+                            chat_listbox.Invoke(new Action(() =>
+                            {
+                                chat_listbox.Items.Add($"Ban nhan duoc file {mess_from_server.file.fileName} tu {mess_from_server.sender_name}");
+                                chat_listbox.Items.Add("Noi dung:");
 
-                        }));
-                        break;
+                            }));
+                            for (int index_list = 0; index_list < mess_from_server.file.content.Count; index_list++)
+                                chat_listbox.Invoke(new Action(() =>
+                                {
+                                    chat_listbox.Items.Add($"{mess_from_server.file.content[index_list]}");
+
+                                }));
+                            break;
+                        case "ib":
+                            /*    FileStream filestream = new FileStream("Client_read.txt",FileMode.Create,FileAccess.Write);
+                                StreamWriter streamWriter = new StreamWriter(filestream);
+                                streamWriter.Write(data.Substring(2));
+                                MessageBox.Show("Client doc thanh cong");
+                                streamWriter.Close();
+                                filestream.Close();*/
+                            mess_from_server = JsonConvert.DeserializeObject<Mess>(data.Substring(2));
+                            chat_listbox.Invoke(new Action(() =>
+                            {
+                                chat_listbox.Items.Add($"Ban nhan duoc hinh tu {mess.sender_name}");
+                            }));
+                            using (MemoryStream ms = new MemoryStream(mess_from_server.imageBytes))
+                            {
+
+                                pictureBox1.Invoke(new Action(() =>
+                                {
+                                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                                  //  pictureBox1.BackColor = Color.White;
+                                    pictureBox1.Image = Image.FromStream(ms);
+                                }));
+                            }
+                            break;
+
+                    
                 }
-
             }
             }
         void request_update_clients()
@@ -146,6 +187,13 @@ namespace Client
                 send_bytes("11");
             
         }
+        static byte[] ImageToByte(System.Drawing.Image iImage)
+        {
+            MemoryStream mMemoryStream = new MemoryStream();
+            iImage.Save(mMemoryStream, System.Drawing.Imaging.ImageFormat.Gif);
+            return mMemoryStream.ToArray();
+        }
+
         private void label2_Click(object sender, EventArgs e)
         {
             
@@ -162,25 +210,38 @@ namespace Client
             OpenFileDialog openFileDialog = new OpenFileDialog();
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
+                string code;
                 string filePath = openFileDialog.FileName;
                 string fileName = Path.GetFileName(filePath);
-                string code = "fb";
-                if (specific_client_check_box.Checked)
+                FileInfo fileInfor = new FileInfo(fileName);
+                MessageBox.Show(fileInfor.Extension);
+                if (fileInfor.Extension == ".png" || fileInfor.Extension == ".jpg")
                 {
-                    code = "fs";
-                    mess.recipient_name = list_client_listbox.SelectedItems[0].ToString();
+                    code = "ib";
+                    Bitmap image = new Bitmap(filePath);
+                    mess.imageBytes = ImageToByte(image);
+                  
+                }
+                else
+                {
+                    code = "fb";
+                    if (specific_client_check_box.Checked)
+                    {
+                        code = "fs";
+                        mess.recipient_name = list_client_listbox.SelectedItems[0].ToString();
+                    }
                 }
                 mess.file.fileName = fileName;
-                FileStream file = new FileStream(filePath, FileMode.Open, FileAccess.ReadWrite);
-                StreamReader reader = new StreamReader(file);
+         //       FileStream file = new FileStream(filePath, FileMode.Open, FileAccess.ReadWrite);
+            //    StreamReader reader = new StreamReader(file);
                 
-                string line = null;
-                while ((line = reader.ReadLine())!=null)
-                    mess.file.content.Add(line);
+          //      string line = null;
+            //    while ((line = reader.ReadLine())!=null)
+              //      mess.file.content.Add(line);
                 
-                send_bytes(code);
-                reader.Close();
-                file.Close();
+               send_bytes(code);
+             //   reader.Close();
+             //   file.Close();
            
          
             }

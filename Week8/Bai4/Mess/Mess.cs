@@ -11,6 +11,7 @@ using System.IO;
 using Newtonsoft.Json;
 using Microsoft.Win32;
 using System.Security.Cryptography;
+using System.Windows.Controls;
 
 namespace TCP_Connection
 {
@@ -20,6 +21,7 @@ namespace TCP_Connection
         public string recipient_name { get; set; }
         public string body { get; set; }
         public file_transfer file { get; set; }
+        public byte[] imageBytes { get; set; }
        public Mess(){
             file = new file_transfer();
 
