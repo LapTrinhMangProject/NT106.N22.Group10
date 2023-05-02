@@ -76,7 +76,7 @@
             this.severip_textbox.Name = "severip_textbox";
             this.severip_textbox.Size = new System.Drawing.Size(76, 20);
             this.severip_textbox.TabIndex = 3;
-            this.severip_textbox.Text = "192.168.1.9";
+            this.severip_textbox.Text = "127.0.0.1";
             // 
             // label1
             // 
