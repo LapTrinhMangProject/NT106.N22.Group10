@@ -208,7 +208,6 @@ namespace Client
                 string filePath = openFileDialog.FileName;
                 string fileName = Path.GetFileName(filePath);
                 FileInfo fileInfor = new FileInfo(fileName);
-                MessageBox.Show(fileInfor.Extension);
                 if (fileInfor.Extension == ".png" || fileInfor.Extension == ".jpg")
                 {
                     code = "ib";

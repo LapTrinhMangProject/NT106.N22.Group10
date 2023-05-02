@@ -34,22 +34,15 @@ namespace Server
         {
             try
             {
-                // Set the IP address and port number for the server
                 IPAddress ipAddress = IPAddress.Parse(severip_textbox.Text);
-
-                // Create a TcpListener object
                 server = new TcpListener(ipAddress, 8080);
-
-                // Start listening for connections
                 server.Start();
                 status_textbox.Invoke(new Action(() => {
                     status_textbox.Text = "Waitting to connect";
                 }));
-                // Enter the listening loop
                 while (true)
                 {
 
-                    // Accept the client connection
                     TcpClient client = server.AcceptTcpClient();
                     client.ReceiveBufferSize = 1048576;
                     client.SendBufferSize = 1048576;
@@ -102,7 +95,6 @@ namespace Server
                             _mapping[mess.sender_name] = client;
                             break;
                         case "01":
-                            //   MessageBox.Show(data.Substring(2));
                             mess = JsonConvert.DeserializeObject<Mess>(data.Substring(2));
                             chat.Invoke(new Action(() =>
                             {
