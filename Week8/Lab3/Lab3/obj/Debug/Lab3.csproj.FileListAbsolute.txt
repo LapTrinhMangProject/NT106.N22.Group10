@@ -1,0 +1,34 @@
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\bin\Debug\Lab3.exe.config
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\bin\Debug\Lab3.exe
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\bin\Debug\Lab3.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\bin\Debug\Bai4.exe
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\bin\Debug\Client.exe
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\bin\Debug\Server.exe
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\bin\Debug\Mess.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\bin\Debug\Bai4.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\bin\Debug\Bai4.exe.config
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\bin\Debug\Client.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\bin\Debug\Client.exe.config
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\bin\Debug\Server.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\bin\Debug\Server.exe.config
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\bin\Debug\Mess.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\obj\Debug\Lab3.csproj.AssemblyReference.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\obj\Debug\Lab3.csproj.SuggestedBindingRedirects.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\obj\Debug\Lab3.Properties.Resources.resources
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\obj\Debug\Lab3.csproj.GenerateResource.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\obj\Debug\Lab3.csproj.CoreCompileInputs.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\obj\Debug\Lab3.csproj.CopyComplete
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\obj\Debug\Lab3.exe
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\obj\Debug\Lab3.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\bin\Debug\WindowsFormsApp1.exe
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\obj\Debug\Lab3.Lab3_form.resources
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\bin\Debug\ex3_lab3.exe
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\bin\Debug\telnet TCP.exe
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\bin\Debug\telnet TCP.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\bin\Debug\telnet TCP.exe.config
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\bin\Debug\ex3_lab3.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Lab3\bin\Debug\ex3_lab3.exe.config
