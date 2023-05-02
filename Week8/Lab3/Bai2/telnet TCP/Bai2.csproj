@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5A7402F1-163A-440B-84BB-F6669865E53B}</ProjectGuid>
+    <ProjectGuid>{7CFDDEA0-E0D0-4394-9D95-53309C0C5B53}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>telnet_TCP</RootNamespace>
     <AssemblyName>telnet TCP</AssemblyName>

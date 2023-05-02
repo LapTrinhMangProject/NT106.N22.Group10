@@ -37,6 +37,9 @@ namespace Bai1
             udpServer.BeginReceive(new AsyncCallback(ReceiveCallback), null);
         }
 
+        private void UDPServer_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }

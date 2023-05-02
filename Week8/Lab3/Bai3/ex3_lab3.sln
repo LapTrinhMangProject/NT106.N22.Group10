@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.33423.256
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex3_lab3", "ex3_lab3\ex3_lab3.csproj", "{2F314E22-3206-4811-A44E-B97EBB34E41F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bai3", "ex3_lab3\Bai3.csproj", "{D79B0AC0-CFAA-4619-AFB3-7A5CD19D38BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2F314E22-3206-4811-A44E-B97EBB34E41F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2F314E22-3206-4811-A44E-B97EBB34E41F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2F314E22-3206-4811-A44E-B97EBB34E41F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2F314E22-3206-4811-A44E-B97EBB34E41F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D79B0AC0-CFAA-4619-AFB3-7A5CD19D38BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D79B0AC0-CFAA-4619-AFB3-7A5CD19D38BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D79B0AC0-CFAA-4619-AFB3-7A5CD19D38BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D79B0AC0-CFAA-4619-AFB3-7A5CD19D38BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

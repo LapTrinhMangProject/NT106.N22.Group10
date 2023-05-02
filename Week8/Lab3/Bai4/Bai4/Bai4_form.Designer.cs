@@ -34,7 +34,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(157, 161);
+            this.button1.Location = new System.Drawing.Point(30, 34);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(176, 23);
             this.button1.TabIndex = 0;
@@ -44,7 +44,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(389, 161);
+            this.button2.Location = new System.Drawing.Point(247, 34);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(176, 23);
             this.button2.TabIndex = 1;
@@ -52,14 +52,14 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Bai4
+            // Bai4_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 418);
+            this.ClientSize = new System.Drawing.Size(450, 77);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "Bai4";
+            this.Name = "Bai4_form";
             this.Text = "Bai4";
             this.ResumeLayout(false);
 

@@ -34,12 +34,12 @@ namespace Bai2
             int bytesReceived = 0;
             byte[] recv = new byte[1];
             Socket clientSocket;
-            IPEndPoint IPServer = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 8080);
+            IPEndPoint IPServer = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 8060);
             listenerSocket.Bind(IPServer);
             listenerSocket.Listen(1);
             clientSocket = listenerSocket.Accept();
             isListening = true;
-            MessageBox.Show("Telnet is running on 127.0.0.1:8080", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Telnet is running on 127.0.0.1:8060", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Information);
             while (isListening)
             {
                 if (!clientSocket.Connected)

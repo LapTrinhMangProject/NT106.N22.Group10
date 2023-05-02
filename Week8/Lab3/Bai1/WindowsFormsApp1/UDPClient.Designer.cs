@@ -39,7 +39,7 @@
             // display
             // 
             this.display.Location = new System.Drawing.Point(9, 89);
-            this.display.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.display.Margin = new System.Windows.Forms.Padding(2);
             this.display.Name = "display";
             this.display.Size = new System.Drawing.Size(582, 138);
             this.display.TabIndex = 1;
@@ -48,7 +48,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(9, 238);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(122, 28);
             this.button1.TabIndex = 2;
@@ -59,18 +59,20 @@
             // IPremote
             // 
             this.IPremote.Location = new System.Drawing.Point(9, 57);
-            this.IPremote.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.IPremote.Margin = new System.Windows.Forms.Padding(2);
             this.IPremote.Name = "IPremote";
             this.IPremote.Size = new System.Drawing.Size(371, 20);
             this.IPremote.TabIndex = 3;
+            this.IPremote.Text = "127.0.0.1";
             // 
             // Port
             // 
             this.Port.Location = new System.Drawing.Point(481, 57);
-            this.Port.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Port.Margin = new System.Windows.Forms.Padding(2);
             this.Port.Name = "Port";
             this.Port.Size = new System.Drawing.Size(110, 20);
             this.Port.TabIndex = 4;
+            this.Port.Text = "8050";
             // 
             // label1
             // 
@@ -103,7 +105,7 @@
             this.Controls.Add(this.IPremote);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.display);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UDPClient";
             this.Text = "UDPClient";
             this.Load += new System.EventHandler(this.UDPClient_Load);
