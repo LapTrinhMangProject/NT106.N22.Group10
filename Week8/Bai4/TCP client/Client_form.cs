@@ -61,6 +61,8 @@ namespace Client
             if (specific_client_check_box.Checked)
             {
                 mess.recipient_name = list_client_listbox.SelectedItems[0].ToString();
+                chat_listbox.Items.Add($"You to {mess.recipient_name}: {send_textbox.Text}");
+
                 send_bytes("10", send_textbox.Text);
             }
             else
@@ -85,7 +87,6 @@ namespace Client
             }
             byte[] header = BitConverter.GetBytes(bytes.Length);
             stream.Write(header, 0, header.Length);
-
               stream.Write(bytes, 0, bytes.Length);
         stream.Flush();
         }
@@ -93,7 +94,6 @@ namespace Client
         void Client_listening(NetworkStream stream)
         {
             Mess mess_from_server = new Mess();
-            int i;
             while (client.Connected) {
               
                     int bytes_read = 0;
@@ -122,7 +122,6 @@ namespace Client
                             }));
                             break;
                         case "11":
-                            MessageBox.Show(data.Substring(2), "update client");
                             List<Mess> list = JsonConvert.DeserializeObject<List<Mess>>(data.Substring(2));
                             foreach (Mess name in list)
                             {
@@ -150,16 +149,11 @@ namespace Client
                                 }));
                             break;
                         case "ib":
-                            /*    FileStream filestream = new FileStream("Client_read.txt",FileMode.Create,FileAccess.Write);
-                                StreamWriter streamWriter = new StreamWriter(filestream);
-                                streamWriter.Write(data.Substring(2));
-                                MessageBox.Show("Client doc thanh cong");
-                                streamWriter.Close();
-                                filestream.Close();*/
+                           
                             mess_from_server = JsonConvert.DeserializeObject<Mess>(data.Substring(2));
                             chat_listbox.Invoke(new Action(() =>
                             {
-                                chat_listbox.Items.Add($"Ban nhan duoc hinh tu {mess.sender_name}");
+                                chat_listbox.Items.Add($"Ban nhan duoc hinh tu {mess_from_server.sender_name}");
                             }));
                             using (MemoryStream ms = new MemoryStream(mess_from_server.imageBytes))
                             {
@@ -218,6 +212,12 @@ namespace Client
                 if (fileInfor.Extension == ".png" || fileInfor.Extension == ".jpg")
                 {
                     code = "ib";
+                    if (specific_client_check_box.Checked)
+                    {
+                        code = "is";
+                        mess.recipient_name = list_client_listbox.SelectedItems[0].ToString();
+                    }
+                    
                     Bitmap image = new Bitmap(filePath);
                     mess.imageBytes = ImageToByte(image);
                   
@@ -230,21 +230,26 @@ namespace Client
                         code = "fs";
                         mess.recipient_name = list_client_listbox.SelectedItems[0].ToString();
                     }
+                    FileStream file = new FileStream(filePath, FileMode.Open, FileAccess.ReadWrite);
+                    StreamReader reader = new StreamReader(file);
+                    string line = null;
+                    while ((line = reader.ReadLine()) != null)
+                        mess.file.content.Add(line);
+                    reader.Close();
+                    file.Close();
                 }
-                mess.file.fileName = fileName;
-         //       FileStream file = new FileStream(filePath, FileMode.Open, FileAccess.ReadWrite);
-            //    StreamReader reader = new StreamReader(file);
-                
-          //      string line = null;
-            //    while ((line = reader.ReadLine())!=null)
-              //      mess.file.content.Add(line);
-                
+             
+                    mess.file.fileName = fileName;
                send_bytes(code);
-             //   reader.Close();
-             //   file.Close();
+              
            
          
             }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

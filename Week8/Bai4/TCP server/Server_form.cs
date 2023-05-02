@@ -87,9 +87,7 @@ namespace Server
                     }
                     
                     Mess mess = new Mess();
-                    // Convert the data bytes to a string
                     string data = Encoding.UTF8.GetString(buffer, 0, length);
-                    // MessageBox.Show(data,"server read:");
                     string code = data.Substring(0, 2);
                     switch (code)
                     {
@@ -115,7 +113,6 @@ namespace Server
                         case "10":
 
                             mess = JsonConvert.DeserializeObject<Mess>(data.Substring(2));
-
                             TcpClient client_forward;
                             lock (_lock)
                             {
@@ -124,6 +121,8 @@ namespace Server
 
                                     buffer = Encoding.UTF8.GetBytes("01" + data.Substring(2));
                                     Stream stream_forwarding = client_forward.GetStream();
+                                header = BitConverter.GetBytes(buffer.Length);
+                                stream_forwarding.Write(header, 0, header.Length);
                                     stream_forwarding.Write(buffer, 0, buffer.Length);
                                     stream_forwarding.Flush();
                                 }
@@ -133,19 +132,21 @@ namespace Server
                             string json_data = JsonConvert.SerializeObject(_mess);
                             string data_return = code + json_data;
                             buffer = Encoding.UTF8.GetBytes(data_return);
+                         header = BitConverter.GetBytes(buffer.Length);
+                            stream.Write(header, 0, header.Length);
                             stream.Write(buffer, 0, buffer.Length);
                             stream.Flush();
                             break;
                         case "fb":
-                            // mess = JsonConvert.DeserializeObject<Mess>(data.Substring(2));
+                             mess = JsonConvert.DeserializeObject<Mess>(data.Substring(2));
                             chat.Invoke(new Action(() =>
                             {
                                 chat.Items.Add($"Server nhan duoc file {mess.file.fileName} tu {mess.sender_name}");
                             }));
-                            //   Broadcast(mess, client,"fs");
+                               Broadcast(mess, client,"fs");
                             break;
                         case "fs":
-                            // mess = JsonConvert.DeserializeObject<Mess>(data.Substring(2));
+                             mess = JsonConvert.DeserializeObject<Mess>(data.Substring(2));
                             chat.Invoke(new Action(() =>
                             {
                                 chat.Items.Add($"Server nhan duoc file {mess.file.fileName} tu {mess.sender_name}");
@@ -158,6 +159,8 @@ namespace Server
 
                                     buffer = Encoding.UTF8.GetBytes("fs" + data.Substring(2));
                                     Stream stream_forwarding = client_forward_file.GetStream();
+                                     header = BitConverter.GetBytes(buffer.Length);
+                                     stream_forwarding.Write(header, 0, header.Length);
                                     stream_forwarding.Write(buffer, 0, buffer.Length);
                                     stream_forwarding.Flush();
                                 }
@@ -170,14 +173,28 @@ namespace Server
                                 chat.Items.Add($"Server nhan duoc file {mess.file.fileName} tu {mess.sender_name}");
                             }));
                               Broadcast(mess, client,"ib");
-                            FileStream filestream = new FileStream("Server read.txt", FileMode.Create, FileAccess.Write);
-                            StreamWriter filewriter = new StreamWriter(filestream);
-                            filewriter.Write(data);
-                            filewriter.Flush();
-                            filewriter.Close();
-                            filestream.Close();
-                            MessageBox.Show("server read thanh cong");
                             break;
+                    case "is":
+                        mess = JsonConvert.DeserializeObject<Mess>(data.Substring(2));
+                        chat.Invoke(new Action(() =>
+                        {
+                            chat.Items.Add($"Server nhan duoc file {mess.file.fileName} tu {mess.sender_name}");
+                        }));
+                        TcpClient client_forward_image;
+                        lock (_lock)
+                        {
+                            if (_mapping.TryGetValue(mess.recipient_name, out client_forward_image))
+                            {
+
+                                buffer = Encoding.UTF8.GetBytes("ib" + data.Substring(2));
+                                Stream stream_forwarding = client_forward_image.GetStream();
+                                 header = BitConverter.GetBytes(buffer.Length);
+                                stream_forwarding .Write(header, 0, header.Length);
+                                stream_forwarding.Write(buffer, 0, buffer.Length);
+                                stream_forwarding.Flush();
+                            }
+                        }
+                        break;
 
                     }
                 
