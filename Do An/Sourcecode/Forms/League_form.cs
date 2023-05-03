@@ -22,11 +22,10 @@ namespace Forms
 
         private void find_leagues_button_Click(object sender, EventArgs e)
         {
-            list_name_leagues.Items.Clear();
+            SQL_user sqlUser = new SQL_user();
             List<League> _league;
-            string connectionString = "Data Source=LAPTOP-68GCST1P\\SQLEXPRESS02;Initial Catalog=API_football;Integrated Security=True";
-            SQL_user sqlUser = new SQL_user(connectionString);
            _league = sqlUser.Get_Name_leagues(name_find_textbox.Text);
+            list_name_leagues.Items.Clear();
             foreach( League league in _league)
             {
                 list_name_leagues.Items.Add(league.name);

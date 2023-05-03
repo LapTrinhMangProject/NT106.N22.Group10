@@ -16,5 +16,15 @@ namespace Forms
         {
             InitializeComponent();
         }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void find_player_button_Click(object sender, EventArgs e)
+        {
+            new Player_form().Show();
+        }
     }
 }

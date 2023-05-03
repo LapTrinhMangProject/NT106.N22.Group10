@@ -16,7 +16,7 @@ namespace Forms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new League_form());
+            Application.Run(new Dashboard());
         }
     }
 }
