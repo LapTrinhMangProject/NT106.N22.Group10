@@ -1,0 +1,13 @@
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai3\ex3_lab3\bin\Debug\ex3_lab3.exe.config
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai3\ex3_lab3\bin\Debug\ex3_lab3.exe
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai3\ex3_lab3\bin\Debug\ex3_lab3.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai3\ex3_lab3\obj\Debug\Bai3.csproj.AssemblyReference.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai3\ex3_lab3\obj\Debug\Bai3.csproj.SuggestedBindingRedirects.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai3\ex3_lab3\obj\Debug\Bai3.Form1.resources
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai3\ex3_lab3\obj\Debug\Bai3.Form2.resources
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai3\ex3_lab3\obj\Debug\Bai3.Bai3_form.resources
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai3\ex3_lab3\obj\Debug\ex3_lab3.Properties.Resources.resources
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai3\ex3_lab3\obj\Debug\Bai3.csproj.GenerateResource.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai3\ex3_lab3\obj\Debug\Bai3.csproj.CoreCompileInputs.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai3\ex3_lab3\obj\Debug\ex3_lab3.exe
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai3\ex3_lab3\obj\Debug\ex3_lab3.pdb

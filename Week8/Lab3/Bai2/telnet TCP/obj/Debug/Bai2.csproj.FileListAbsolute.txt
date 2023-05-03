@@ -1,0 +1,11 @@
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai2\telnet TCP\bin\Debug\telnet TCP.exe.config
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai2\telnet TCP\bin\Debug\telnet TCP.exe
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai2\telnet TCP\bin\Debug\telnet TCP.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai2\telnet TCP\obj\Debug\Bai2.csproj.AssemblyReference.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai2\telnet TCP\obj\Debug\Bai2.csproj.SuggestedBindingRedirects.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai2\telnet TCP\obj\Debug\Bai2.Bai2_form.resources
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai2\telnet TCP\obj\Debug\telnet_TCP.Properties.Resources.resources
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai2\telnet TCP\obj\Debug\Bai2.csproj.GenerateResource.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai2\telnet TCP\obj\Debug\Bai2.csproj.CoreCompileInputs.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai2\telnet TCP\obj\Debug\telnet TCP.exe
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai2\telnet TCP\obj\Debug\telnet TCP.pdb

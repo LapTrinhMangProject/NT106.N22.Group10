@@ -1,0 +1,13 @@
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai1\WindowsFormsApp1\obj\Debug\Bai1.csproj.AssemblyReference.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai1\WindowsFormsApp1\obj\Debug\Bai1.csproj.SuggestedBindingRedirects.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai1\WindowsFormsApp1\obj\Debug\Bai1.Bai1_form.resources
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai1\WindowsFormsApp1\obj\Debug\Bai1.Properties.Resources.resources
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai1\WindowsFormsApp1\obj\Debug\Bai1.UDPClient.resources
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai1\WindowsFormsApp1\obj\Debug\Bai1.UDPServer.resources
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai1\WindowsFormsApp1\obj\Debug\Bai1.csproj.GenerateResource.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai1\WindowsFormsApp1\obj\Debug\Bai1.csproj.CoreCompileInputs.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week8\Lab3\Bai1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
