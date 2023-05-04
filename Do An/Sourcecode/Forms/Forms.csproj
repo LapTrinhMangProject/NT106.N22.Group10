@@ -98,9 +98,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Server\Get_response_using_API\Get_response_using_API.csproj">
+      <Project>{c9f39a9b-f60b-434d-903b-465745aa5840}</Project>
+      <Name>Get_response_using_API</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Server\Server\league\Library Football.csproj">
       <Project>{ac82b139-d9fd-4ee0-a17d-0af422372cc3}</Project>
       <Name>Library Football</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Server\Server\Response\Response.csproj">
+      <Project>{33e0f8b3-61db-4d33-8195-625549c18f94}</Project>
+      <Name>Response</Name>
     </ProjectReference>
     <ProjectReference Include="..\Server\SQL Connection\SQL Connection.csproj">
       <Project>{08459c43-9d61-4c2b-82e6-4571a6d91c05}</Project>

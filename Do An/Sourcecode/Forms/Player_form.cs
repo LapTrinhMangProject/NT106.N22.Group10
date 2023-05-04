@@ -9,6 +9,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Get_response_using_API;
+using Response;
+using System.Net;
+using System.IO;
 
 namespace Forms
 {
@@ -18,6 +22,7 @@ namespace Forms
         {
             InitializeComponent();
         }
+        Dictionary<string, string> playerDic = new Dictionary<string, string>();
 
         private void Player_form_Load(object sender, EventArgs e)
         {
@@ -26,6 +31,74 @@ namespace Forms
             foreach (Player player in _player)
             {
                 list_player_listbox.Items.Add(player.name);
+                if (playerDic.ContainsKey(player.name))
+                    continue;
+              playerDic.Add(player.name, player.id.ToString());
+            }
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            list_player_listbox.Items.Clear();
+            SQL_user sqlUser = new SQL_user();
+            List<Player> _player = sqlUser.Get_Players(find_textbox.Text);
+            foreach (Player player in _player)
+            {
+                list_player_listbox.Items.Add(player.name);
+            }
+        }
+
+        private async void list_player_listbox_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            API aPI = new API();
+            Root_Response_player_and_statistics reponsePlayer = new Root_Response_player_and_statistics();
+            string id = playerDic[list_player_listbox.SelectedItems[0].ToString()];
+           reponsePlayer = await aPI.Get_Specific_player(id, "39");
+            infor_player_listbox.Items.Clear ();
+            statistic_1_listbox.Items.Clear ();
+            Display_basic_infor();
+            Display_statistic();
+
+            void Display_basic_infor()
+            {
+                infor_player_listbox.Items.Add($"Tên: {reponsePlayer.response[0].Player.name}");
+                infor_player_listbox.Items.Add($"Firstname: {reponsePlayer.response[0].Player.firstname}");
+                infor_player_listbox.Items.Add($"Lastname : {reponsePlayer.response[0].Player.lastname}");
+                infor_player_listbox.Items.Add($"Tuổi: {reponsePlayer.response[0].Player.age}");
+                infor_player_listbox.Items.Add($"Ngày sinh: {reponsePlayer.response[0].Player.birth.date}");
+                infor_player_listbox.Items.Add($"Nơi sinh: {reponsePlayer.response[0].Player.birth.place}");
+                infor_player_listbox.Items.Add($"Quốc gia: {reponsePlayer.response[0].Player.birth.country}");
+                infor_player_listbox.Items.Add($"Quốc gia: {reponsePlayer.response[0].Player.nationality}");
+                infor_player_listbox.Items.Add($"Cân nặng: {reponsePlayer.response[0].Player.weight}");
+                infor_player_listbox.Items.Add("Bị thương: " + (reponsePlayer.response[0].Player.injured ? "Có" : "Không"));
+                Display_photo(reponsePlayer.response[0].Player.photo);
+                 void Display_photo(string url)
+            {
+                WebClient client = new WebClient();
+                byte[] imageData = client.DownloadData(url);
+                MemoryStream ms = new MemoryStream(imageData);
+                Bitmap image = new Bitmap(ms);
+                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBox1.Image = image;
+            }
+            }
+            void Display_statistic()
+            {
+                statistic_1_listbox.Items.Add($"Tên đội {reponsePlayer.response[0].Statistics[0].Team.name}");
+                statistic_1_listbox.Items.Add("Số lần shút: " + reponsePlayer.response[0].Statistics[0].Shots.Total.ToString());
+                statistic_1_listbox.Items.Add("Số cú shút trúng đích: " + reponsePlayer.response[0].Statistics[0].Shots.On);
+                statistic_1_listbox.Items.Add("Số bàn thắng: " + reponsePlayer.response[0].Statistics[0].Goals.Total);
+                statistic_1_listbox.Items.Add("Kiến tạo: " + reponsePlayer.response[0].Statistics[0].Goals.Assists);
+                statistic_1_listbox.Items.Add("Tổng đường chuyền: " + reponsePlayer.response[0].Statistics[0].Passes.Total);
+                statistic_1_listbox.Items.Add("Đường chuyền quyết định: " + reponsePlayer.response[0].Statistics[0].Passes.Key);
+                statistic_1_listbox.Items.Add("chính xác: " + reponsePlayer.response[0].Statistics[0].Passes.Accuracy);
+                statistic2_list_box.Items.Add("Số lần rê bóng: " + reponsePlayer.response[0].Statistics[0].Dribbles.Attempts);
+                statistic2_list_box.Items.Add("Số lần rê bóng thành công : " + reponsePlayer.response[0].Statistics[0].Dribbles.Success);
+                statistic2_list_box.Items.Add("Past: " + reponsePlayer.response[0].Statistics[0].Dribbles.Past);
+
+
+
             }
 
         }

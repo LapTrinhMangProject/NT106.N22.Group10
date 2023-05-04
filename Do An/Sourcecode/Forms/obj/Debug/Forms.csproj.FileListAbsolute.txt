@@ -16,3 +16,9 @@ C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Forms\obj\Debug\Fo
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Forms\obj\Debug\Forms.Dashboard.resources
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Forms\obj\Debug\Forms.League_form.resources
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Forms\obj\Debug\Forms.Player_form.resources
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Forms\bin\Debug\Get_response_using_API.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Forms\bin\Debug\Response.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Forms\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Forms\bin\Debug\Get_response_using_API.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Forms\bin\Debug\Response.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Forms\bin\Debug\Newtonsoft.Json.xml
