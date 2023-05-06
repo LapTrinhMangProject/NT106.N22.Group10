@@ -17,8 +17,8 @@ namespace communicate_client_server
        
       public  Com_Client()
         {
-            ipAddress = IPAddress.Parse("127.0.0.1");
-            client.Connect(ipAddress, 8080);
+            ipAddress = IPAddress.Parse("42.119.166.156");
+            client.Connect(ipAddress, 3004);
             stream = client.GetStream();
         }
         public void Client_listening()

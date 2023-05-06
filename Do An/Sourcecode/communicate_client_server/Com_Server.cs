@@ -18,8 +18,8 @@ namespace communicate_client_server
         {
             try
             {
-                IPAddress ipAddress = IPAddress.Parse("127.0.0.1");
-                server = new TcpListener(ipAddress, 8080);
+                IPAddress ipAddress = IPAddress.Parse("192.168.1.8");
+                server = new TcpListener(ipAddress, 3004);
                 server.Start();
                 while (true)
                 {
