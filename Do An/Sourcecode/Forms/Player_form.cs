@@ -52,7 +52,7 @@ namespace Forms
         private async void list_player_listbox_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             API aPI = new API();
-            Root_Response_player_and_statistics reponsePlayer = new Root_Response_player_and_statistics();
+            Root_Response_Player_and_Statistic reponsePlayer = new Root_Response_Player_and_Statistic();
             string id = playerDic[list_player_listbox.SelectedItems[0].ToString()];
            reponsePlayer = await aPI.Get_Specific_player(id, "39");
             infor_player_listbox.Items.Clear ();
