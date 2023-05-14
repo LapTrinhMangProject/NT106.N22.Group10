@@ -34,5 +34,10 @@ namespace Forms
         {
             new Player_form().Show();
         }
+
+        private void topscore_button_Click(object sender, EventArgs e)
+        {
+            new Topscore_form().Show();
+        }
     }
 }

@@ -123,5 +123,27 @@ namespace Get_response_using_API
                  return responseStanding;
             }
         }
+    public async Task<Root_Response_Player_and_Statistic> Get_Top_Score(string league_id)
+        {
+            Root_Response_Player_and_Statistic responsePlayerAndstatistic = new Root_Response_Player_and_Statistic();
+            var client = new HttpClient();
+            var request = new HttpRequestMessage
+            {
+                Method = HttpMethod.Get,
+                RequestUri = new Uri($"https://api-football-v1.p.rapidapi.com/v3/players/topscorers?league={league_id}&season=2022"),
+                Headers =
+    {
+        { "X-RapidAPI-Key", "759c532019msh63e52ce5ea468afp113769jsnc64419692369" },
+        { "X-RapidAPI-Host", "api-football-v1.p.rapidapi.com" },
+    },
+            };
+            using (var response = await client.SendAsync(request))
+            {
+                response.EnsureSuccessStatusCode();
+                var body = await response.Content.ReadAsStringAsync();
+                responsePlayerAndstatistic = JsonConvert.DeserializeObject<Root_Response_Player_and_Statistic>(body);
+            }
+            return responsePlayerAndstatistic;
+        }
     }
 }
