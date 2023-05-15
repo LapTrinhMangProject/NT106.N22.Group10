@@ -22,12 +22,12 @@ namespace Forms
         API api = new API();
         private async void  Dashboard_Load(object sender, EventArgs e)
         {
-            Root_Reponse_standing responseStanding = new Root_Reponse_standing();
+        /*    Root_Reponse_standing responseStanding = new Root_Reponse_standing();
            responseStanding = await api.Get_Standing("39");
             foreach(var index in responseStanding.response[0].league.standings[0])
             {
                 standing_listbox.Items.Add(index.Rank +" " + index.Team.Name +"Point: "+index.Points);
-            }
+            }*/
         }
 
         private void find_player_button_Click(object sender, EventArgs e)

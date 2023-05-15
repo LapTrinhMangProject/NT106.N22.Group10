@@ -123,14 +123,14 @@ namespace Get_response_using_API
                  return responseStanding;
             }
         }
-    public async Task<Root_Response_Player_and_Statistic> Get_Top_Score(string league_id)
+    public async Task<Root_Response_Player_and_Statistic> Get_Top_Score(string leagueId)
         {
             Root_Response_Player_and_Statistic responsePlayerAndstatistic = new Root_Response_Player_and_Statistic();
             var client = new HttpClient();
             var request = new HttpRequestMessage
             {
                 Method = HttpMethod.Get,
-                RequestUri = new Uri($"https://api-football-v1.p.rapidapi.com/v3/players/topscorers?league={league_id}&season=2022"),
+                RequestUri = new Uri($"https://api-football-v1.p.rapidapi.com/v3/players/topscorers?league={leagueId}&season=2022"),
                 Headers =
     {
         { "X-RapidAPI-Key", "759c532019msh63e52ce5ea468afp113769jsnc64419692369" },
@@ -145,5 +145,73 @@ namespace Get_response_using_API
             }
             return responsePlayerAndstatistic;
         }
+        public async Task<Root_Response_Player_and_Statistic> Get_Top_Assists(string leagueId)
+        {
+            Root_Response_Player_and_Statistic responsePlayerAndStatistic = new Root_Response_Player_and_Statistic();
+            var client = new HttpClient();
+            var request = new HttpRequestMessage
+            {
+                Method = HttpMethod.Get,
+                RequestUri = new Uri($"https://api-football-v1.p.rapidapi.com/v3/players/topassists?league={leagueId}&season=2022"),
+                Headers =
+    {
+        { "X-RapidAPI-Key", "759c532019msh63e52ce5ea468afp113769jsnc64419692369" },
+        { "X-RapidAPI-Host", "api-football-v1.p.rapidapi.com" },
+    },
+            };
+            using (var response = await client.SendAsync(request))
+            {
+                response.EnsureSuccessStatusCode();
+                var body = await response.Content.ReadAsStringAsync();
+                responsePlayerAndStatistic = JsonConvert.DeserializeObject<Root_Response_Player_and_Statistic>(body);
+            }
+            return responsePlayerAndStatistic;
+        }
+        public async Task<Root_Response_Player_and_Statistic> Get_Top_Red_Cards(string leagueId)
+        {
+            Root_Response_Player_and_Statistic responsePlayerAndStatistic = new Root_Response_Player_and_Statistic();
+            var client = new HttpClient();
+            var request = new HttpRequestMessage
+            {
+                Method = HttpMethod.Get,
+                RequestUri = new Uri($"https://api-football-v1.p.rapidapi.com/v3/players/topredcards?league={leagueId}&season=2022"),
+                Headers =
+    {
+        { "X-RapidAPI-Key", "759c532019msh63e52ce5ea468afp113769jsnc64419692369" },
+        { "X-RapidAPI-Host", "api-football-v1.p.rapidapi.com" },
+    },
+            };
+            using (var response = await client.SendAsync(request))
+            {
+                response.EnsureSuccessStatusCode();
+                var body = await response.Content.ReadAsStringAsync();
+                responsePlayerAndStatistic = JsonConvert.DeserializeObject<Root_Response_Player_and_Statistic>(body);
+            }
+            return responsePlayerAndStatistic;
+        }
+        public async Task<Root_Response_Player_and_Statistic> Get_Top_Yellow_Cards(string leagueId)
+        {
+            Root_Response_Player_and_Statistic responsePlayerAndStatistic = new Root_Response_Player_and_Statistic();
+            var client = new HttpClient();
+            var request = new HttpRequestMessage
+            {
+                Method = HttpMethod.Get,
+                RequestUri = new Uri($"https://api-football-v1.p.rapidapi.com/v3/players/topyellowcards?league=39&season=2022"),
+                Headers =
+    {
+        { "X-RapidAPI-Key", "759c532019msh63e52ce5ea468afp113769jsnc64419692369" },
+        { "X-RapidAPI-Host", "api-football-v1.p.rapidapi.com" },
+    },
+            };
+            using (var response = await client.SendAsync(request))
+            {
+                response.EnsureSuccessStatusCode();
+                var body = await response.Content.ReadAsStringAsync();
+                responsePlayerAndStatistic = JsonConvert.DeserializeObject<Root_Response_Player_and_Statistic>(body);
+            }
+            return responsePlayerAndStatistic;
+        }
+
+
     }
 }
