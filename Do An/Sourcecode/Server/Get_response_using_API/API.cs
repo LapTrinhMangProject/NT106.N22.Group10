@@ -211,7 +211,28 @@ namespace Get_response_using_API
             }
             return responsePlayerAndStatistic;
         }
-
+        public async Task<Root_teams_and_venue> Get_Teams_from_Leagues(string leagueId)
+        {
+            Root_teams_and_venue teamAndVenue = new Root_teams_and_venue();
+            var client = new HttpClient();
+            var request = new HttpRequestMessage
+            {
+                Method = HttpMethod.Get,
+                RequestUri = new Uri($"https://api-football-v1.p.rapidapi.com/v3/teams?league={leagueId}&season=2022"),
+                Headers =
+    {
+        { "X-RapidAPI-Key", "759c532019msh63e52ce5ea468afp113769jsnc64419692369" },
+        { "X-RapidAPI-Host", "api-football-v1.p.rapidapi.com" },
+    },
+            };
+            using (var response = await client.SendAsync(request))
+            {
+                response.EnsureSuccessStatusCode();
+                var body = await response.Content.ReadAsStringAsync();
+                teamAndVenue = JsonConvert.DeserializeObject<Root_teams_and_venue>(body);
+            }
+            return teamAndVenue;
+        }
 
     }
 }

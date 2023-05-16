@@ -39,5 +39,11 @@ namespace Forms
         {
             new Topscore_form().Show();
         }
+
+        private void find_teams_button_Click(object sender, EventArgs e)
+        {
+            Team_form team =new Team_form();
+            team.Show();
+        }
     }
 }
