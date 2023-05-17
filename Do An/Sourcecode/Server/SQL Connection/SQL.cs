@@ -48,6 +48,25 @@ namespace SQL_Connection
             }
             return _players;
         }
+        public List<Team> Get_Teams(string name = null)
+        {
+            List<Team> _teams = new List<Team>();
+            string query = $"select * from Teams where name like '%{name}%'";
+            command = new SqlCommand(query, sqlConnection);
+            reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+               Team team = new Team();
+                team.name = reader.GetString(1);
+                team.id = reader.GetInt32(0);
+                team.code = reader.GetString(2);
+                team.country = reader.GetString(3);
+                team.founded = reader.GetInt32(4); 
+                team.logo = reader.GetString(6);
+                _teams.Add(team);
+            }
+            return _teams;
+        }
     }
     }
 

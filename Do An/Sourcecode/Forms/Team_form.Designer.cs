@@ -36,6 +36,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.infor_teams_listsbox = new System.Windows.Forms.ListBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.infor_statistic_listbox = new System.Windows.Forms.ListBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,6 +49,7 @@
             this.teams_listsbox.Name = "teams_listsbox";
             this.teams_listsbox.Size = new System.Drawing.Size(194, 324);
             this.teams_listsbox.TabIndex = 0;
+            this.teams_listsbox.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.teams_listsbox_MouseDoubleClick);
             // 
             // label1
             // 
@@ -72,6 +75,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(119, 22);
             this.textBox1.TabIndex = 3;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
@@ -94,7 +98,7 @@
             // 
             this.infor_teams_listsbox.FormattingEnabled = true;
             this.infor_teams_listsbox.ItemHeight = 16;
-            this.infor_teams_listsbox.Location = new System.Drawing.Point(310, 19);
+            this.infor_teams_listsbox.Location = new System.Drawing.Point(313, 12);
             this.infor_teams_listsbox.Name = "infor_teams_listsbox";
             this.infor_teams_listsbox.Size = new System.Drawing.Size(275, 180);
             this.infor_teams_listsbox.TabIndex = 6;
@@ -102,17 +106,38 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(393, 218);
+            this.label4.Location = new System.Drawing.Point(395, 202);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(106, 16);
             this.label4.TabIndex = 7;
             this.label4.Text = "Thông tin cơ bản";
+            // 
+            // infor_statistic_listbox
+            // 
+            this.infor_statistic_listbox.FormattingEnabled = true;
+            this.infor_statistic_listbox.ItemHeight = 16;
+            this.infor_statistic_listbox.Location = new System.Drawing.Point(43, 229);
+            this.infor_statistic_listbox.Name = "infor_statistic_listbox";
+            this.infor_statistic_listbox.Size = new System.Drawing.Size(268, 180);
+            this.infor_statistic_listbox.TabIndex = 8;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(122, 412);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(102, 16);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Thông tin chi tiết";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // Team_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.infor_statistic_listbox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.infor_teams_listsbox);
             this.Controls.Add(this.pictureBox1);
@@ -140,5 +165,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ListBox infor_teams_listsbox;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ListBox infor_statistic_listbox;
+        private System.Windows.Forms.Label label5;
     }
 }

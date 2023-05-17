@@ -1,5 +1,6 @@
 ﻿using Get_response_using_API;
 using Response;
+using SQL_Connection;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,41 +28,82 @@ namespace Forms
 
         }
         string leagueId; 
+            Root_teams_and_venue teamsAndVenue = new Root_teams_and_venue();
         private async void Team_form_Load(object sender, EventArgs e)
         {
+            SQL_user userSql = new SQL_user();
+            foreach(var index in userSql.Get_Teams())
+            {
+                teams_listsbox.Items.Add(index.name);   
+            }
             API aPI = new API();
-            Root_teams_and_venue teamsAndVenue = new Root_teams_and_venue();
             teamsAndVenue = await aPI.Get_Teams_from_Leagues("39");
-            foreach(var index in teamsAndVenue.response)
-            {
-                teams_listsbox.Items.Add(index.team.name);   
-            }
-            string url_image = teamsAndVenue.response[0].team.logo;
-            Display_Photo(url_image);
-            Display_Infor_Team();
-            void Display_Photo(string url)
-            {
-                WebClient client = new WebClient();
-                byte[] imageData = client.DownloadData(url);
-                MemoryStream ms = new MemoryStream(imageData);
-                Bitmap image = new Bitmap(ms);
-                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-                pictureBox1.Image = image;
-            }
-            
-            void Display_Infor_Team()
-            {
-                infor_teams_listsbox.Items.Clear();
-                infor_teams_listsbox.Items.Add($"Tên đội: {teamsAndVenue.response[0].team.name}");
-                infor_teams_listsbox.Items.Add($"Ki hiệu: {teamsAndVenue.response[0].team.code}");
-                infor_teams_listsbox.Items.Add($"Thành lập: {teamsAndVenue.response[0].team.founded}");
-                infor_teams_listsbox.Items.Add($"Quốc gia: {teamsAndVenue.response[0].team.country}");
-                infor_teams_listsbox.Items.Add($"Đội tuyển quốc gia: {teamsAndVenue.response[0].team.national}");
-            }
+            Display_All(0);
+            textBox1.Focus();
         }
-        public async void Display_All_Teams()
+        void Display_All(int index)
+        {
+            infor_statistic_listbox.Items.Clear();
+            infor_teams_listsbox.Items.Clear();
+            string url_image = teamsAndVenue.response[index].team.logo;
+            Display_Photo(url_image);
+            Display_Infor_Team(index);
+        }
+        void Display_Photo(string url)
+        {
+            WebClient client = new WebClient();
+            byte[] imageData = client.DownloadData(url);
+            MemoryStream ms = new MemoryStream(imageData);
+            Bitmap image = new Bitmap(ms);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.Image = image;
+        }
+        void Display_Infor_Team(int index)
+        {
+            infor_teams_listsbox.Items.Clear();
+            infor_teams_listsbox.Items.Add($"Tên đội: {teamsAndVenue.response[index].team.name}");
+            infor_teams_listsbox.Items.Add($"Ki hiệu: {teamsAndVenue.response[index].team.code}");
+            infor_teams_listsbox.Items.Add($"Thành lập: {teamsAndVenue.response[index].team.founded}");
+            infor_teams_listsbox.Items.Add($"Quốc gia: {teamsAndVenue.response[index].team.country}");
+            infor_teams_listsbox.Items.Add($"Đội tuyển quốc gia: {teamsAndVenue.response[index].team.national}");
+            infor_teams_listsbox.Items.Add($"Sân vận động: {teamsAndVenue.response[index].venue.name}");
+            infor_teams_listsbox.Items.Add($"Sức chứa: {teamsAndVenue.response[index].venue.capacity}");
+            infor_teams_listsbox.Items.Add($"Địa chỉ: {teamsAndVenue.response[index].venue.address}");
+            infor_teams_listsbox.Items.Add($"Thành phố: {teamsAndVenue.response[index].venue.city}");
+
+
+
+        }
+        void Display_Statistic_Team(int index)
+        {
+            infor_statistic_listbox.Items.Clear();
+            //infor_statistic_listbox.Items.Add(teamsAndVenue.response[index])
+        }
+      
+        private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void teams_listsbox_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            for (int index = 0; index < teamsAndVenue.response.Length; index++)
+                if (teamsAndVenue.response[index].team.name == teams_listsbox.SelectedItems[0].ToString())
+                    Display_All(index);
+                    
+
+
+  
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            teams_listsbox.Items.Clear();
+            SQL_user userSql = new SQL_user();
+            foreach (var index in userSql.Get_Teams(textBox1.Text.ToString()))
+            {
+                teams_listsbox.Items.Add(index.name);
+            }
         }
     }
 }
