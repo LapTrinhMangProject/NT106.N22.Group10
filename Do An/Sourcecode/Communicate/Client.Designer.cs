@@ -1,4 +1,6 @@
-﻿namespace Communicate
+﻿using System.Windows.Controls;
+
+namespace Communicate
 {
     partial class Client
     {
@@ -75,8 +77,10 @@
             // 
             this.pass_textbox.Location = new System.Drawing.Point(132, 108);
             this.pass_textbox.Name = "pass_textbox";
+            this.pass_textbox.PasswordChar = '*';
             this.pass_textbox.Size = new System.Drawing.Size(150, 22);
             this.pass_textbox.TabIndex = 4;
+            this.pass_textbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pass_textbox_KeyDown);
             // 
             // login_button
             // 

@@ -8,18 +8,21 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SQL_Connection;
+using System.IO;
 
 namespace communicate_client_server
 {
     public class Com_Server
     {
+        SQL_user sqlUser = new SQL_user();
         TcpListener server;
        public void Server_Listener()
         {
             try
             {
-                IPAddress ipAddress = IPAddress.Parse("192.168.1.8");
-                server = new TcpListener(ipAddress, 3004);
+                IPAddress ipAddress = IPAddress.Parse("127.0.0.1");
+                server = new TcpListener(ipAddress, 8080);
                 server.Start();
                 while (true)
                 {
@@ -42,7 +45,7 @@ namespace communicate_client_server
         void Establish(TcpClient client)
         {
             NetworkStream stream = client.GetStream();
-
+            StreamWriter writer = new StreamWriter(stream);
             // Loop to receive all the data sent by the client
             while (client.Connected)
             {
@@ -66,9 +69,26 @@ namespace communicate_client_server
                 if(code == "00000")
                 {
                     Login login = JsonConvert.DeserializeObject<Login>(data.Substring(5));
-                    MessageBox.Show($"username: {login.username} with pass: {login.password}");
+                    if (sqlUser.Check_Credential(login.username, login.password))
+                    {
+                        Send_Login("accept");
+                    }
+                    else
+                        Send_Login("reject");
+                       
                 }
             }
+            void Send_Login(string target)
+            {
+                byte[] header = new byte[4];
+                string code = "00000";
+                byte[] buffer = Encoding.UTF8.GetBytes(code + target);
+                int lengthOfdata = buffer.Length;
+                header = BitConverter.GetBytes(lengthOfdata);
+                stream.Write(header, 0, 4);
+                stream.Write(buffer, 0, lengthOfdata);
+            }
         }
+
     }
 }

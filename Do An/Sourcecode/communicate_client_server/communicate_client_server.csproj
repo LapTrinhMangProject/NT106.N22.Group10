@@ -45,13 +45,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Com_Client.cs" />
     <Compile Include="Com_Server.cs" />
     <Compile Include="login.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Server\SQL Connection\SQL Connection.csproj">
+      <Project>{08459c43-9d61-4c2b-82e6-4571a6d91c05}</Project>
+      <Name>SQL Connection</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

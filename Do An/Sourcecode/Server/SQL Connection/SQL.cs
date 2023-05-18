@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using Library_football;
+
 namespace SQL_Connection
 {
     public class SQL_user
@@ -66,6 +67,22 @@ namespace SQL_Connection
                 _teams.Add(team);
             }
             return _teams;
+        }
+        public bool Check_Credential(string username,string password)
+        {
+            string query = $"select * from credential where username = '{username}' and password ='{password}'";
+            command = new SqlCommand (query, sqlConnection);
+            reader = command.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                reader.Close();
+                return true;
+            }
+            reader.Close ();
+           return false;
+
+
         }
     }
     }
