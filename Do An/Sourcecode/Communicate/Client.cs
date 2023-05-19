@@ -1,6 +1,7 @@
 ﻿using communicate_client_server;
 using Forms;
 using Newtonsoft.Json;
+using Response;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -57,11 +58,12 @@ namespace Communicate
                 
                     this.Invoke(new Action(() => 
                     {
-                        if (code == "00000" && data.Substring(5) == "accept")
+                        if (code == "00000" && data.Substring(5,1) == "1")
                         {
+                            Root_Reponse_standing responseStanding = JsonConvert.DeserializeObject<Root_Reponse_standing>(data.Substring(6));
+                            Dashboard dashboard = new Dashboard(responseStanding);
                             this.Hide();
-                            Dashboard dashboardForm = new Dashboard();
-                            dashboardForm.ShowDialog();
+                            dashboard.ShowDialog();
                         }
                         else
                             MessageBox.Show("Tài khoản hoặc mật khẩu không đúng", "Lỗi đăng nhập", MessageBoxButtons.OK, MessageBoxIcon.Error);

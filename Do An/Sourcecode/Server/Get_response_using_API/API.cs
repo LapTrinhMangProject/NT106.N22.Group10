@@ -114,11 +114,6 @@ namespace Get_response_using_API
             {
                 response.EnsureSuccessStatusCode();
                 var body = await response.Content.ReadAsStringAsync();
-                FileStream filestream = new FileStream("test.txt",FileMode.Create,FileAccess.Write);
-                StreamWriter writer = new StreamWriter(filestream);
-                writer.Write(body);
-                writer.Flush();
-                MessageBox.Show("done");
                 responseStanding = JsonConvert.DeserializeObject<Root_Reponse_standing>(body);
                  return responseStanding;
             }

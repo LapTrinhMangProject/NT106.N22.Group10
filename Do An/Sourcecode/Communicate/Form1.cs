@@ -23,7 +23,12 @@ namespace Communicate
 
         private void server_button_Click(object sender, EventArgs e)
         {
-            new Server().Show();    
+            new Server_form().Show();    
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Communicate
 {
-    partial class Server
+    partial class Server_form
     {
         /// <summary>
         /// Required designer variable.
@@ -30,12 +30,12 @@
         {
             this.SuspendLayout();
             // 
-            // Server
+            // Server_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Server";
+            this.Name = "Server_form";
             this.Text = "Server";
             this.Load += new System.EventHandler(this.Server_Load);
             this.ResumeLayout(false);

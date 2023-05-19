@@ -45,7 +45,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Com_Server.cs" />
     <Compile Include="login.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
