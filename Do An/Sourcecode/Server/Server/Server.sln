@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Response", "Response\Respon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server.csproj", "{9E875AA0-D110-483B-BC7A-C9A0885873B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Get_response_using_API", "..\Get_response_using_API\Get_response_using_API.csproj", "{C9F39A9B-F60B-434D-903B-465745AA5840}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{9E875AA0-D110-483B-BC7A-C9A0885873B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E875AA0-D110-483B-BC7A-C9A0885873B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E875AA0-D110-483B-BC7A-C9A0885873B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9F39A9B-F60B-434D-903B-465745AA5840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9F39A9B-F60B-434D-903B-465745AA5840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9F39A9B-F60B-434D-903B-465745AA5840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9F39A9B-F60B-434D-903B-465745AA5840}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

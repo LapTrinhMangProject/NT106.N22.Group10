@@ -12,7 +12,7 @@ namespace Response
         public Team team { get; set; }
         public Venue venue { get; set; }
     }
-    public class root_teams_and_venue
+    public class Root_teams_and_venue
     {
         public Response_teams_and_venue[] response { get; set; }
     }
