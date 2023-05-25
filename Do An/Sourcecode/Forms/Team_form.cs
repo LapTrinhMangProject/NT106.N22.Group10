@@ -1,4 +1,5 @@
 ﻿using Get_response_using_API;
+using Library_football;
 using Response;
 using SQL_Connection;
 using System;
@@ -25,19 +26,27 @@ namespace Forms
         {
             InitializeComponent();
             this.leagueId = leagueId;
-
+        }
+        public Team_form(List<Team> _teams,Root_teams_and_venue teamAndVenue) 
+        {
+            InitializeComponent();
+            this._teams = _teams;
+            this.teamsAndVenue = teamAndVenue;
+        }
+        public Team_form(List<Team> _team)
+        {
+            InitializeComponent();
+            this._teams = _team;
         }
         string leagueId; 
-            Root_teams_and_venue teamsAndVenue = new Root_teams_and_venue();
+        Root_teams_and_venue teamsAndVenue = new Root_teams_and_venue();
+        List<Team> _teams = new List<Team>();
         private async void Team_form_Load(object sender, EventArgs e)
         {
-            SQL_user userSql = new SQL_user();
-            foreach(var index in userSql.Get_Teams())
+            foreach(var index in _teams)
             {
                 teams_listsbox.Items.Add(index.name);   
             }
-            API aPI = new API();
-            teamsAndVenue = await aPI.Get_Teams_from_Leagues("39");
             Display_All(0);
             textBox1.Focus();
         }
@@ -77,7 +86,7 @@ namespace Forms
         void Display_Statistic_Team(int index)
         {
             infor_statistic_listbox.Items.Clear();
-            //infor_statistic_listbox.Items.Add(teamsAndVenue.response[index])
+            infor_statistic_listbox.Items.Add(teamsAndVenue.response[index]);
         }
       
         private void label5_Click(object sender, EventArgs e)

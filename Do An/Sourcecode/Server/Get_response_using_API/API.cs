@@ -25,8 +25,8 @@ namespace Get_response_using_API
             var client = new HttpClient();
 
             Root_page page_from_API;
-            FileStream myfile = new FileStream("test.txt", FileMode.Create, FileAccess.Write);
-            StreamWriter writerr = new StreamWriter(myfile);
+            FileStream file = new FileStream("player.txt", FileMode.Create, FileAccess.Write);
+            StreamWriter writer = new StreamWriter(file);
             int page_current = 1; 
             do
             {
@@ -58,15 +58,16 @@ namespace Get_response_using_API
                     for (int i = 0; i < player_and_statistics.response.Length; i++)
                     {
                         int id = player_and_statistics.response[i].Player.id;
-                        string name = player_and_statistics.response[i].Player.name;
-                        writerr.WriteLine($"insert into player values({id},'{name}')");
+                        string namePlayer = player_and_statistics.response[i].Player.name;
+                        string nameTeam = player_and_statistics.response[i].Statistics[0].Team.name;
+                      
+                        writer.WriteLine($"insert into player values({id},'{namePlayer}','{nameTeam}')");
                     }
                     await Task.Delay(1000);
                 }
                 page_current++;
             } while (page_current!=page_from_API.paging.total);
-            writerr.Flush();
-            
+           writer.Flush();
         MessageBox.Show("done");
         }
       public async Task<Root_Response_Player_and_Statistic> Get_Specific_player(string playerId,string leagueId=null,string seasonId = null)

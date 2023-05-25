@@ -29,7 +29,6 @@ namespace Communicate
             InitializeComponent();
         }
         SQL_user sqlUser = new SQL_user();
-
         private void Server_Load(object sender, EventArgs e)
         {
             Thread thread1 = new Thread(Server_Listener);
@@ -46,7 +45,6 @@ namespace Communicate
                 server.Start();
                 while (true)
                 {
-
                     TcpClient client = server.AcceptTcpClient();
                     client.ReceiveBufferSize = 1048576;
                     client.SendBufferSize = 1048576;
@@ -65,12 +63,12 @@ namespace Communicate
         {
             NetworkStream stream = client.GetStream();
             Reponse reponse = new Reponse(stream);
-
+                
             while (client.Connected)
             {
                 int bytes_read = 0;
                 byte[] header = new byte[4];
-                    bytes_read += stream.Read(header, 0, 4);
+                bytes_read += stream.Read(header, 0, 4);
                 int length = BitConverter.ToInt32(header, 0);
                 bytes_read = 0;
                 byte[] buffer = new byte[length];
@@ -85,6 +83,9 @@ namespace Communicate
                         break;
                         case "00001":
                             reponse.Get_All_Players();
+                        break;
+                    case "00011":
+                        reponse.Get_All_Teams_And_venue();
                         break;
                     }
             }

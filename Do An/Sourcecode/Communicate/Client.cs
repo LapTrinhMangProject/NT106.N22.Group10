@@ -53,15 +53,16 @@ namespace Communicate
                 bytes_read += stream.Read(buffer, bytes_read, length - bytes_read);
                 string data = Encoding.UTF8.GetString(buffer);
                 string code = data.Substring(0, 5);
+                string jsonData = data.Substring(5);
                         switch (code) 
                         {
                             case "00000":
                                 this.Invoke(new Action(() =>
                                 {
-                                    if (data.Substring(5, 1) == "1")
+                                     Login login = JsonConvert.DeserializeObject<Login>(jsonData);
+                                    if (login.valid)
                                     {
-                                        Root_Reponse_standing responseStanding = JsonConvert.DeserializeObject<Root_Reponse_standing>(data.Substring(6));
-                                        Dashboard dashboardForm = new Dashboard(responseStanding, requestUser);
+                                        Dashboard dashboardForm = new Dashboard(login.reponseStanding, requestUser);
                                         this.Close();
                                         dashboardForm.Show();
                                     }
@@ -70,10 +71,15 @@ namespace Communicate
                                 }));
                              break;
                              case "00001":
-                                  List<Player> _player = JsonConvert.DeserializeObject<List<Player>>(data.Substring(5));
+                                  List<Player> _player = JsonConvert.DeserializeObject<List<Player>>(jsonData);
                                   Player_form playerForm = new Player_form(_player);
                                   playerForm.ShowDialog();
                              break;
+                            case "00011":
+                        SQL_BothTeamAndVenue dataGeneral = JsonConvert.DeserializeObject<SQL_BothTeamAndVenue>(jsonData);
+                                Team_form teamForm = new Team_form(dataGeneral._teams,dataGeneral.teamAndvenue);
+                                teamForm.ShowDialog();
+                            break;
                         }
             }
         }

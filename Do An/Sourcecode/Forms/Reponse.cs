@@ -30,14 +30,16 @@ namespace Communicate
         }
        async public void Login_Access(string target)
         {
+            Login login = new Login();
             payload = null;
              jsonData = null;
             if (target == "1")
             {
-                Root_Reponse_standing reponseStanding = await api.Get_Standing("39");
-                jsonData = JsonConvert.SerializeObject(reponseStanding);
+                login.reponseStanding = await api.Get_Standing("39");
+                login.valid = true;
+                jsonData = JsonConvert.SerializeObject(login);
             }
-                payload = "00000" + target+jsonData;
+                payload = "00000"+jsonData;
                 Send(payload);
         }
         public void Get_All_Players()
@@ -55,6 +57,15 @@ namespace Communicate
             else 
                 Login_Access("0");
         }
+        public async void Get_All_Teams_And_venue()
+        {
+            List<Team> _teams = sqlUser.Get_Teams();
+            Root_teams_and_venue teamAndVenue = await api.Get_Teams_from_Leagues("39");
+            SQL_BothTeamAndVenue data = new SQL_BothTeamAndVenue(_teams,teamAndVenue);
+            payload = "00011"+JsonConvert.SerializeObject(data);
+            Send(payload);
+        }
+       
         public void Send(string payload)
         {
             byte[] header = new byte[4];
@@ -62,7 +73,7 @@ namespace Communicate
             header = BitConverter.GetBytes(buffer.Length);
             stream.Write(header, 0, 4);
             stream.Write(buffer, 0, buffer.Length);
-          //  stream.Flush();
+            stream.Flush();
         }
     }
 }

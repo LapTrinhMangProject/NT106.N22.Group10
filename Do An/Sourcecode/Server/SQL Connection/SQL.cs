@@ -10,7 +10,7 @@ namespace SQL_Connection
 {
     public class SQL_user
     {
-        string connectionString = "Data Source=LAPTOP-68GCST1P\\SQLEXPRESS02;Initial Catalog = API_football; Integrated Security = True";
+        string connectionString = "Data Source=15ACH6H\\SQLEXPRESS02;Initial Catalog = API_football; Integrated Security = True";
         SqlConnection sqlConnection = null;
         SqlCommand command = null;
         SqlDataReader reader;
@@ -32,6 +32,7 @@ namespace SQL_Connection
                 league.name = reader.GetString(1);
                 _leagues.Add(league);
             }
+            reader.Close();
             return _leagues;
         }
         public List<Player> Get_Players(string name = null) 
@@ -47,6 +48,7 @@ namespace SQL_Connection
                 player.name = reader.GetString(1); 
                 _players.Add(player);
             }
+            reader.Close();
             return _players;
         }
         public List<Team> Get_Teams(string name = null)
@@ -66,6 +68,7 @@ namespace SQL_Connection
                 team.logo = reader.GetString(6);
                 _teams.Add(team);
             }
+            reader.Close();
             return _teams;
         }
         public bool Check_Credential(string username,string password)

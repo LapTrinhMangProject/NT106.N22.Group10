@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Response">
+      <HintPath>..\Response\bin\Debug\Response.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BothTeamsAndVenue.cs" />
     <Compile Include="Country.cs" />
     <Compile Include="League.cs" />
     <Compile Include="Player.cs" />

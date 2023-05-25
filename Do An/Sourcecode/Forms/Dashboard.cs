@@ -46,13 +46,12 @@ namespace Forms
 
         private void topscore_button_Click(object sender, EventArgs e)
         {
-           // request.Send("00001");
+           // request.Send("00010");
         }
 
         private void find_teams_button_Click(object sender, EventArgs e)
         {
-            Team_form team =new Team_form();
-            team.Show();
+            request.Send("00011");
         }
     }
 }

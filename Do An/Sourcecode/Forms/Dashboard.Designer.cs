@@ -95,7 +95,7 @@
             this.topscore_button.Name = "topscore_button";
             this.topscore_button.Size = new System.Drawing.Size(133, 44);
             this.topscore_button.TabIndex = 5;
-            this.topscore_button.Text = "Top score";
+            this.topscore_button.Text = "TOP";
             this.topscore_button.UseVisualStyleBackColor = true;
             this.topscore_button.Click += new System.EventHandler(this.topscore_button_Click);
             // 
