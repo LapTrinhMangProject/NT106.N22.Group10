@@ -73,7 +73,7 @@ namespace SQL_Connection
         }
         public bool Check_Credential(string username,string password)
         {
-            string query = $"select * from credential where username = '{username}' and password ='{password}'";
+            string query = $"select * from users where username = '{username}' and password ='{password}'";
             command = new SqlCommand (query, sqlConnection);
             reader = command.ExecuteReader();
 

@@ -29,11 +29,14 @@ namespace Communicate
             InitializeComponent();
         }
         SQL_user sqlUser = new SQL_user();
-        private void Server_Load(object sender, EventArgs e)
+        private async void Server_Load(object sender, EventArgs e)
         {
             Thread thread1 = new Thread(Server_Listener);
             thread1.IsBackground = true;
             thread1.Start();
+            API api  = new API();
+            api.Get_all_players_from_league("39");
+          //  api.Get_all_players_from_league("61");
         }
         TcpListener server;
         public void Server_Listener()

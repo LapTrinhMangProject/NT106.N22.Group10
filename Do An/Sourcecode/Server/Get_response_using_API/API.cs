@@ -25,7 +25,7 @@ namespace Get_response_using_API
             var client = new HttpClient();
 
             Root_page page_from_API;
-            FileStream file = new FileStream("player.txt", FileMode.Create, FileAccess.Write);
+            FileStream file = new FileStream("player.txt", FileMode.Append, FileAccess.Write);
             StreamWriter writer = new StreamWriter(file);
             int page_current = 1; 
             do
@@ -53,24 +53,24 @@ namespace Get_response_using_API
                         player_and_statistics = JsonConvert.DeserializeObject<Root_Response_Player_and_Statistic>(body);
                         page_from_API = JsonConvert.DeserializeObject<Root_page>(body);
                     }
-
-
                     for (int i = 0; i < player_and_statistics.response.Length; i++)
                     {
                         int id = player_and_statistics.response[i].Player.id;
                         string namePlayer = player_and_statistics.response[i].Player.name;
                         string nameTeam = player_and_statistics.response[i].Statistics[0].Team.name;
-                      
-                        writer.WriteLine($"insert into player values({id},'{namePlayer}','{nameTeam}')");
+                        string leagueName = player_and_statistics.response[i].Statistics[0].League.name;
+                        writer.WriteLine($"insert into player values({id},'{namePlayer}','{nameTeam}','{leagueName}')");
                     }
-                    await Task.Delay(1000);
+                    await Task.Delay(2000);
                 }
                 page_current++;
             } while (page_current!=page_from_API.paging.total);
            writer.Flush();
-        MessageBox.Show("done");
+            writer.Close();
+            file.Close();
+            MessageBox.Show("Done");
         }
-      public async Task<Root_Response_Player_and_Statistic> Get_Specific_player(string playerId,string leagueId=null,string seasonId = null)
+        public async Task<Root_Response_Player_and_Statistic> Get_Specific_player(string playerId,string leagueId=null,string seasonId = null)
         {
             if (seasonId == null)
             {

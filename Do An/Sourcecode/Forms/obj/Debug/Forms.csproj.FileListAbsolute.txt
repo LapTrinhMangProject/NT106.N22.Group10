@@ -24,3 +24,4 @@ C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Forms\bin\Debug\Re
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Forms\bin\Debug\Newtonsoft.Json.xml
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Forms\obj\Debug\Forms.Topscore_form.resources
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Forms\obj\Debug\Forms.Team_form.resources
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Forms\obj\Debug\Forms.Administrator_form.resources

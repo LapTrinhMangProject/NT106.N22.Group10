@@ -12,6 +12,7 @@ using Get_response_using_API;
 using Response;
 using System.IO;
 using Communicate;
+using System.Net;
 
 namespace Forms
 {
@@ -31,11 +32,20 @@ namespace Forms
        
         Root_Reponse_standing responseStanding = new Root_Reponse_standing();
 
-        private async void  Dashboard_Load(object sender, EventArgs e)
+        private void  Dashboard_Load(object sender, EventArgs e)
         {
             foreach(var index in responseStanding.response[0].league.standings[0])
             {
                 standing_listbox.Items.Add(index.Rank +" " + index.Team.Name +"Point: "+index.Points);
+            }
+            void Display_Photo(string url)
+            {
+                WebClient client = new WebClient();
+                byte[] imageData = client.DownloadData(url);
+                MemoryStream ms = new MemoryStream(imageData);
+                Bitmap image = new Bitmap(ms);
+                logo_picturebox.SizeMode = PictureBoxSizeMode.StretchImage;
+                logo_picturebox.Image = image;
             }
         }
 

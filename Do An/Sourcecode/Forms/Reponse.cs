@@ -28,19 +28,28 @@ namespace Communicate
         {
             this.stream = stream;
         }
-       async public void Login_Access(string target)
+        public void Check_Credential(string jsonData)
         {
-            Login login = new Login();
+            Login login = JsonConvert.DeserializeObject<Login>(jsonData);
+            if(sqlUser.Check_Credential(login.username, login.password))
+                Login_Access(true);
+            else 
+                Login_Access(false);
+            async void Login_Access(bool valid)
+        {
             payload = null;
              jsonData = null;
-            if (target == "1")
+            if (valid == true)
             {
                 login.reponseStanding = await api.Get_Standing("39");
                 login.valid = true;
-                jsonData = JsonConvert.SerializeObject(login);
             }
+            else 
+                login.valid =false;
+                jsonData = JsonConvert.SerializeObject(login);
                 payload = "00000"+jsonData;
                 Send(payload);
+        }
         }
         public void Get_All_Players()
         {
@@ -48,14 +57,6 @@ namespace Communicate
             string jsonData = JsonConvert.SerializeObject(_player);
             string payload = "00001" + jsonData;
             Send(payload);
-        }
-        public void Check_Credential(string jsonData)
-        {
-            Login login = JsonConvert.DeserializeObject<Login>(jsonData);
-            if(sqlUser.Check_Credential(login.username, login.password))
-                Login_Access("1");
-            else 
-                Login_Access("0");
         }
         public async void Get_All_Teams_And_venue()
         {

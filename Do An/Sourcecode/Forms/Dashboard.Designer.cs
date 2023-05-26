@@ -34,6 +34,8 @@
             this.button4 = new System.Windows.Forms.Button();
             this.standing_listbox = new System.Windows.Forms.ListBox();
             this.topscore_button = new System.Windows.Forms.Button();
+            this.logo_picturebox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.logo_picturebox)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -90,7 +92,7 @@
             // 
             // topscore_button
             // 
-            this.topscore_button.Location = new System.Drawing.Point(652, 14);
+            this.topscore_button.Location = new System.Drawing.Point(664, 297);
             this.topscore_button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.topscore_button.Name = "topscore_button";
             this.topscore_button.Size = new System.Drawing.Size(133, 44);
@@ -99,11 +101,20 @@
             this.topscore_button.UseVisualStyleBackColor = true;
             this.topscore_button.Click += new System.EventHandler(this.topscore_button_Click);
             // 
+            // logo_picturebox
+            // 
+            this.logo_picturebox.Location = new System.Drawing.Point(412, 12);
+            this.logo_picturebox.Name = "logo_picturebox";
+            this.logo_picturebox.Size = new System.Drawing.Size(224, 177);
+            this.logo_picturebox.TabIndex = 6;
+            this.logo_picturebox.TabStop = false;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 454);
+            this.Controls.Add(this.logo_picturebox);
             this.Controls.Add(this.topscore_button);
             this.Controls.Add(this.standing_listbox);
             this.Controls.Add(this.button4);
@@ -114,6 +125,7 @@
             this.Name = "Dashboard";
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Dashboard_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.logo_picturebox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -126,5 +138,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ListBox standing_listbox;
         private System.Windows.Forms.Button topscore_button;
+        private System.Windows.Forms.PictureBox logo_picturebox;
     }
 }

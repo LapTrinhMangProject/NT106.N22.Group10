@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administrator_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator_form.Designer.cs">
+      <DependentUpon>Administrator_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +91,9 @@
     <Compile Include="Topscore_form.Designer.cs">
       <DependentUpon>Topscore_form.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Administrator_form.resx">
+      <DependentUpon>Administrator_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,9 +140,9 @@
       <Project>{ac82b139-d9fd-4ee0-a17d-0af422372cc3}</Project>
       <Name>Library Football</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Server\Server\Response\Response.csproj">
+    <ProjectReference Include="..\Server\Server\Response\ReponseJsonDataSructure.csproj">
       <Project>{33e0f8b3-61db-4d33-8195-625549c18f94}</Project>
-      <Name>Response</Name>
+      <Name>ReponseJsonDataSructure</Name>
     </ProjectReference>
     <ProjectReference Include="..\Server\SQL Connection\SQL Connection.csproj">
       <Project>{08459c43-9d61-4c2b-82e6-4571a6d91c05}</Project>
