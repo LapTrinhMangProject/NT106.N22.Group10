@@ -75,17 +75,18 @@ namespace Communicate
                 while (bytes_read < length)
                     bytes_read += stream.Read(buffer, bytes_read, length - bytes_read);
                 string data = Encoding.UTF8.GetString(buffer, 0, length);
+                string jsonData = data.Substring(5);
                 string code = data.Substring(0, 5);
                     switch (code)
                     {
                         case "00000":
-                            reponse.Check_Credential(data.Substring(5));
+                            reponse.Check_Credential(jsonData);
                         break;
                         case "00001":
                             reponse.Get_All_Players();
                         break;
-                    case "00011":
-                        reponse.Get_All_Teams_And_venue();
+                        case "00011":
+                            reponse.Get_All_Teams_And_venue();
                         break;
                     }
             }
