@@ -34,8 +34,7 @@ namespace Communicate
             Thread thread1 = new Thread(Server_Listener);
             thread1.IsBackground = true;
             thread1.Start();
-            API api  = new API();
-            api.Get_all_players_from_league("39");
+           // API api  = new API();
           //  api.Get_all_players_from_league("61");
         }
         TcpListener server;
