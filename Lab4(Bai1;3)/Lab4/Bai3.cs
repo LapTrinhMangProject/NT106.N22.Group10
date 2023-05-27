@@ -22,7 +22,7 @@ namespace Lab4
         }
         public static string txt_add;
 
-        private void Load()
+        private void load()
         {
             string url = tb_Address.Text;
 
@@ -35,7 +35,7 @@ namespace Lab4
         }
         private void bt_Go_Click(object sender, EventArgs e)
         {
-            Load();
+            load();
         }
 
         private void bt_Exit_Click(object sender, EventArgs e)
@@ -126,7 +126,16 @@ namespace Lab4
         private void bt_Download_Click(object sender, EventArgs e)
         {
             string html = txt_add;
-            SaveHtmlToFile(html, "C:\\Users\\acer\\Downloads\\downloaded.html");
+
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = "HTML Files (*.html)|*.html";
+            saveFileDialog1.Title = "Save downloaded HTML file";
+            saveFileDialog1.ShowDialog();
+
+            if (saveFileDialog1.FileName != "")
+            {
+                SaveHtmlToFile(html,saveFileDialog1.FileName);
+            }
         }
     }
 }
