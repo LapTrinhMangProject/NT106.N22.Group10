@@ -1,0 +1,14 @@
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week10\Lab4\Bai4\bin\Debug\Bai4.exe.config
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week10\Lab4\Bai4\bin\Debug\Bai4.exe
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week10\Lab4\Bai4\bin\Debug\Bai4.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week10\Lab4\Bai4\obj\Debug\Bai4.csproj.AssemblyReference.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week10\Lab4\Bai4\obj\Debug\Bai4.csproj.SuggestedBindingRedirects.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week10\Lab4\Bai4\obj\Debug\Bai4.Bai4_form.resources
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week10\Lab4\Bai4\obj\Debug\Bai4.Properties.Resources.resources
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week10\Lab4\Bai4\obj\Debug\Bai4.csproj.GenerateResource.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week10\Lab4\Bai4\obj\Debug\Bai4.csproj.CoreCompileInputs.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week10\Lab4\Bai4\obj\Debug\Bai4.exe
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week10\Lab4\Bai4\obj\Debug\Bai4.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week10\Lab4\Bai4\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week10\Lab4\Bai4\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week10\Lab4\Bai4\obj\Debug\Bai4.csproj.CopyComplete
