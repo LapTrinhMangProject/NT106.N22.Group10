@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Get_response_using_API;
-using Response;
+using ReponseJsonDataStructure;
 using System.Net;
 using System.IO;
 
@@ -50,20 +50,19 @@ namespace Forms
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             list_player_listbox.Items.Clear();
-            SQL_user sqlUser = new SQL_user();
-            List<Player> _player = sqlUser.Get_Players(find_textbox.Text);
-            foreach (Player player in _player)
+            foreach (var index in _player)
             {
-                list_player_listbox.Items.Add(player.name);
+                if (index.name.Contains(find_textbox.Text))
+                    list_player_listbox.Items.Add(index.name);
             }
         }
 
         public async void list_player_listbox_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-          Display_All_Statistic_Of_specific();
+            Display_All_Statistic_Of_specific();
         }
-    public async void Display_All_Statistic_Of_specific()
-    {
+        public async void Display_All_Statistic_Of_specific()
+        {
             {
                 API aPI = new API();
                 Root_Response_Player_and_Statistic reponsePlayer = new Root_Response_Player_and_Statistic();
@@ -125,4 +124,4 @@ namespace Forms
             }
         }
     }
-    }
+}

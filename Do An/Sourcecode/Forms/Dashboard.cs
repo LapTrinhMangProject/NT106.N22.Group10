@@ -9,10 +9,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Get_response_using_API;
-using Response;
+using ReponseJsonDataStructure;
 using System.IO;
 using Communicate;
 using System.Net;
+using Library_football;
+using Newtonsoft.Json;
 
 namespace Forms
 {
@@ -23,20 +25,20 @@ namespace Forms
             InitializeComponent();
         }
         Request request;
-       public Dashboard(Root_Reponse_standing reponseStanding,Request request)
+        public Dashboard(Root_Reponse_standing reponseStanding, Request request)
         {
             InitializeComponent();
             this.responseStanding = reponseStanding;
             this.request = request;
         }
-       
+
         Root_Reponse_standing responseStanding = new Root_Reponse_standing();
 
-        private void  Dashboard_Load(object sender, EventArgs e)
+        private void Dashboard_Load(object sender, EventArgs e)
         {
-            foreach(var index in responseStanding.response[0].league.standings[0])
+            foreach (var index in responseStanding.response[0].league.standings[0])
             {
-                standing_listbox.Items.Add(index.Rank +" " + index.Team.Name +"Point: "+index.Points);
+                standing_listbox.Items.Add(index.Rank + " " + index.Team.Name + "Point: " + index.Points);
             }
             void Display_Photo(string url)
             {
@@ -51,12 +53,15 @@ namespace Forms
 
         private void find_player_button_Click(object sender, EventArgs e)
         {
-            request.Send("00001");
+            League league = responseStanding.League;
+            string jsonData = JsonConvert.SerializeObject(league);
+            string payload = "00001" + jsonData;
+            request.Send(payload);
         }
 
         private void topscore_button_Click(object sender, EventArgs e)
         {
-           // request.Send("00010");
+            // request.Send("00010");
         }
 
         private void find_teams_button_Click(object sender, EventArgs e)

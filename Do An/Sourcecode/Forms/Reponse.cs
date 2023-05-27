@@ -2,7 +2,7 @@
 using Get_response_using_API;
 using Library_football;
 using Newtonsoft.Json;
-using Response;
+using ReponseJsonDataStructure;
 using SQL_Connection;
 using System;
 using System.Collections.Generic;
@@ -20,8 +20,8 @@ namespace Communicate
     public class Reponse
     {
         NetworkStream stream;
-        API api= new API();
-        SQL_user sqlUser = new SQL_user(); 
+        API api = new API();
+        SQL_user sqlUser = new SQL_user();
         string payload = null;
         string jsonData = null;
         public Reponse(NetworkStream stream)
@@ -30,30 +30,50 @@ namespace Communicate
         }
         public void Check_Credential(string jsonData)
         {
+            string typeUser = null;
             Login login = JsonConvert.DeserializeObject<Login>(jsonData);
-            if(sqlUser.Check_Credential(login.username, login.password))
-                Login_Access(true);
-            else 
-                Login_Access(false);
-            async void Login_Access(bool valid)
-        {
-            payload = null;
-             jsonData = null;
-            if (valid == true)
+            if (sqlUser.Check_Credential(login.username, login.password, ref typeUser))
             {
-                login.reponseStanding = await api.Get_Standing("39");
                 login.valid = true;
+                login.typeUser = typeUser; ;
             }
-            else 
-                login.valid =false;
+            else
+                login.valid = false;
+            Reponse();
+            async void Reponse()
+            {
+                payload = null;
+                jsonData = null;
+                if (login.valid == true)
+                    switch (login.typeUser)
+                    {
+                        case "normal":
+                            //login.reponseStanding = await api.Get_Standing("39");
+                            login._league = sqlUser.Get_Name_leagues();
+                            login.valid = true;
+                            break;
+                        case "administrator":
+                            login.reponseStanding = null;
+                            login._league = sqlUser.Get_Name_leagues();
+                            break;
+                    }
                 jsonData = JsonConvert.SerializeObject(login);
-                payload = "00000"+jsonData;
+                payload = "00000" + jsonData;
                 Send(payload);
+            }
+
         }
-        }
-        public void Get_All_Players()
+        public async void Get_Team_Standing(League league)
         {
-            List<Player> _player = sqlUser.Get_Players();
+            Root_Reponse_standing responseTeamStanding = await api.Get_Standing(league.id.ToString());
+            responseTeamStanding.League = league;
+            string jsonData = JsonConvert.SerializeObject(responseTeamStanding);
+            payload = "00100" + jsonData;
+            Send(payload);
+        }
+        public void Get_All_Players(string leagueName)
+        {
+            List<Player> _player = sqlUser.Get_Players(leagueName);
             string jsonData = JsonConvert.SerializeObject(_player);
             string payload = "00001" + jsonData;
             Send(payload);
@@ -62,11 +82,11 @@ namespace Communicate
         {
             List<Team> _teams = sqlUser.Get_Teams();
             Root_teams_and_venue teamAndVenue = await api.Get_Teams_from_Leagues("39");
-            SQL_BothTeamAndVenue data = new SQL_BothTeamAndVenue(_teams,teamAndVenue);
-            payload = "00011"+JsonConvert.SerializeObject(data);
+            SQL_BothTeamAndVenue data = new SQL_BothTeamAndVenue(_teams, teamAndVenue);
+            payload = "00011" + JsonConvert.SerializeObject(data);
             Send(payload);
         }
-       
+
         public void Send(string payload)
         {
             byte[] header = new byte[4];

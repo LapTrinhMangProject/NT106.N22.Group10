@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using SQL_Connection;
 using Library_football;
+using Communicate;
+using Newtonsoft.Json;
 
 namespace Forms
 {
@@ -19,17 +21,34 @@ namespace Forms
         {
             InitializeComponent();
         }
-
-        private void find_leagues_button_Click(object sender, EventArgs e)
+        public League_form(List<League> _league, Request requestUser)
         {
-            SQL_user sqlUser = new SQL_user();
-            List<League> _league;
-           _league = sqlUser.Get_Name_leagues(name_find_textbox.Text);
-            list_name_leagues.Items.Clear();
-            foreach( League league in _league)
-            {
-                list_name_leagues.Items.Add(league.name);
-            }
+            InitializeComponent();
+            this._league = _league;
+            this.requestUser = requestUser;
+        }
+        List<League> _league = new List<League>();
+        Request requestUser;
+
+        private void League_form_Load(object sender, EventArgs e)
+        {
+            foreach (var league in _league)
+                selecte_leagues_combobox.Items.Add(league.name);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string name = selecte_leagues_combobox.SelectedItem as string;
+            MessageBox.Show(name);
+            foreach (var league in _league)
+                if (name == league.name)
+                {
+                    League leagueId = new League();
+                    leagueId.id = league.id;
+                    string jsonData = JsonConvert.SerializeObject(league);
+                    requestUser.Send("00100" + jsonData);
+                }
+
         }
     }
 }

@@ -17,7 +17,7 @@ using System.Windows.Forms;
 using Forms;
 using Get_response_using_API;
 using System.ComponentModel.Design.Serialization;
-using Response;
+using ReponseJsonDataStructure;
 using Library_football;
 
 namespace Communicate
@@ -34,8 +34,6 @@ namespace Communicate
             Thread thread1 = new Thread(Server_Listener);
             thread1.IsBackground = true;
             thread1.Start();
-           // API api  = new API();
-          //  api.Get_all_players_from_league("61");
         }
         TcpListener server;
         public void Server_Listener()
@@ -65,7 +63,7 @@ namespace Communicate
         {
             NetworkStream stream = client.GetStream();
             Reponse reponse = new Reponse(stream);
-                
+
             while (client.Connected)
             {
                 int bytes_read = 0;
@@ -79,18 +77,24 @@ namespace Communicate
                 string data = Encoding.UTF8.GetString(buffer, 0, length);
                 string jsonData = data.Substring(5);
                 string code = data.Substring(0, 5);
-                    switch (code)
-                    {
-                        case "00000":
-                            reponse.Check_Credential(jsonData);
+                League league = JsonConvert.DeserializeObject<League>(jsonData);
+                switch (code)
+                {
+                    case "00000":
+                        reponse.Check_Credential(jsonData);
                         break;
-                        case "00001":
-                            reponse.Get_All_Players();
+                    case "00001":
+
+                        reponse.Get_All_Players(league.name);
                         break;
-                        case "00011":
-                            reponse.Get_All_Teams_And_venue();
+                    case "00011":
+                        reponse.Get_All_Teams_And_venue();
                         break;
-                    }
+                    case "00100":
+                        reponse.Get_Team_Standing(league);
+                        break;
+
+                }
             }
         }
     }
