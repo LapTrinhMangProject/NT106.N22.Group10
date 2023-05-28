@@ -19,6 +19,7 @@ using Get_response_using_API;
 using System.ComponentModel.Design.Serialization;
 using ReponseJsonDataStructure;
 using Library_football;
+using System.Net.Http;
 
 namespace Communicate
 {
@@ -63,7 +64,13 @@ namespace Communicate
         {
             NetworkStream stream = client.GetStream();
             Reponse reponse = new Reponse(stream);
+            IPEndPoint remoteEndPoint = (IPEndPoint)client.Client.RemoteEndPoint;
+            string ipRemote = remoteEndPoint.Address.ToString();
+            this.Invoke(new Action(() =>
+            {
+                status_listbox.Items.Add($"Có kết nối từ {ipRemote} ");
 
+            }));
             while (client.Connected)
             {
                 int bytes_read = 0;
@@ -81,7 +88,12 @@ namespace Communicate
                 switch (code)
                 {
                     case "00000":
-                        reponse.Check_Credential(jsonData);
+                        string result = null;
+                        reponse.Check_Credential(jsonData, ref result, ipRemote);
+                        this.Invoke(new Action(() =>
+                        {
+                            status_listbox.Items.Add(result);
+                        }));
                         break;
                     case "00001":
 

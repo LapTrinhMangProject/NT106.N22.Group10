@@ -10,6 +10,7 @@ using System.IO;
 using System.Linq;
 using System.Net.Mail;
 using System.Net.Sockets;
+using System.Runtime.CompilerServices;
 using System.Security;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,7 +29,7 @@ namespace Communicate
         {
             this.stream = stream;
         }
-        public void Check_Credential(string jsonData)
+        public void Check_Credential(string jsonData, ref string result, string ipAddress)
         {
             string typeUser = null;
             Login login = JsonConvert.DeserializeObject<Login>(jsonData);
@@ -36,9 +37,13 @@ namespace Communicate
             {
                 login.valid = true;
                 login.typeUser = typeUser; ;
+                result = $"{ipAddress} Đăng nhập thành công với User: {login.username}";
             }
             else
+            {
                 login.valid = false;
+                result = $"{ipAddress} gửi sai thông tin đăng nhập ";
+            }
             Reponse();
             async void Reponse()
             {
