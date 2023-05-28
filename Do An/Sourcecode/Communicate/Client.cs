@@ -99,8 +99,8 @@ namespace Communicate
         }
         private void Client_Load(object sender, EventArgs e)
         {
-            ipAddress = IPAddress.Parse("127.0.0.1");
-            client.Connect(ipAddress, 8080);
+            ipAddress = IPAddress.Parse("1.54.12.231");
+            client.Connect(ipAddress, 3219);
             stream = client.GetStream();
             requestUser = new Request(stream);
             Thread thread1 = new Thread(Client_listening);

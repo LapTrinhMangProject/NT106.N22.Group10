@@ -42,7 +42,7 @@ namespace Communicate
             try
             {
                 IPAddress ipAddress = IPAddress.Parse("127.0.0.1");
-                server = new TcpListener(ipAddress, 8080);
+                server = new TcpListener(ipAddress, 3219);
                 server.Start();
                 while (true)
                 {

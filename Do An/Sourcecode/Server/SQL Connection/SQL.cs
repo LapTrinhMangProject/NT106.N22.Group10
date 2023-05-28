@@ -11,7 +11,7 @@ namespace SQL_Connection
 {
     public class SQL_user
     {
-        string connectionString = "Data Source=15ACH6H\\SQLEXPRESS02;Initial Catalog = API_football; Integrated Security = True";
+        string connectionString = "Data Source=1.54.12.231,1433;Network Library=DBMSSOCN; Initial Catalog=API_football;User ID=laptrinhmang;Password=h?T<e)>5ePtf{P8L;";
         SqlConnection sqlConnection = null;
         SqlCommand command = null;
         SqlDataReader reader;
