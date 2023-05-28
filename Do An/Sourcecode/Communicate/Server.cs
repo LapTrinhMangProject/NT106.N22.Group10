@@ -96,14 +96,25 @@ namespace Communicate
                         }));
                         break;
                     case "00001":
+                        reponse.Get_All_Players(league);
+                        this.Invoke(new Action(() =>
+                        {
+                            status_listbox.Items.Add($"{ipRemote} Yêu cầu lấy thông tin danh sách cầu thủ");
+                            status_listbox.Items.Add($"Trả về danh sách cầu thủ giải đấu {league.name}");
 
-                        reponse.Get_All_Players(league.name);
+                        }));
                         break;
                     case "00011":
                         reponse.Get_All_Teams_And_venue();
                         break;
                     case "00100":
                         reponse.Get_Team_Standing(league);
+                        this.Invoke(new Action(() =>
+                        {
+                            status_listbox.Items.Add($"{ipRemote} Yêu cầu lấy thông tin bảng xếp hạng cho giải đấu");
+                            status_listbox.Items.Add($"Trả về bảng xếp hạng giải đấu {league.name}");
+
+                        }));
                         break;
 
                 }

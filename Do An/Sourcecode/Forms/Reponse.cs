@@ -72,13 +72,15 @@ namespace Communicate
         {
             Root_Reponse_standing responseTeamStanding = await api.Get_Standing(league.id.ToString());
             responseTeamStanding.League = league;
+            string urlLogo;
             string jsonData = JsonConvert.SerializeObject(responseTeamStanding);
             payload = "00100" + jsonData;
             Send(payload);
         }
-        public void Get_All_Players(string leagueName)
+        public void Get_All_Players(League league)
         {
-            List<Player> _player = sqlUser.Get_Players(leagueName);
+            List<Player> _player = sqlUser.Get_Players(league.name);
+            _player[0].League = league;
             string jsonData = JsonConvert.SerializeObject(_player);
             string payload = "00001" + jsonData;
             Send(payload);

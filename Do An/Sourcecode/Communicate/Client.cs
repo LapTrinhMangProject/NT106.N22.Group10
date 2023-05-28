@@ -79,7 +79,6 @@ namespace Communicate
                         case "00001":
                             List<Player> _player = JsonConvert.DeserializeObject<List<Player>>(jsonData);
                             Player_form playerForm = new Player_form(_player);
-                            this.Hide();
                             playerForm.ShowDialog();
                             break;
                         case "00011":

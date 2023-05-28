@@ -40,6 +40,8 @@ namespace Forms
             {
                 standing_listbox.Items.Add(index.Rank + " " + index.Team.Name + "Point: " + index.Points);
             }
+            string urlLogo = responseStanding.League.logo;
+            Display_Photo(urlLogo);
             void Display_Photo(string url)
             {
                 WebClient client = new WebClient();

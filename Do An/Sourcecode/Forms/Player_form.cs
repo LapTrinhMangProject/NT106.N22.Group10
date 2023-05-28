@@ -31,9 +31,11 @@ namespace Forms
         {
             InitializeComponent();
             this._player = _player;
+            this.leagueId = _player[0].League.id.ToString();
         }
         List<Player> _player;
         Dictionary<string, string> playerDic = new Dictionary<string, string>();
+        string leagueId = null;
         string idPlayer = null;
         private void Player_form_Load(object sender, EventArgs e)
         {
@@ -74,7 +76,7 @@ namespace Forms
                 }
                 else
                     id = playerDic[list_player_listbox.SelectedItems[0].ToString()];
-                reponsePlayer = await aPI.Get_Specific_player(id, "39");
+                reponsePlayer = await aPI.Get_Specific_player(id, leagueId);
                 infor_player_listbox.Items.Clear();
                 statistic_1_listbox.Items.Clear();
                 Display_basic_infor();

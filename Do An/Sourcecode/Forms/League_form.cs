@@ -39,12 +39,9 @@ namespace Forms
         private void button1_Click(object sender, EventArgs e)
         {
             string name = selecte_leagues_combobox.SelectedItem as string;
-            MessageBox.Show(name);
             foreach (var league in _league)
                 if (name == league.name)
                 {
-                    League leagueId = new League();
-                    leagueId.id = league.id;
                     string jsonData = JsonConvert.SerializeObject(league);
                     requestUser.Send("00100" + jsonData);
                 }
