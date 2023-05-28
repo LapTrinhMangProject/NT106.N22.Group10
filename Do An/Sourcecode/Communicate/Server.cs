@@ -30,7 +30,7 @@ namespace Communicate
             InitializeComponent();
         }
         SQL_user sqlUser = new SQL_user();
-        private async void Server_Load(object sender, EventArgs e)
+        private void Server_Load(object sender, EventArgs e)
         {
             Thread thread1 = new Thread(Server_Listener);
             thread1.IsBackground = true;
@@ -63,13 +63,12 @@ namespace Communicate
         void Establish(TcpClient client)
         {
             NetworkStream stream = client.GetStream();
-            Reponse reponse = new Reponse(stream);
+            Response reponse = new Response(stream);
             IPEndPoint remoteEndPoint = (IPEndPoint)client.Client.RemoteEndPoint;
             string ipRemote = remoteEndPoint.Address.ToString();
             this.Invoke(new Action(() =>
             {
-                status_listbox.Items.Add($"Có kết nối từ {ipRemote} ");
-
+                status_listbox.Items.Add($"Nhận kết nối từ {ipRemote}");
             }));
             while (client.Connected)
             {
@@ -85,40 +84,38 @@ namespace Communicate
                 string jsonData = data.Substring(5);
                 string code = data.Substring(0, 5);
                 League league = JsonConvert.DeserializeObject<League>(jsonData);
-                switch (code)
+                this.Invoke(new Action(() =>
                 {
-                    case "00000":
-                        string result = null;
-                        reponse.Check_Credential(jsonData, ref result, ipRemote);
-                        this.Invoke(new Action(() =>
-                        {
+                    switch (code)
+                    {
+                        case "00000":
+                            string result = null;
+                            reponse.Check_Credential(jsonData, ref result, ipRemote);
                             status_listbox.Items.Add(result);
-                        }));
-                        break;
-                    case "00001":
-                        reponse.Get_All_Players(league);
-                        this.Invoke(new Action(() =>
-                        {
+                            break;
+                        case "00001":
+                            reponse.Get_All_Players(league);
                             status_listbox.Items.Add($"{ipRemote} Yêu cầu lấy thông tin danh sách cầu thủ");
                             status_listbox.Items.Add($"Trả về danh sách cầu thủ giải đấu {league.name}");
-
-                        }));
-                        break;
-                    case "00011":
-                        reponse.Get_All_Teams_And_venue(league);
-                        break;
-                    case "00100":
-                        reponse.Get_Team_Standing(league);
-                        this.Invoke(new Action(() =>
-                        {
+                            break;
+                        case "00011":
+                            reponse.Get_All_Teams_And_venue(league);
+                            status_listbox.Items.Add($"{ipRemote} Yêu cầu lấy thông tin danh sách đội");
+                            status_listbox.Items.Add($"Trả về danh sách danh sách đội cho giải đấu {league.name}");
+                            break;
+                        case "00100":
+                            reponse.Get_Team_Standing(league);
                             status_listbox.Items.Add($"{ipRemote} Yêu cầu lấy thông tin bảng xếp hạng cho giải đấu");
                             status_listbox.Items.Add($"Trả về bảng xếp hạng giải đấu {league.name}");
-
-                        }));
-                        break;
-
-                }
+                            break;
+                    }
+                    status_listbox.TopIndex = status_listbox.Items.Count - 1;
+                    status_listbox.Refresh();
+                }));
             }
+
+
+
         }
     }
 }

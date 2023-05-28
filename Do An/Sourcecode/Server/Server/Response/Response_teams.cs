@@ -15,5 +15,6 @@ namespace ReponseJsonDataStructure
     public class Root_teams_and_venue
     {
         public Response_teams_and_venue[] response { get; set; }
+        public League league { get; set; }
     }
 }

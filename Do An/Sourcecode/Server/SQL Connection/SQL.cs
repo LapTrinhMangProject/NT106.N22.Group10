@@ -91,6 +91,13 @@ namespace SQL_Connection
 
 
         }
+        public void AddTeam(Team team, string leagueName)
+        {
+            string query = $"insert into teams values({team.id},'{team.name}','{team.code}','{team.country}','{team.founded}','{team.national}','{team.logo}','{leagueName}')";
+            command = new SqlCommand(query, sqlConnection);
+            command.ExecuteNonQuery();
+            MessageBox.Show("completed");
+        }
     }
 }
 

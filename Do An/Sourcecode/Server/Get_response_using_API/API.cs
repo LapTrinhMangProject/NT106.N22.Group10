@@ -12,22 +12,22 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Get_response_using_API
-       
+
 {
-    
+
     public class API
     {
-       public Root_Response_Player_and_Statistic playerAndstatistic = new Root_Response_Player_and_Statistic();
+        public Root_Response_Player_and_Statistic playerAndstatistic = new Root_Response_Player_and_Statistic();
         public Root_Reponse_standing responseStanding = new Root_Reponse_standing();
 
-        public async void Get_all_players_from_league(string leagueId,string seasonId=null)
+        public async void Get_all_players_from_league(string leagueId, string seasonId = null)
         {
             var client = new HttpClient();
 
             Root_page page_from_API;
             FileStream file = new FileStream("player.txt", FileMode.Append, FileAccess.Write);
             StreamWriter writer = new StreamWriter(file);
-            int page_current = 1; 
+            int page_current = 1;
             do
             {
                 {
@@ -64,13 +64,13 @@ namespace Get_response_using_API
                     await Task.Delay(2000);
                 }
                 page_current++;
-            } while (page_current!=page_from_API.paging.total);
-           writer.Flush();
+            } while (page_current != page_from_API.paging.total);
+            writer.Flush();
             writer.Close();
             file.Close();
             MessageBox.Show("Done");
         }
-        public async Task<Root_Response_Player_and_Statistic> Get_Specific_player(string playerId,string leagueId=null,string seasonId = null)
+        public async Task<Root_Response_Player_and_Statistic> Get_Specific_player(string playerId, string leagueId = null, string seasonId = null)
         {
             if (seasonId == null)
             {
@@ -96,7 +96,7 @@ namespace Get_response_using_API
                 return playerAndstatistic;
             }
         }
-      public async Task<Root_Reponse_standing> Get_Standing(string leagueId)
+        public async Task<Root_Reponse_standing> Get_Standing(string leagueId)
         {
 
             var client = new HttpClient();
@@ -116,10 +116,10 @@ namespace Get_response_using_API
                 response.EnsureSuccessStatusCode();
                 var body = await response.Content.ReadAsStringAsync();
                 responseStanding = JsonConvert.DeserializeObject<Root_Reponse_standing>(body);
-                 return responseStanding;
+                return responseStanding;
             }
         }
-    public async Task<Root_Response_Player_and_Statistic> Get_Top_Score(string leagueId)
+        public async Task<Root_Response_Player_and_Statistic> Get_Top_Score(string leagueId)
         {
             Root_Response_Player_and_Statistic responsePlayerAndstatistic = new Root_Response_Player_and_Statistic();
             var client = new HttpClient();
@@ -207,14 +207,14 @@ namespace Get_response_using_API
             }
             return responsePlayerAndStatistic;
         }
-        public async Task<Root_teams_and_venue> Get_Teams_from_Leagues(string leagueId)
+        public async Task<Root_teams_and_venue> Get_Teams_from_Leagues(League league)
         {
             Root_teams_and_venue teamAndVenue = new Root_teams_and_venue();
             var client = new HttpClient();
             var request = new HttpRequestMessage
             {
                 Method = HttpMethod.Get,
-                RequestUri = new Uri($"https://api-football-v1.p.rapidapi.com/v3/teams?league={leagueId}&season=2022"),
+                RequestUri = new Uri($"https://api-football-v1.p.rapidapi.com/v3/teams?league={league.id}&season=2022"),
                 Headers =
     {
         { "X-RapidAPI-Key", "759c532019msh63e52ce5ea468afp113769jsnc64419692369" },
@@ -227,6 +227,7 @@ namespace Get_response_using_API
                 var body = await response.Content.ReadAsStringAsync();
                 teamAndVenue = JsonConvert.DeserializeObject<Root_teams_and_venue>(body);
             }
+            teamAndVenue.league = league;
             return teamAndVenue;
         }
 

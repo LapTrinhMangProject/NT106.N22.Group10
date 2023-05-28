@@ -18,14 +18,14 @@ using System.Windows.Forms;
 
 namespace Communicate
 {
-    public class Reponse
+    public class Response
     {
         NetworkStream stream;
         API api = new API();
         SQL_user sqlUser = new SQL_user();
         string payload = null;
         string jsonData = null;
-        public Reponse(NetworkStream stream)
+        public Response(NetworkStream stream)
         {
             this.stream = stream;
         }
@@ -44,8 +44,8 @@ namespace Communicate
                 login.valid = false;
                 result = $"{ipAddress} gửi sai thông tin đăng nhập ";
             }
-            Reponse();
-            async void Reponse()
+            Response();
+            void Response()
             {
                 payload = null;
                 jsonData = null;
@@ -53,7 +53,6 @@ namespace Communicate
                     switch (login.typeUser)
                     {
                         case "normal":
-                            //login.reponseStanding = await api.Get_Standing("39");
                             login._league = sqlUser.Get_Name_leagues();
                             login.valid = true;
                             break;
@@ -72,7 +71,6 @@ namespace Communicate
         {
             Root_Reponse_standing responseTeamStanding = await api.Get_Standing(league.id.ToString());
             responseTeamStanding.League = league;
-            string urlLogo;
             string jsonData = JsonConvert.SerializeObject(responseTeamStanding);
             payload = "00100" + jsonData;
             Send(payload);
@@ -88,7 +86,7 @@ namespace Communicate
         public async void Get_All_Teams_And_venue(League league)
         {
             List<Team> _teams = sqlUser.Get_Teams(league.name);
-            Root_teams_and_venue teamAndVenue = await api.Get_Teams_from_Leagues(league.id.ToString());
+            Root_teams_and_venue teamAndVenue = await api.Get_Teams_from_Leagues(league);
             SQL_BothTeamAndVenue data = new SQL_BothTeamAndVenue(_teams, teamAndVenue);
             payload = "00011" + JsonConvert.SerializeObject(data);
             Send(payload);

@@ -53,10 +53,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(396, 182);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.status_listbox);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Server_form";
             this.Text = "Server";
             this.Load += new System.EventHandler(this.Server_Load);
