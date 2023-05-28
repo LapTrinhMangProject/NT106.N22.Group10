@@ -27,7 +27,7 @@ namespace Forms
             InitializeComponent();
             this.leagueId = leagueId;
         }
-        public Team_form(List<Team> _teams,Root_teams_and_venue teamAndVenue) 
+        public Team_form(List<Team> _teams, Root_teams_and_venue teamAndVenue)
         {
             InitializeComponent();
             this._teams = _teams;
@@ -38,14 +38,14 @@ namespace Forms
             InitializeComponent();
             this._teams = _team;
         }
-        string leagueId; 
+        string leagueId;
         Root_teams_and_venue teamsAndVenue = new Root_teams_and_venue();
         List<Team> _teams = new List<Team>();
         private async void Team_form_Load(object sender, EventArgs e)
         {
-            foreach(var index in _teams)
+            foreach (var index in _teams)
             {
-                teams_listsbox.Items.Add(index.name);   
+                teams_listsbox.Items.Add(index.name);
             }
             Display_All(0);
             textBox1.Focus();
@@ -88,7 +88,7 @@ namespace Forms
             infor_statistic_listbox.Items.Clear();
             infor_statistic_listbox.Items.Add(teamsAndVenue.response[index]);
         }
-      
+
         private void label5_Click(object sender, EventArgs e)
         {
 
@@ -99,20 +99,17 @@ namespace Forms
             for (int index = 0; index < teamsAndVenue.response.Length; index++)
                 if (teamsAndVenue.response[index].team.name == teams_listsbox.SelectedItems[0].ToString())
                     Display_All(index);
-                    
-
-
-  
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             teams_listsbox.Items.Clear();
-            SQL_user userSql = new SQL_user();
-            foreach (var index in userSql.Get_Teams(textBox1.Text.ToString()))
+            foreach (var team in _teams)
             {
-                teams_listsbox.Items.Add(index.name);
+                if (team.name.Contains(textBox1.Text))
+                    teams_listsbox.Items.Add(team.name);
             }
+
         }
     }
 }

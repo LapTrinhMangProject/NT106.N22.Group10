@@ -40,20 +40,20 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(103, 382);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(77, 310);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(56, 19);
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // find_player_button
             // 
-            this.find_player_button.Location = new System.Drawing.Point(233, 374);
-            this.find_player_button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.find_player_button.Location = new System.Drawing.Point(175, 304);
+            this.find_player_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.find_player_button.Name = "find_player_button";
-            this.find_player_button.Size = new System.Drawing.Size(157, 38);
+            this.find_player_button.Size = new System.Drawing.Size(118, 31);
             this.find_player_button.TabIndex = 1;
             this.find_player_button.Text = "Danh sách cầu thủ";
             this.find_player_button.UseVisualStyleBackColor = true;
@@ -61,10 +61,10 @@
             // 
             // find_teams_button
             // 
-            this.find_teams_button.Location = new System.Drawing.Point(427, 374);
-            this.find_teams_button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.find_teams_button.Location = new System.Drawing.Point(320, 304);
+            this.find_teams_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.find_teams_button.Name = "find_teams_button";
-            this.find_teams_button.Size = new System.Drawing.Size(132, 43);
+            this.find_teams_button.Size = new System.Drawing.Size(99, 35);
             this.find_teams_button.TabIndex = 2;
             this.find_teams_button.Text = "Danh sách đội";
             this.find_teams_button.UseVisualStyleBackColor = true;
@@ -72,10 +72,10 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(611, 373);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Location = new System.Drawing.Point(458, 303);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(56, 19);
             this.button4.TabIndex = 3;
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
@@ -83,19 +83,18 @@
             // standing_listbox
             // 
             this.standing_listbox.FormattingEnabled = true;
-            this.standing_listbox.ItemHeight = 16;
-            this.standing_listbox.Location = new System.Drawing.Point(15, 1);
-            this.standing_listbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.standing_listbox.Location = new System.Drawing.Point(11, 1);
+            this.standing_listbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.standing_listbox.Name = "standing_listbox";
-            this.standing_listbox.Size = new System.Drawing.Size(363, 340);
+            this.standing_listbox.Size = new System.Drawing.Size(273, 277);
             this.standing_listbox.TabIndex = 4;
             // 
             // topscore_button
             // 
-            this.topscore_button.Location = new System.Drawing.Point(664, 297);
-            this.topscore_button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.topscore_button.Location = new System.Drawing.Point(498, 241);
+            this.topscore_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.topscore_button.Name = "topscore_button";
-            this.topscore_button.Size = new System.Drawing.Size(133, 44);
+            this.topscore_button.Size = new System.Drawing.Size(100, 36);
             this.topscore_button.TabIndex = 5;
             this.topscore_button.Text = "TOP";
             this.topscore_button.UseVisualStyleBackColor = true;
@@ -103,17 +102,18 @@
             // 
             // logo_picturebox
             // 
-            this.logo_picturebox.Location = new System.Drawing.Point(412, 12);
+            this.logo_picturebox.Location = new System.Drawing.Point(309, 10);
+            this.logo_picturebox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.logo_picturebox.Name = "logo_picturebox";
-            this.logo_picturebox.Size = new System.Drawing.Size(224, 177);
+            this.logo_picturebox.Size = new System.Drawing.Size(263, 206);
             this.logo_picturebox.TabIndex = 6;
             this.logo_picturebox.TabStop = false;
             // 
             // Dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 454);
+            this.ClientSize = new System.Drawing.Size(600, 369);
             this.Controls.Add(this.logo_picturebox);
             this.Controls.Add(this.topscore_button);
             this.Controls.Add(this.standing_listbox);
@@ -121,7 +121,7 @@
             this.Controls.Add(this.find_teams_button);
             this.Controls.Add(this.find_player_button);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Dashboard";
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Dashboard_Load);

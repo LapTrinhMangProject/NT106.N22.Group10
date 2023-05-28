@@ -68,7 +68,10 @@ namespace Forms
 
         private void find_teams_button_Click(object sender, EventArgs e)
         {
-            request.Send("00011");
+            League league = responseStanding.League;
+            string jsonData = JsonConvert.SerializeObject(league);
+            string payload = "00011" + jsonData;
+            request.Send(payload);
         }
     }
 }

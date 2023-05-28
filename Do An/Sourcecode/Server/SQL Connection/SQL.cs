@@ -53,10 +53,10 @@ namespace SQL_Connection
             reader.Close();
             return _players;
         }
-        public List<Team> Get_Teams(string name = null)
+        public List<Team> Get_Teams(string leagueName, string name = null)
         {
             List<Team> _teams = new List<Team>();
-            string query = $"select * from Teams where name like '%{name}%'";
+            string query = $"select * from Teams where name like '%{name}%'and league = '{leagueName}'";
             command = new SqlCommand(query, sqlConnection);
             reader = command.ExecuteReader();
             while (reader.Read())

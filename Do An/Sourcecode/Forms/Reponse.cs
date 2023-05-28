@@ -85,10 +85,10 @@ namespace Communicate
             string payload = "00001" + jsonData;
             Send(payload);
         }
-        public async void Get_All_Teams_And_venue()
+        public async void Get_All_Teams_And_venue(League league)
         {
-            List<Team> _teams = sqlUser.Get_Teams();
-            Root_teams_and_venue teamAndVenue = await api.Get_Teams_from_Leagues("39");
+            List<Team> _teams = sqlUser.Get_Teams(league.name);
+            Root_teams_and_venue teamAndVenue = await api.Get_Teams_from_Leagues(league.id.ToString());
             SQL_BothTeamAndVenue data = new SQL_BothTeamAndVenue(_teams, teamAndVenue);
             payload = "00011" + JsonConvert.SerializeObject(data);
             Send(payload);

@@ -105,7 +105,7 @@ namespace Communicate
                         }));
                         break;
                     case "00011":
-                        reponse.Get_All_Teams_And_venue();
+                        reponse.Get_All_Teams_And_venue(league);
                         break;
                     case "00100":
                         reponse.Get_Team_Standing(league);
