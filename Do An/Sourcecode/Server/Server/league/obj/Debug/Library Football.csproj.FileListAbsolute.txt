@@ -7,3 +7,12 @@ C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Server\leag
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Server\league\bin\Debug\Response.dll
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Server\league\bin\Debug\Response.pdb
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Server\league\obj\Debug\Library Football.csproj.CopyComplete
+D:\Code\Do An\Sourcecode\Server\Server\league\bin\Debug\Library_football.dll
+D:\Code\Do An\Sourcecode\Server\Server\league\bin\Debug\Library_football.pdb
+D:\Code\Do An\Sourcecode\Server\Server\league\bin\Debug\Response.dll
+D:\Code\Do An\Sourcecode\Server\Server\league\bin\Debug\Response.pdb
+D:\Code\Do An\Sourcecode\Server\Server\league\obj\Debug\Library Football.csproj.AssemblyReference.cache
+D:\Code\Do An\Sourcecode\Server\Server\league\obj\Debug\Library Football.csproj.CoreCompileInputs.cache
+D:\Code\Do An\Sourcecode\Server\Server\league\obj\Debug\Library Football.csproj.CopyComplete
+D:\Code\Do An\Sourcecode\Server\Server\league\obj\Debug\Library_football.dll
+D:\Code\Do An\Sourcecode\Server\Server\league\obj\Debug\Library_football.pdb
