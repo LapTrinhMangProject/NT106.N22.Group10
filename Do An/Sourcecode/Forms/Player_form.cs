@@ -13,6 +13,7 @@ using Get_response_using_API;
 using Response;
 using System.Net;
 using System.IO;
+using System.Net.Http;
 
 namespace Forms
 {
@@ -90,10 +91,12 @@ namespace Forms
                     infor_player_listbox.Items.Add($"Cân nặng: {reponsePlayer.response[0].Player.weight}");
                     infor_player_listbox.Items.Add("Bị thương: " + (reponsePlayer.response[0].Player.injured ? "Có" : "Không"));
                     Display_photo(reponsePlayer.response[0].Player.photo);
-                    void Display_photo(string url)
+                    async void Display_photo(string url)
                     {
-                        WebClient client = new WebClient();
-                        byte[] imageData = client.DownloadData(url);
+                     //   WebClient client = new WebClient();
+                       // byte[] imageData = client.DownloadData(url);
+                       HttpClient client = new HttpClient();
+                        byte[] imageData = await client.GetByteArrayAsync(url);
                         MemoryStream ms = new MemoryStream(imageData);
                         Bitmap image = new Bitmap(ms);
                         pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
