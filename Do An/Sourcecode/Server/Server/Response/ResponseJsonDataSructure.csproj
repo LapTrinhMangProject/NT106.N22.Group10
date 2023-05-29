@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LeagueWhoSessionIsRunning.cs" />
     <Compile Include="Page.cs" />
     <Compile Include="Reponse_league.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

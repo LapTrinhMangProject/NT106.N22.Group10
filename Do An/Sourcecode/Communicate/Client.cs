@@ -18,7 +18,7 @@ using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Forms;
 using Forms;
-using ReponseJsonDataStructure;
+using ResponseDataStructure;
 
 namespace Communicate
 {
@@ -69,9 +69,10 @@ namespace Communicate
                             }
                             else if (login.valid && login.typeUser == "administrator")
                             {
-                                Administrator_form administrator = new Administrator_form(login._league);
+                                Administrator_form administrator = new Administrator_form(login, requestUser);
                                 this.Hide();
                                 administrator.Show();
+
                             }
                             else
                                 MessageBox.Show("Tài khoản hoặc mật khẩu không đúng", "Lỗi đăng nhập", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -99,7 +100,7 @@ namespace Communicate
         }
         private void Client_Load(object sender, EventArgs e)
         {
-            ipAddress = IPAddress.Parse("1.54.12.231");
+            ipAddress = IPAddress.Parse("127.0.0.1");
             client.Connect(ipAddress, 3219);
             stream = client.GetStream();
             requestUser = new Request(stream);

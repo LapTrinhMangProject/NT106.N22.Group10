@@ -1,4 +1,4 @@
-﻿using ReponseJsonDataStructure;
+﻿using ResponseDataStructure;
 using System;
 using System.Collections.Generic;
 using System.Linq;

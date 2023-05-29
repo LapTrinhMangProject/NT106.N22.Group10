@@ -51,6 +51,10 @@
       <Project>{ac82b139-d9fd-4ee0-a17d-0af422372cc3}</Project>
       <Name>Library Football</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Server\Response\ResponseJsonDataSructure.csproj">
+      <Project>{33e0f8b3-61db-4d33-8195-625549c18f94}</Project>
+      <Name>ResponseJsonDataSructure</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

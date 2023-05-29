@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Get_response_using_API;
-using ReponseJsonDataStructure;
+using ResponseDataStructure;
 using System.Net;
 using System.IO;
 

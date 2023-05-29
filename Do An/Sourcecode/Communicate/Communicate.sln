@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Get_response_using_API", ".
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library Football", "..\Server\Server\league\Library Football.csproj", "{AC82B139-D9FD-4EE0-A17D-0AF422372CC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReponseJsonDataSructure", "..\Server\Server\Response\ReponseJsonDataSructure.csproj", "{33E0F8B3-61DB-4D33-8195-625549C18F94}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResponseJsonDataSructure", "..\Server\Server\Response\ResponseJsonDataSructure.csproj", "{33E0F8B3-61DB-4D33-8195-625549C18F94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

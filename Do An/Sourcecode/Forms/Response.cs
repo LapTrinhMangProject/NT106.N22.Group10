@@ -2,7 +2,7 @@
 using Get_response_using_API;
 using Library_football;
 using Newtonsoft.Json;
-using ReponseJsonDataStructure;
+using ResponseDataStructure;
 using SQL_Connection;
 using System;
 using System.Collections.Generic;
@@ -57,8 +57,8 @@ namespace Communicate
                             login.valid = true;
                             break;
                         case "administrator":
-                            login.reponseStanding = null;
                             login._league = sqlUser.Get_Name_leagues();
+                            login._leagueWhoSessionIsRunning = sqlUser.GetLeagueWhoSessionIsRunning();
                             break;
                     }
                 jsonData = JsonConvert.SerializeObject(login);

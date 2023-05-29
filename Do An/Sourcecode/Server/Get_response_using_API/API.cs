@@ -1,6 +1,6 @@
 ﻿using Library_football;
 using Newtonsoft.Json;
-using ReponseJsonDataStructure;
+using ResponseDataStructure;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -10,6 +10,8 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SQL_Connection;
+using System.ComponentModel;
 
 namespace Get_response_using_API
 
@@ -19,14 +21,11 @@ namespace Get_response_using_API
     {
         public Root_Response_Player_and_Statistic playerAndstatistic = new Root_Response_Player_and_Statistic();
         public Root_Reponse_standing responseStanding = new Root_Reponse_standing();
-
-        public async void Get_all_players_from_league(string leagueId, string seasonId = null)
+        public async Task<List<Root_Response_Player_and_Statistic>> Get_all_players_from_league(string leagueId, string seasonId = null)
         {
+            List<Root_Response_Player_and_Statistic> _responsePlayerAndStatistic = new List<Root_Response_Player_and_Statistic>();
             var client = new HttpClient();
-
             Root_page page_from_API;
-            FileStream file = new FileStream("player.txt", FileMode.Append, FileAccess.Write);
-            StreamWriter writer = new StreamWriter(file);
             int page_current = 1;
             do
             {
@@ -51,24 +50,15 @@ namespace Get_response_using_API
                         response.EnsureSuccessStatusCode();
                         var body = await response.Content.ReadAsStringAsync();
                         player_and_statistics = JsonConvert.DeserializeObject<Root_Response_Player_and_Statistic>(body);
+                        _responsePlayerAndStatistic.Add(player_and_statistics);
                         page_from_API = JsonConvert.DeserializeObject<Root_page>(body);
                     }
-                    for (int i = 0; i < player_and_statistics.response.Length; i++)
-                    {
-                        int id = player_and_statistics.response[i].Player.id;
-                        string namePlayer = player_and_statistics.response[i].Player.name;
-                        string nameTeam = player_and_statistics.response[i].Statistics[0].Team.name;
-                        string leagueName = player_and_statistics.response[i].Statistics[0].League.name;
-                        writer.WriteLine($"insert into player values({id},'{namePlayer}','{nameTeam}','{leagueName}')");
-                    }
+
                     await Task.Delay(2000);
                 }
                 page_current++;
             } while (page_current != page_from_API.paging.total);
-            writer.Flush();
-            writer.Close();
-            file.Close();
-            MessageBox.Show("Done");
+            return _responsePlayerAndStatistic;
         }
         public async Task<Root_Response_Player_and_Statistic> Get_Specific_player(string playerId, string leagueId = null, string seasonId = null)
         {
@@ -229,6 +219,64 @@ namespace Get_response_using_API
             }
             teamAndVenue.league = league;
             return teamAndVenue;
+        }
+        public async Task<List<Team>> Get_Teams_from_Leagues(League league, bool onlyteam = true)
+        {
+            List<Team> _teams = new List<Team>();
+            Root_teams_and_venue teamAndVenue = new Root_teams_and_venue();
+            var client = new HttpClient();
+            var request = new HttpRequestMessage
+            {
+                Method = HttpMethod.Get,
+                RequestUri = new Uri($"https://api-football-v1.p.rapidapi.com/v3/teams?league={league.id}&season=2022"),
+                Headers =
+    {
+        { "X-RapidAPI-Key", "759c532019msh63e52ce5ea468afp113769jsnc64419692369" },
+        { "X-RapidAPI-Host", "api-football-v1.p.rapidapi.com" },
+    },
+            };
+            using (var response = await client.SendAsync(request))
+            {
+                response.EnsureSuccessStatusCode();
+                var body = await response.Content.ReadAsStringAsync();
+                teamAndVenue = JsonConvert.DeserializeObject<Root_teams_and_venue>(body);
+            }
+            foreach (var index in teamAndVenue.response)
+                _teams.Add(index.team);
+            return _teams;
+        }
+        public async Task<RootLeagueWhoSessionIsRunning> GetLeagueWhoSessionIsRunning(string countryCode)
+        {
+            RootLeagueWhoSessionIsRunning rootLeagueWhoSessionIsRunning = new RootLeagueWhoSessionIsRunning();
+            var client = new HttpClient();
+            var request = new HttpRequestMessage
+            {
+                Method = HttpMethod.Get,
+                RequestUri = new Uri($"https://api-football-v1.p.rapidapi.com/v3/leagues?code={countryCode}&season=2022&type=league&current=true"),
+                Headers =
+    {
+        { "X-RapidAPI-Key", "759c532019msh63e52ce5ea468afp113769jsnc64419692369" },
+        { "X-RapidAPI-Host", "api-football-v1.p.rapidapi.com" },
+    },
+            };
+            using (var response = await client.SendAsync(request))
+            {
+                response.EnsureSuccessStatusCode();
+                var body = await response.Content.ReadAsStringAsync();
+                rootLeagueWhoSessionIsRunning = JsonConvert.DeserializeObject<RootLeagueWhoSessionIsRunning>(body);
+                FileStream file = new FileStream("LeagueActive.txt", FileMode.Create, FileAccess.Write);
+                StreamWriter writer = new StreamWriter(file);
+                foreach (var index in rootLeagueWhoSessionIsRunning.response)
+                {
+                    string nameLeague = index.league.name;
+                    string countryName = index.country.name;
+                    string query = $"insert into active_list values('{nameLeague}','{countryName}')";
+                    SQL_user sqlUser = new SQL_user();
+                    sqlUser.CustomAddRecord(query);
+                }
+            }
+            MessageBox.Show("done");
+            return rootLeagueWhoSessionIsRunning;
         }
 
     }

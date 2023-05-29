@@ -1,5 +1,5 @@
 ﻿using Library_football;
-using ReponseJsonDataStructure;
+using ResponseDataStructure;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design.Serialization;
@@ -16,6 +16,7 @@ namespace communicate_client_server
         public bool valid = false;
         public Root_Reponse_standing reponseStanding = new Root_Reponse_standing();
         public List<League> _league = new List<League>();
+        public List<LeagueWhoSessionIsRunning> _leagueWhoSessionIsRunning = new List<LeagueWhoSessionIsRunning>();
         public string typeUser;
         public Login(string username = null, string password = null)
         {

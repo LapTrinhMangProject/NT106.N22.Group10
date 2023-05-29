@@ -6,12 +6,15 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using Library_football;
 using System.Windows.Forms;
+using ResponseDataStructure;
 
 namespace SQL_Connection
 {
     public class SQL_user
     {
-        string connectionString = "Data Source=1.54.12.231,1433;Network Library=DBMSSOCN; Initial Catalog=API_football;User ID=laptrinhmang;Password=h?T<e)>5ePtf{P8L;";
+        // string connectionString = "Data Source=1.54.12.231,1433;Network Library=DBMSSOCN; Initial Catalog=API_football;User ID=laptrinhmang;Password=h?T<e)>5ePtf{P8L;";
+        string connectionString = "Data Source=15ACH6H\\SQLEXPRESS02;Initial Catalog = API_football; Integrated Security = True";
+
         SqlConnection sqlConnection = null;
         SqlCommand command = null;
         SqlDataReader reader;
@@ -73,6 +76,21 @@ namespace SQL_Connection
             reader.Close();
             return _teams;
         }
+        public List<LeagueWhoSessionIsRunning> GetLeagueWhoSessionIsRunning()
+        {
+            List<LeagueWhoSessionIsRunning> _leagueWhoSessionIsRunning = new List<LeagueWhoSessionIsRunning>();
+            string query = "select * from active_list";
+            command = new SqlCommand(query, sqlConnection);
+            reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                LeagueWhoSessionIsRunning temp = new LeagueWhoSessionIsRunning();
+                temp.league.name = reader.GetString(0);
+                temp.country.name = reader.GetString(1);
+                _leagueWhoSessionIsRunning.Add(temp);
+            }
+            return _leagueWhoSessionIsRunning;
+        }
         public bool Check_Credential(string username, string password, ref string typeUser)
         {
             string query = $"select * from users where username = '{username}' and password ='{password}'";
@@ -95,9 +113,39 @@ namespace SQL_Connection
         {
             string query = $"insert into teams values({team.id},'{team.name}','{team.code}','{team.country}','{team.founded}','{team.national}','{team.logo}','{leagueName}')";
             command = new SqlCommand(query, sqlConnection);
-            command.ExecuteNonQuery();
-            MessageBox.Show("completed");
+            try
+            {
+                command.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
+        public void AddPlayers(Response_player_and_statistics player)
+        {
+            string query = $"insert into player values({player.Player.id},'{player.Player.name}','{player.Statistics[0].Team.name}','{player.Statistics[0].League.name}'";
+            command = new SqlCommand(query, sqlConnection);
+            try
+            {
+                command.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+        public void CustomAddRecord(string query)
+        {
+            command = new SqlCommand(query, sqlConnection);
+            command.ExecuteNonQuery();
+        }
+        public void AddAllFromNewLeague(List<Player> _player, List<Team> teams, League league)
+        {
+
+        }
+
+
     }
 }
 

@@ -1,5 +1,5 @@
 ﻿using Get_response_using_API;
-using ReponseJsonDataStructure;
+using ResponseDataStructure;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

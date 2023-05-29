@@ -17,7 +17,7 @@ using System.Windows.Forms;
 using Forms;
 using Get_response_using_API;
 using System.ComponentModel.Design.Serialization;
-using ReponseJsonDataStructure;
+using ResponseDataStructure;
 using Library_football;
 using System.Net.Http;
 
@@ -30,6 +30,7 @@ namespace Communicate
             InitializeComponent();
         }
         SQL_user sqlUser = new SQL_user();
+        API api = new API();
         private void Server_Load(object sender, EventArgs e)
         {
             Thread thread1 = new Thread(Server_Listener);
@@ -41,7 +42,7 @@ namespace Communicate
         {
             try
             {
-                IPAddress ipAddress = IPAddress.Parse("192.168.1.120");
+                IPAddress ipAddress = IPAddress.Parse("127.0.0.1");
                 server = new TcpListener(ipAddress, 3219);
                 server.Start();
                 while (true)
@@ -83,8 +84,9 @@ namespace Communicate
                 string data = Encoding.UTF8.GetString(buffer, 0, length);
                 string jsonData = data.Substring(5);
                 string code = data.Substring(0, 5);
+                //     MessageBox.Show(jsonData);
                 League league = JsonConvert.DeserializeObject<League>(jsonData);
-                this.Invoke(new Action(() =>
+                this.Invoke(new Action(async () =>
                 {
                     switch (code)
                     {
@@ -107,6 +109,22 @@ namespace Communicate
                             reponse.Get_Team_Standing(league);
                             status_listbox.Items.Add($"{ipRemote} Yêu cầu lấy thông tin bảng xếp hạng cho giải đấu");
                             status_listbox.Items.Add($"Trả về bảng xếp hạng giải đấu {league.name}");
+                            break;
+                        case "00101":
+                            string leagueId = league.id.ToString();
+                            status_listbox.Items.Add($"{ipRemote} yêu cầu Thêm giải {league.name}, request API ");
+                            var temp = await api.Get_all_players_from_league(leagueId);
+                            status_listbox.Items.Add($"Đang cập nhật cầu thủ cho giải đấu {league.name}");
+                            foreach (var index in temp)
+                                foreach (var player in index.response)
+                                    sqlUser.AddPlayers(player);
+                            status_listbox.Items.Add($"Cập nhật xong cầu thủ cho giải đấu {league.name}");
+                            status_listbox.Items.Add($"Đang cập nhật đội cho giải đấu {league.name}");
+                            List<Team> _teams = await api.Get_Teams_from_Leagues(league, true);
+                            foreach (var team in _teams)
+                                sqlUser.AddTeam(team, league.name);
+                            status_listbox.Items.Add($"Cập nhật xong các đội cho giải đấu {league.name}");
+
                             break;
                     }
                     status_listbox.TopIndex = status_listbox.Items.Count - 1;

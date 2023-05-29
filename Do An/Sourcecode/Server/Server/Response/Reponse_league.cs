@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Library_football;
 
-namespace ReponseJsonDataStructure
+namespace ResponseDataStructure
 {
 
     public class root_league

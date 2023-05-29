@@ -1,5 +1,8 @@
-﻿using Get_response_using_API;
+﻿using Communicate;
+using communicate_client_server;
+using Get_response_using_API;
 using Library_football;
+using ResponseDataStructure;
 using SQL_Connection;
 using System;
 using System.Collections.Generic;
@@ -19,12 +22,16 @@ namespace Forms
         {
             InitializeComponent();
         }
-        public Administrator_form(List<League> _league)
+        public Administrator_form(Login login, Request requestUser)
         {
             InitializeComponent();
-            this._league = _league;
+            this._league = login._league;
+            this._leagueWhoSessionIsRunning = login._leagueWhoSessionIsRunning;
+            this.requestUser = requestUser;
         }
-        List<League> _league = new List<League>();
+        Request requestUser;
+        public List<League> _league = new List<League>();
+        List<LeagueWhoSessionIsRunning> _leagueWhoSessionIsRunning = new List<LeagueWhoSessionIsRunning>();
         SQL_user sqlUser = new SQL_user();
         API api = new API();
         private void button1_Click(object sender, EventArgs e)
@@ -32,11 +39,21 @@ namespace Forms
 
         }
 
-        private void Administrator_form_Load(object sender, EventArgs e)
+        public void Administrator_form_Load(object sender, EventArgs e)
         {
+            foreach (var index in _leagueWhoSessionIsRunning)
+            {
+                if (countrycode_combobox.Items.Contains(index.country.name))
+                    continue;
+                countrycode_combobox.Items.Add(index.country.name);
+            }
+            countrycode_combobox.SelectedIndex = 0;
             AutoCompleteStringCollection autoCompleteStringCollection = new AutoCompleteStringCollection();
-            foreach (var league in _league)
-                active_leagues_listbox.Items.Add(league.name);
+            foreach (var index in _league)
+                active_leagues_listbox.Items.Add(index.name);
+            foreach (var index in _leagueWhoSessionIsRunning)
+                if (index.country.name == countrycode_combobox.SelectedItem.ToString())
+                    list_league_api_support.Items.Add(index.league.name);
         }
 
         private void button1_Click_2(object sender, EventArgs e)
@@ -44,15 +61,36 @@ namespace Forms
         }
         private async void add_league_button_Click(object sender, EventArgs e)
         {
-            League league = new League();
-            league.id = 61;
-            var _teams = await api.Get_Teams_from_Leagues(league);
-            string leagueName = _league[1].name;
-            foreach (var index in _teams.response)
+            if (list_league_api_support.SelectedIndex == -1)
             {
-                sqlUser.AddTeam(index.team, leagueName);
+                MessageBox.Show("Vui lòng chọn giải đấu muốn thêm", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
+            string leagueSelected = list_league_api_support.SelectedItems[0].ToString();
+            MessageBox.Show(leagueSelected);
+            foreach (var index in _leagueWhoSessionIsRunning)
+                if (index.league.name == leagueSelected)
+                {
+                    League league = index.league;
+                    requestUser.Send("00101", league);
+                    MessageBox.Show("sent");
+                    return;
+                }
+        }
 
+        private void countrycode_combobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            list_league_api_support.Items.Clear();
+            foreach (var index in _leagueWhoSessionIsRunning)
+                if (index.country.name == countrycode_combobox.SelectedItem.ToString())
+                    list_league_api_support.Items.Add(index.league.name);
+        }
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            list_league_api_support.Items.Clear();
+            foreach (var index in _leagueWhoSessionIsRunning)
+                if (index.league.name.Contains(find_textbox.Text) && index.country.name == countrycode_combobox.SelectedItem.ToString())
+                    list_league_api_support.Items.Add(index.league.name);
         }
     }
 }
