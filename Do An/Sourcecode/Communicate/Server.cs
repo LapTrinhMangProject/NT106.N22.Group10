@@ -31,11 +31,12 @@ namespace Communicate
         }
         SQL_user sqlUser = new SQL_user();
         API api = new API();
-        private void Server_Load(object sender, EventArgs e)
+        private async void Server_Load(object sender, EventArgs e)
         {
             Thread thread1 = new Thread(Server_Listener);
             thread1.IsBackground = true;
             thread1.Start();
+
         }
         TcpListener server;
         public void Server_Listener()
@@ -53,6 +54,8 @@ namespace Communicate
                     Thread thread2 = new Thread(() => Establish(client));
                     thread2.IsBackground = true;
                     thread2.Start();
+
+
                 }
             }
             catch (Exception e)

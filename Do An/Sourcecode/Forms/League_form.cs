@@ -42,8 +42,7 @@ namespace Forms
             foreach (var league in _league)
                 if (name == league.name)
                 {
-                    string jsonData = JsonConvert.SerializeObject(league);
-                    requestUser.Send("00100" + jsonData);
+                    requestUser.Send("00100", league);
                 }
 
         }
