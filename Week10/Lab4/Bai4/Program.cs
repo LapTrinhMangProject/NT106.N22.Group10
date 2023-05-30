@@ -16,7 +16,11 @@ namespace Bai4
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new Form1());
+=======
+            Application.Run(new Bai4_form());
+>>>>>>> Lab4
         }
     }
 }
