@@ -28,18 +28,22 @@ namespace Forms
             InitializeComponent();
             this.idPlayer = idPlayer;
         }
+        public Player_form(List<Player> _player)
+        {
+            InitializeComponent();
+            this._player = _player;
+        }
+        List<Player> _player;
         Dictionary<string, string> playerDic = new Dictionary<string, string>();
         string idPlayer = null;
         private void Player_form_Load(object sender, EventArgs e)
         {
-            SQL_user sqlUser = new SQL_user();
-            List<Player> _player = sqlUser.Get_Players();
             foreach (Player player in _player)
             {
                 list_player_listbox.Items.Add(player.name);
                 if (playerDic.ContainsKey(player.name))
                     continue;
-              playerDic.Add(player.name, player.id.ToString());
+                playerDic.Add(player.name, player.id.ToString());
             }
 
         }

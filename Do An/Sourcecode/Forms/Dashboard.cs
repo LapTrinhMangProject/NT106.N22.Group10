@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Get_response_using_API;
 using Response;
+using System.IO;
+using Communicate;
 
 namespace Forms
 {
@@ -19,10 +21,12 @@ namespace Forms
         {
             InitializeComponent();
         }
-       public Dashboard(Root_Reponse_standing reponseStanding)
+        Request request;
+       public Dashboard(Root_Reponse_standing reponseStanding,Request request)
         {
-            this.responseStanding = reponseStanding;
             InitializeComponent();
+            this.responseStanding = reponseStanding;
+            this.request = request;
         }
        
         Root_Reponse_standing responseStanding = new Root_Reponse_standing();
@@ -37,12 +41,12 @@ namespace Forms
 
         private void find_player_button_Click(object sender, EventArgs e)
         {
-            new Player_form().Show();
+            request.Send("00001");
         }
 
         private void topscore_button_Click(object sender, EventArgs e)
         {
-            new Topscore_form().Show();
+           // request.Send("00001");
         }
 
         private void find_teams_button_Click(object sender, EventArgs e)
