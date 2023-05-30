@@ -104,10 +104,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\communicate_client_server\communicate_client_server.csproj">
-      <Project>{08820931-86a5-4f45-a69d-397eaf25f917}</Project>
-      <Name>communicate_client_server</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Forms\Forms.csproj">
       <Project>{a89ae27a-50e4-41a7-a86b-91ced5e23ac3}</Project>
       <Name>Forms</Name>

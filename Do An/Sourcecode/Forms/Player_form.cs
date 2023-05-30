@@ -13,6 +13,7 @@ using Get_response_using_API;
 using Response;
 using System.Net;
 using System.IO;
+using System.Net.Http;
 
 namespace Forms
 {
@@ -27,18 +28,22 @@ namespace Forms
             InitializeComponent();
             this.idPlayer = idPlayer;
         }
+        public Player_form(List<Player> _player)
+        {
+            InitializeComponent();
+            this._player = _player;
+        }
+        List<Player> _player;
         Dictionary<string, string> playerDic = new Dictionary<string, string>();
         string idPlayer = null;
         private void Player_form_Load(object sender, EventArgs e)
         {
-            SQL_user sqlUser = new SQL_user();
-            List<Player> _player = sqlUser.Get_Players();
             foreach (Player player in _player)
             {
                 list_player_listbox.Items.Add(player.name);
                 if (playerDic.ContainsKey(player.name))
                     continue;
-              playerDic.Add(player.name, player.id.ToString());
+                playerDic.Add(player.name, player.id.ToString());
             }
 
         }
@@ -90,10 +95,12 @@ namespace Forms
                     infor_player_listbox.Items.Add($"Cân nặng: {reponsePlayer.response[0].Player.weight}");
                     infor_player_listbox.Items.Add("Bị thương: " + (reponsePlayer.response[0].Player.injured ? "Có" : "Không"));
                     Display_photo(reponsePlayer.response[0].Player.photo);
-                    void Display_photo(string url)
+                    async void Display_photo(string url)
                     {
-                        WebClient client = new WebClient();
-                        byte[] imageData = client.DownloadData(url);
+                     //   WebClient client = new WebClient();
+                       // byte[] imageData = client.DownloadData(url);
+                       HttpClient client = new HttpClient();
+                        byte[] imageData = await client.GetByteArrayAsync(url);
                         MemoryStream ms = new MemoryStream(imageData);
                         Bitmap image = new Bitmap(ms);
                         pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;

@@ -18,6 +18,7 @@ using Forms;
 using Get_response_using_API;
 using System.ComponentModel.Design.Serialization;
 using Response;
+using Library_football;
 
 namespace Communicate
 {
@@ -27,6 +28,7 @@ namespace Communicate
         {
             InitializeComponent();
         }
+        SQL_user sqlUser = new SQL_user();
 
         private void Server_Load(object sender, EventArgs e)
         {
@@ -34,7 +36,6 @@ namespace Communicate
             thread1.IsBackground = true;
             thread1.Start();
         }
-        SQL_user sqlUser = new SQL_user();
         TcpListener server;
         public void Server_Listener()
         {
@@ -47,7 +48,6 @@ namespace Communicate
                 {
 
                     TcpClient client = server.AcceptTcpClient();
-                    MessageBox.Show("new");
                     client.ReceiveBufferSize = 1048576;
                     client.SendBufferSize = 1048576;
                     Thread thread2 = new Thread(() => Establish(client));
@@ -64,59 +64,31 @@ namespace Communicate
         void Establish(TcpClient client)
         {
             NetworkStream stream = client.GetStream();
-            StreamWriter writer = new StreamWriter(stream);
-            // Loop to receive all the data sent by the client
+            Reponse reponse = new Reponse(stream);
+
             while (client.Connected)
             {
-
                 int bytes_read = 0;
                 byte[] header = new byte[4];
-                while (bytes_read < 4)
-                {
-                    bytes_read += stream.Read(header, 0, header.Length);
-                }
+                    bytes_read += stream.Read(header, 0, 4);
                 int length = BitConverter.ToInt32(header, 0);
                 bytes_read = 0;
                 byte[] buffer = new byte[length];
                 while (bytes_read < length)
-                {
                     bytes_read += stream.Read(buffer, bytes_read, length - bytes_read);
-                }
-
                 string data = Encoding.UTF8.GetString(buffer, 0, length);
                 string code = data.Substring(0, 5);
-                if (code == "00000")
-                {
-                    Login login = JsonConvert.DeserializeObject<Login>(data.Substring(5));
-                    if (sqlUser.Check_Credential(login.username, login.password))
+                    switch (code)
                     {
-                     
-
-                        Send_Login("1");
-
+                        case "00000":
+                            reponse.Check_Credential(data.Substring(5));
+                        break;
+                        case "00001":
+                            reponse.Get_All_Players();
+                        break;
                     }
-                    else
-                        Send_Login("0");
-
-                }
-            }
-            async void Send_Login(string target)
-            {
-                byte[] header = new byte[4];
-                string code = "00000";
-
-                API aPI = new API();
-                Root_Reponse_standing reponseStanding = await aPI.Get_Standing("39");
-                string jsonData = JsonConvert.SerializeObject(reponseStanding);
-                // serialize the dashboard object to a JSON string
-                byte[] buffer = Encoding.UTF8.GetBytes(code + target+jsonData);
-                int lengthOfdata = buffer.Length;
-                header = BitConverter.GetBytes(lengthOfdata);
-                stream.Write(header, 0, 4);
-                stream.Write(buffer, 0, lengthOfdata);
             }
         }
-
     }
 }
 
