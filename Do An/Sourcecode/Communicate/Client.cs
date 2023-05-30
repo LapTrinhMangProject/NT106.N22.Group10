@@ -100,8 +100,9 @@ namespace Communicate
         }
         private void Client_Load(object sender, EventArgs e)
         {
-            ipAddress = IPAddress.Parse("127.0.0.1");
-            client.Connect(ipAddress, 3219);
+            ipAddress = IPAddress.Parse("20.24.132.202");
+            //  ipAddress = IPAddress.Parse("127.0.0.1");
+            client.Connect(ipAddress, 2509);
             stream = client.GetStream();
             requestUser = new Request(stream);
             Thread thread1 = new Thread(Client_listening);

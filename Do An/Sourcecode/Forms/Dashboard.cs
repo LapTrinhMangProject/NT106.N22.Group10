@@ -56,9 +56,7 @@ namespace Forms
         private void find_player_button_Click(object sender, EventArgs e)
         {
             League league = responseStanding.League;
-            string jsonData = JsonConvert.SerializeObject(league);
-            string payload = "00001" + jsonData;
-            request.Send(payload);
+            request.Send("00001", league);
         }
 
         private void topscore_button_Click(object sender, EventArgs e)
@@ -69,9 +67,7 @@ namespace Forms
         private void find_teams_button_Click(object sender, EventArgs e)
         {
             League league = responseStanding.League;
-            string jsonData = JsonConvert.SerializeObject(league);
-            string payload = "00011" + jsonData;
-            request.Send(payload);
+            request.Send("00011", league);
         }
     }
 }
