@@ -13,7 +13,7 @@ namespace SQL_Connection
     public class SQL_user
     {
         // string connectionString = "Data Source=1.54.12.231,1433;Network Library=DBMSSOCN; Initial Catalog=API_football;User ID=laptrinhmang;Password=h?T<e)>5ePtf{P8L;";
-        string connectionString = "Data Source=15ACH6H\\SQLEXPRESS02;Initial Catalog = API_football; Integrated Security = True";
+        string connectionString = "Server=tcp:databaselaptrinhmang.database.windows.net,1433;Initial Catalog=API_football;Persist Security Info=False;User ID=laptrinhmang;Password=h?T<e)>5ePtf{P8L;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;e";
 
         SqlConnection sqlConnection = null;
         SqlCommand command = null;
