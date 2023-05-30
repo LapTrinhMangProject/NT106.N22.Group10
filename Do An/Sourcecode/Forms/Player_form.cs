@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Get_response_using_API;
-using Response;
+using ResponseDataStructure;
 using System.Net;
 using System.IO;
 using System.Net.Http;
@@ -32,9 +32,11 @@ namespace Forms
         {
             InitializeComponent();
             this._player = _player;
+            this.leagueId = _player[0].League.id.ToString();
         }
         List<Player> _player;
         Dictionary<string, string> playerDic = new Dictionary<string, string>();
+        string leagueId = null;
         string idPlayer = null;
         private void Player_form_Load(object sender, EventArgs e)
         {
@@ -51,20 +53,19 @@ namespace Forms
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             list_player_listbox.Items.Clear();
-            SQL_user sqlUser = new SQL_user();
-            List<Player> _player = sqlUser.Get_Players(find_textbox.Text);
-            foreach (Player player in _player)
+            foreach (var index in _player)
             {
-                list_player_listbox.Items.Add(player.name);
+                if (index.name.Contains(find_textbox.Text))
+                    list_player_listbox.Items.Add(index.name);
             }
         }
 
         public async void list_player_listbox_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-          Display_All_Statistic_Of_specific();
+            Display_All_Statistic_Of_specific();
         }
-    public async void Display_All_Statistic_Of_specific()
-    {
+        public async void Display_All_Statistic_Of_specific()
+        {
             {
                 API aPI = new API();
                 Root_Response_Player_and_Statistic reponsePlayer = new Root_Response_Player_and_Statistic();
@@ -76,7 +77,7 @@ namespace Forms
                 }
                 else
                     id = playerDic[list_player_listbox.SelectedItems[0].ToString()];
-                reponsePlayer = await aPI.Get_Specific_player(id, "39");
+                reponsePlayer = await aPI.Get_Specific_player(id, leagueId);
                 infor_player_listbox.Items.Clear();
                 statistic_1_listbox.Items.Clear();
                 Display_basic_infor();
@@ -128,4 +129,4 @@ namespace Forms
             }
         }
     }
-    }
+}

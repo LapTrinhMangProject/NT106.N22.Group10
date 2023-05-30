@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SQL_Connection</RootNamespace>
     <AssemblyName>SQL_Connection</AssemblyName>
-    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -49,6 +50,10 @@
     <ProjectReference Include="..\Server\league\Library Football.csproj">
       <Project>{ac82b139-d9fd-4ee0-a17d-0af422372cc3}</Project>
       <Name>Library Football</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Server\Response\ResponseJsonDataSructure.csproj">
+      <Project>{33e0f8b3-61db-4d33-8195-625549c18f94}</Project>
+      <Name>ResponseJsonDataSructure</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

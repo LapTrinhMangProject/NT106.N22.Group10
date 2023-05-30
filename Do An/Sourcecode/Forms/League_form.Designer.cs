@@ -28,57 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.list_name_leagues = new System.Windows.Forms.ListBox();
-            this.name_find_textbox = new System.Windows.Forms.TextBox();
-            this.find_leagues_button = new System.Windows.Forms.Button();
+            this.selecte_leagues_combobox = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // list_name_leagues
+            // selecte_leagues_combobox
             // 
-            this.list_name_leagues.FormattingEnabled = true;
-            this.list_name_leagues.ItemHeight = 16;
-            this.list_name_leagues.Location = new System.Drawing.Point(20, 15);
-            this.list_name_leagues.Name = "list_name_leagues";
-            this.list_name_leagues.Size = new System.Drawing.Size(736, 308);
-            this.list_name_leagues.TabIndex = 0;
+            this.selecte_leagues_combobox.FormattingEnabled = true;
+            this.selecte_leagues_combobox.Location = new System.Drawing.Point(32, 88);
+            this.selecte_leagues_combobox.Name = "selecte_leagues_combobox";
+            this.selecte_leagues_combobox.Size = new System.Drawing.Size(161, 21);
+            this.selecte_leagues_combobox.TabIndex = 3;
             // 
-            // name_find_textbox
+            // button1
             // 
-            this.name_find_textbox.Location = new System.Drawing.Point(289, 355);
-            this.name_find_textbox.Name = "name_find_textbox";
-            this.name_find_textbox.Size = new System.Drawing.Size(240, 22);
-            this.name_find_textbox.TabIndex = 1;
-            // 
-            // find_leagues_button
-            // 
-            this.find_leagues_button.Location = new System.Drawing.Point(535, 353);
-            this.find_leagues_button.Name = "find_leagues_button";
-            this.find_leagues_button.Size = new System.Drawing.Size(117, 35);
-            this.find_leagues_button.TabIndex = 2;
-            this.find_leagues_button.Text = "Find";
-            this.find_leagues_button.UseVisualStyleBackColor = true;
-            this.find_leagues_button.Click += new System.EventHandler(this.find_leagues_button_Click);
+            this.button1.Location = new System.Drawing.Point(63, 129);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(103, 40);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Load";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // League_form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.find_leagues_button);
-            this.Controls.Add(this.name_find_textbox);
-            this.Controls.Add(this.list_name_leagues);
+            this.ClientSize = new System.Drawing.Size(226, 225);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.selecte_leagues_combobox);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "League_form";
-            this.Text = "Form1";
+            this.Text = "Leagues";
+            this.Load += new System.EventHandler(this.League_form_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ListBox list_name_leagues;
-        private System.Windows.Forms.TextBox name_find_textbox;
-        private System.Windows.Forms.Button find_leagues_button;
+        private System.Windows.Forms.ComboBox selecte_leagues_combobox;
+        private System.Windows.Forms.Button button1;
     }
 }
 

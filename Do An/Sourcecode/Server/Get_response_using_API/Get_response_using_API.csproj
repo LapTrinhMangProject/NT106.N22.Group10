@@ -53,9 +53,13 @@
       <Project>{ac82b139-d9fd-4ee0-a17d-0af422372cc3}</Project>
       <Name>Library Football</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Server\Response\Response.csproj">
+    <ProjectReference Include="..\Server\Response\ResponseJsonDataSructure.csproj">
       <Project>{33e0f8b3-61db-4d33-8195-625549c18f94}</Project>
-      <Name>Response</Name>
+      <Name>ResponseJsonDataSructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQL Connection\SQL Connection.csproj">
+      <Project>{08459c43-9d61-4c2b-82e6-4571a6d91c05}</Project>
+      <Name>SQL Connection</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

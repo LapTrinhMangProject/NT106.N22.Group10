@@ -18,6 +18,7 @@ namespace Library_football
         public string weight { get; set; }
         public bool injured { get; set; }
         public string photo { get; set; }
+        public League League { get; set; }
     }
     public class Birth
     {

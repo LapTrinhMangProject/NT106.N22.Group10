@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Library_football;
 
-namespace Response
+namespace ResponseDataStructure
 {
     public class Response_teams_and_venue
     {
@@ -15,5 +15,6 @@ namespace Response
     public class Root_teams_and_venue
     {
         public Response_teams_and_venue[] response { get; set; }
+        public League league { get; set; }
     }
 }
