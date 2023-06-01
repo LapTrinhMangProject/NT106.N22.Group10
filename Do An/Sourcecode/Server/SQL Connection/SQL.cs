@@ -13,8 +13,7 @@ namespace SQL_Connection
 {
     public class SQL_user
     {
-        string connectionString = ConfigurationManager.ConnectionStrings["MyConnectionString"].ConnectionString;
-        //  string connectionString = "Server=tcp:databaselaptrinhmang.database.windows.net,1433;Initial Catalog=API_football;Persist Security Info=False;User ID=laptrinhmang;Password=h?T<e)>5ePtf{P8L;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;e";
+        string connectionString = ConfigurationManager.AppSettings["sql_key"];
 
         SqlConnection sqlConnection = null;
         SqlCommand command = null;
