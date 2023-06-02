@@ -151,5 +151,29 @@
       <Name>SQL Connection</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pivot_soccer.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4399246973949_e9f6eb0e3d5193f16dac268c991ce1bd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FC_Barcelona_%28crest%29.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-computer-icons-top-1-game-text-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy %282%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading-load-icon-transparent-png-11639609114lctjenyas8.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -103,6 +103,26 @@ namespace Communicate.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap download__3_ {
+            get {
+                object obj = ResourceManager.GetObject("download (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ef6ba9d6e54f13861a0cb406962b00ed17670956 {
+            get {
+                object obj = ResourceManager.GetObject("ef6ba9d6e54f13861a0cb406962b00ed17670956", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap GettyImages_1442587075_e1668806020544 {
             get {
                 object obj = ResourceManager.GetObject("GettyImages-1442587075-e1668806020544", resourceCulture);

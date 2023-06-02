@@ -40,16 +40,12 @@ namespace Forms
             {
                 standing_listbox.Items.Add(index.Rank + " " + index.Team.Name + "Point: " + index.Points);
             }
-            string urlLogo = responseStanding.League.logo;
-            Display_Photo(urlLogo);
             void Display_Photo(string url)
             {
                 WebClient client = new WebClient();
                 byte[] imageData = client.DownloadData(url);
                 MemoryStream ms = new MemoryStream(imageData);
                 Bitmap image = new Bitmap(ms);
-                logo_picturebox.SizeMode = PictureBoxSizeMode.StretchImage;
-                logo_picturebox.Image = image;
             }
         }
 
