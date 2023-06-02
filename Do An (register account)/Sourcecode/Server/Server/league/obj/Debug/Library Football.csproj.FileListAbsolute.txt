@@ -25,3 +25,12 @@ E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Server\league\
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Server\league\obj\Debug\Library Football.csproj.CopyComplete
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Server\league\obj\Debug\Library_football.dll
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Server\league\obj\Debug\Library_football.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Server\league\bin\Debug\Library_football.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Server\league\bin\Debug\Library_football.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Server\league\bin\Debug\Response.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Server\league\bin\Debug\Response.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Server\league\obj\Debug\Library Football.csproj.AssemblyReference.cache
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Server\league\obj\Debug\Library Football.csproj.CoreCompileInputs.cache
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Server\league\obj\Debug\Library Football.csproj.CopyComplete
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Server\league\obj\Debug\Library_football.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Server\league\obj\Debug\Library_football.pdb

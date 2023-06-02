@@ -25,3 +25,12 @@ E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Server\Respons
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Server\Response\obj\Debug\ResponseJsonDataSructure.csproj.CopyComplete
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Server\Response\obj\Debug\Response.dll
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Server\Response\obj\Debug\Response.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Server\Response\bin\Debug\Response.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Server\Response\bin\Debug\Response.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Server\Response\bin\Debug\Library_football.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Server\Response\bin\Debug\Library_football.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Server\Response\obj\Debug\ResponseJsonDataSructure.csproj.AssemblyReference.cache
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Server\Response\obj\Debug\ResponseJsonDataSructure.csproj.CoreCompileInputs.cache
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Server\Response\obj\Debug\ResponseJsonDataSructure.csproj.CopyComplete
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Server\Response\obj\Debug\Response.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Server\Response\obj\Debug\Response.pdb
