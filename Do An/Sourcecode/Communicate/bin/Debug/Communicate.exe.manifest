@@ -42,14 +42,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Communicate.exe" size="18730928">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="API.dll" size="23040">
+      <assemblyIdentity name="API" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>wc0L2HDYlG4EZXARIII9Nr/5J6vVcv8kAUzoQet87Pk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Communicate.exe" size="18732464">
       <assemblyIdentity name="Communicate" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>iCcKJldqvPD1yKiI+ay8sbX+Ujc8j7J6zY78gJRYt4w=</dsig:DigestValue>
+        <dsig:DigestValue>FxKc9GFduSaTBLQQq05XtsBrDUaNHC3p/g/dk/A461Y=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -61,31 +73,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>08+7FJxQ6KHWXEoujIEf5nZe/Tx6ruzdaXr0RlmRcaE=</dsig:DigestValue>
+        <dsig:DigestValue>ssfbQ82oxJY4sT9eOD+GzzLKrvhRCGAMputsyKZDb9I=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Get_response_using_API.dll" size="22016">
-      <assemblyIdentity name="Get_response_using_API" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>+F/3WF04RZAUA6DhUb40cPdME+9VfA0v1LfM0AURH8g=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Library_football.dll" size="21504">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Library_football.dll" size="22016">
       <assemblyIdentity name="Library_football" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>gd1eiyPtCdMxOaplWpE2f3JTAjVbo0CX5PJH9uEgAEY=</dsig:DigestValue>
+        <dsig:DigestValue>TNcg8CyIirAFOJbbpoTWaJM9fRf2wqjY+gUO9r1ccd8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -138,26 +138,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Response.dll" size="7680">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Response.dll" size="8192">
       <assemblyIdentity name="Response" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ATTd61CEuEfZ6+MZTAJmRiueUkppqChmK0VeTMWea58=</dsig:DigestValue>
+        <dsig:DigestValue>sUC9EFCnbz0p2t4WWJO2Zz8IDH1npL0cWV/SSVU038k=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SQL_Connection.dll" size="8704">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SQL_Connection.dll" size="10240">
       <assemblyIdentity name="SQL_Connection" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>It950nwVfO6fwxX450ZqOiR+1aHHAmF2ROT0KF8w+j4=</dsig:DigestValue>
+        <dsig:DigestValue>tH2sgFDg3mcMFoakme0A6tsP1stAqB1f6Y0GqUe1Yeg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -185,13 +185,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Communicate.exe.config" size="1039">
+  <file name="Communicate.exe.config" size="695">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>dYssL98XfMzK7wzLOWXgcgJ/7LLWNR9+ukkeaZn2Kng=</dsig:DigestValue>
+      <dsig:DigestValue>pvDJjFvWjI6uz809x/9EELNBqaLpF1MdOMvNNlSNYGo=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

@@ -29,3 +29,16 @@ C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Re
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Release\Communicate.application
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\obj\Release\Communicate.exe.manifest
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\obj\Release\Communicate.application
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\obj\Release\Communicate.csproj.App.config
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\obj\Release\Communicate.g.resources
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\obj\Release\Communicate.Form_Register.resources
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Release\Microsoft.Threading.Tasks.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Release\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Release\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Release\System.Net.Http.Extensions.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Release\System.Net.Http.Primitives.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Release\Microsoft.Threading.Tasks.xml
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Release\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Release\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Release\System.Net.Http.Extensions.xml
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Release\System.Net.Http.Primitives.xml

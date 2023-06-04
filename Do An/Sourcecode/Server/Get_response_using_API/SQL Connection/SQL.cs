@@ -7,14 +7,15 @@ using System.Data.SqlClient;
 using LibraryFootBall;
 using System.Windows.Forms;
 using ResponseDataStructure;
+using System.Configuration;
+using Microsoft.Azure.Amqp.Framing;
+using SQL_Connection.Properties;
 
 namespace SQLConnection
 {
     public class SqlUser
     {
-        string connectionString = "Data Source=databaselaptrinhmang.database.windows.net,1433;Network Library=DBMSSOCN; Initial Catalog=API_football;User ID=laptrinhmang;Password=BJo8RxhgQvkD2jSBDK3S3LNvUpAH9n;";
-        //  string connectionString = "Server=tcp:databaselaptrinhmang.database.windows.net,1433;Initial Catalog=API_football;Persist Security Info=False;User ID=laptrinhmang;Password=h?T<e)>5ePtf{P8L;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;e";
-
+        string connectionString = SQL_Connection.Properties.Resources.SqlKey;
         SqlConnection sqlConnection = null;
         SqlCommand command = null;
         SqlDataReader reader;

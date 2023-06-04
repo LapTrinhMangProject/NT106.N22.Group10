@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using SQLConnection;
 using System.ComponentModel;
 using LibraryFootBall;
+using System.Configuration;
 
 namespace API
 
@@ -19,6 +20,7 @@ namespace API
 
     public class ApiUser
     {
+        string apiKey = API.Properties.Resource1.ApiKey;
         public Root_Response_Player_and_Statistic playerAndstatistic = new Root_Response_Player_and_Statistic();
         public Root_Reponse_standing responseStanding = new Root_Reponse_standing();
         public async Task<List<Root_Response_Player_and_Statistic>> Get_all_players_from_league(string leagueId, string seasonId = null)
@@ -41,7 +43,7 @@ namespace API
                         RequestUri = new Uri($"https://api-football-v1.p.rapidapi.com/v3/players?league={leagueId}&season={seasonId}&page={page_current}"),
                         Headers =
     {
-        { "X-RapidAPI-Key", "759c532019msh63e52ce5ea468afp113769jsnc64419692369" },
+        { "X-RapidAPI-Key", apiKey },
         { "X-RapidAPI-Host", "api-football-v1.p.rapidapi.com" },
     },
                     };
@@ -74,7 +76,7 @@ namespace API
                 RequestUri = new Uri($"https://api-football-v1.p.rapidapi.com/v3/players?id={playerId}&league={leagueId}&season={seasonId}"),
                 Headers =
     {
-        { "X-RapidAPI-Key", "759c532019msh63e52ce5ea468afp113769jsnc64419692369" },
+        { "X-RapidAPI-Key", apiKey },
         { "X-RapidAPI-Host", "api-football-v1.p.rapidapi.com" },
     },
             };
@@ -97,7 +99,7 @@ namespace API
                 RequestUri = new Uri($"https://api-football-v1.p.rapidapi.com/v3/standings?season=2022&league={leagueId}"),
                 Headers =
     {
-        { "X-RapidAPI-Key", "759c532019msh63e52ce5ea468afp113769jsnc64419692369" },
+        { "X-RapidAPI-Key", apiKey },
         { "X-RapidAPI-Host", "api-football-v1.p.rapidapi.com" },
     },
             };
@@ -119,7 +121,7 @@ namespace API
                 RequestUri = new Uri($"https://api-football-v1.p.rapidapi.com/v3/players/topscorers?league={leagueId}&season=2022"),
                 Headers =
     {
-        { "X-RapidAPI-Key", "759c532019msh63e52ce5ea468afp113769jsnc64419692369" },
+        { "X-RapidAPI-Key", apiKey },
         { "X-RapidAPI-Host", "api-football-v1.p.rapidapi.com" },
     },
             };
@@ -141,7 +143,7 @@ namespace API
                 RequestUri = new Uri($"https://api-football-v1.p.rapidapi.com/v3/players/topassists?league={leagueId}&season=2022"),
                 Headers =
     {
-        { "X-RapidAPI-Key", "759c532019msh63e52ce5ea468afp113769jsnc64419692369" },
+        { "X-RapidAPI-Key", apiKey },
         { "X-RapidAPI-Host", "api-football-v1.p.rapidapi.com" },
     },
             };
@@ -163,7 +165,7 @@ namespace API
                 RequestUri = new Uri($"https://api-football-v1.p.rapidapi.com/v3/players/topredcards?league={leagueId}&season=2022"),
                 Headers =
     {
-        { "X-RapidAPI-Key", "759c532019msh63e52ce5ea468afp113769jsnc64419692369" },
+        { "X-RapidAPI-Key", apiKey },
         { "X-RapidAPI-Host", "api-football-v1.p.rapidapi.com" },
     },
             };
@@ -185,7 +187,7 @@ namespace API
                 RequestUri = new Uri($"https://api-football-v1.p.rapidapi.com/v3/players/topyellowcards?league=39&season=2022"),
                 Headers =
     {
-        { "X-RapidAPI-Key", "759c532019msh63e52ce5ea468afp113769jsnc64419692369" },
+        { "X-RapidAPI-Key", apiKey },
         { "X-RapidAPI-Host", "api-football-v1.p.rapidapi.com" },
     },
             };
@@ -207,7 +209,7 @@ namespace API
                 RequestUri = new Uri($"https://api-football-v1.p.rapidapi.com/v3/teams?league={league.id}&season=2022"),
                 Headers =
     {
-        { "X-RapidAPI-Key", "759c532019msh63e52ce5ea468afp113769jsnc64419692369" },
+        { "X-RapidAPI-Key", apiKey },
         { "X-RapidAPI-Host", "api-football-v1.p.rapidapi.com" },
     },
             };
@@ -231,7 +233,7 @@ namespace API
                 RequestUri = new Uri($"https://api-football-v1.p.rapidapi.com/v3/teams?league={league.id}&season=2022"),
                 Headers =
     {
-        { "X-RapidAPI-Key", "759c532019msh63e52ce5ea468afp113769jsnc64419692369" },
+        { "X-RapidAPI-Key", apiKey },
         { "X-RapidAPI-Host", "api-football-v1.p.rapidapi.com" },
     },
             };
@@ -255,7 +257,7 @@ namespace API
                 RequestUri = new Uri($"https://api-football-v1.p.rapidapi.com/v3/leagues?code={countryCode}&season=2022&type=league&current=true"),
                 Headers =
     {
-        { "X-RapidAPI-Key", "759c532019msh63e52ce5ea468afp113769jsnc64419692369" },
+        { "X-RapidAPI-Key", apiKey },
         { "X-RapidAPI-Host", "api-football-v1.p.rapidapi.com" },
     },
             };
@@ -278,6 +280,5 @@ namespace API
             MessageBox.Show("done");
             return rootLeagueWhoSessionIsRunning;
         }
-
     }
 }

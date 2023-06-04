@@ -6,3 +6,10 @@ C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\ResponseJso
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\ResponseJsonDataStructure\LibraryFootBall\obj\Debug\LibraryFootBall.csproj.CopyComplete
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\ResponseJsonDataStructure\LibraryFootBall\obj\Debug\Library_football.dll
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\ResponseJsonDataStructure\LibraryFootBall\obj\Debug\Library_football.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\ResponseJsonDataStructure\LibraryFootBall\bin\Debug\Library_football.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\ResponseJsonDataStructure\LibraryFootBall\bin\Debug\Library_football.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\ResponseJsonDataStructure\LibraryFootBall\obj\Debug\LibraryFootBall.csproj.AssemblyReference.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\ResponseJsonDataStructure\LibraryFootBall\obj\Debug\LibraryFootBall.csproj.CoreCompileInputs.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\ResponseJsonDataStructure\LibraryFootBall\obj\Debug\LibraryFootBall.csproj.CopyComplete
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\ResponseJsonDataStructure\LibraryFootBall\obj\Debug\Library_football.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\ResponseJsonDataStructure\LibraryFootBall\obj\Debug\Library_football.pdb
