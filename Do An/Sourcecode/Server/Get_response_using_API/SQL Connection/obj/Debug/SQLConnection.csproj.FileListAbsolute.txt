@@ -1,0 +1,11 @@
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\SQL Connection\bin\Debug\SQL_Connection.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\SQL Connection\bin\Debug\SQL_Connection.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\SQL Connection\bin\Debug\Library_football.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\SQL Connection\bin\Debug\Response.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\SQL Connection\bin\Debug\Library_football.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\SQL Connection\bin\Debug\Response.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\SQL Connection\obj\Debug\SQLConnection.csproj.AssemblyReference.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\SQL Connection\obj\Debug\SQLConnection.csproj.CoreCompileInputs.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\SQL Connection\obj\Debug\SQLConnection.csproj.CopyComplete
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\SQL Connection\obj\Debug\SQL_Connection.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\SQL Connection\obj\Debug\SQL_Connection.pdb

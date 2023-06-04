@@ -1,4 +1,4 @@
-﻿using Get_response_using_API;
+﻿using API;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,12 +8,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Get_response_using_API;
+using API;
 using ResponseDataStructure;
 using System.IO;
 using Communicate;
 using System.Net;
-using Library_football;
+using LibraryFootBall;
 using Newtonsoft.Json;
 
 namespace Forms

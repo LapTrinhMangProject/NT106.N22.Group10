@@ -1,9 +1,8 @@
 ﻿using Communicate;
-using communicate_client_server;
-using Get_response_using_API;
-using Library_football;
+using API;
+using LibraryFootBall;
 using ResponseDataStructure;
-using SQL_Connection;
+using SQLConnection;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using communicate_client_server;
 
 namespace Forms
 {
@@ -32,8 +32,8 @@ namespace Forms
         Request requestUser;
         public List<League> _league = new List<League>();
         List<LeagueWhoSessionIsRunning> _leagueWhoSessionIsRunning = new List<LeagueWhoSessionIsRunning>();
-        SQL_user sqlUser = new SQL_user();
-        API api = new API();
+        SqlUser sqlUser = new SqlUser();
+        ApiUser api = new ApiUser();
         private void button1_Click(object sender, EventArgs e)
         {
 

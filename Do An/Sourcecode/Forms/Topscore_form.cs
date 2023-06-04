@@ -1,4 +1,4 @@
-﻿using Get_response_using_API;
+﻿using API;
 using ResponseDataStructure;
 using System;
 using System.Collections.Generic;
@@ -25,8 +25,8 @@ namespace Forms
 
         private void Topscore_form_Load(object sender, EventArgs e)
         {
-                API aPI = new API();
-           async void Display_Get_Top_Score()
+            ApiUser aPI = new ApiUser();
+            async void Display_Get_Top_Score()
             {
                 Root_Response_Player_and_Statistic responsePlayerAndStatistic = new Root_Response_Player_and_Statistic();
                 responsePlayerAndStatistic = await aPI.Get_Top_Score("39");
@@ -34,18 +34,18 @@ namespace Forms
                 foreach (var index in _topScore)
                 {
                     topscore_listbox.Items.Add($"{index.Statistics[0].Goals.Total}            {index.Player.name}");
-                  
+
                 }
             }
             async void Display_Get_Top_Assist()
             {
                 Root_Response_Player_and_Statistic responsePlayerAndStatistic = new Root_Response_Player_and_Statistic();
                 responsePlayerAndStatistic = await aPI.Get_Top_Assists("39");
-                _topAssist = responsePlayerAndStatistic.response;   
+                _topAssist = responsePlayerAndStatistic.response;
                 foreach (var index in _topAssist)
                 {
                     assist_listbox.Items.Add($"{index.Statistics[0].Goals.Assists}            {index.Player.name}");
-                  
+
                 }
             }
             async void Display_Get_Top_Red_Cards()
@@ -56,7 +56,7 @@ namespace Forms
                 foreach (var index in _topRed)
                 {
                     redcard_listbox.Items.Add($"{index.Statistics[0].Cards.Red}            {index.Player.name}");
-                   
+
                 }
 
             }
@@ -68,12 +68,12 @@ namespace Forms
                 foreach (var index in _topYellow)
                 {
                     yellowcard_listbox.Items.Add($"{index.Statistics[0].Cards.Yellow}            {index.Player.name}");
-                  
+
                 }
             }
             Display_Get_Top_Red_Cards();
             Display_Get_Top_Yellow_Cards();
-           Display_Get_Top_Score();
+            Display_Get_Top_Score();
             Display_Get_Top_Assist();
         }
 
@@ -109,7 +109,7 @@ namespace Forms
         {
             Display_player(_topYellow, yellowcard_listbox.SelectedIndex);
         }
-        void Display_player(Response_player_and_statistics[] _top,int index)
+        void Display_player(Response_player_and_statistics[] _top, int index)
         {
             string idPlayer = _top[index].Player.id.ToString();
             Player_form player = new Player_form(idPlayer);

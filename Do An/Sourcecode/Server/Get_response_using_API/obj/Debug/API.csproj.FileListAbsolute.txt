@@ -1,0 +1,14 @@
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\bin\Debug\Get_response_using_API.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\bin\Debug\Get_response_using_API.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\bin\Debug\Library_football.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\bin\Debug\Response.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\bin\Debug\SQL_Connection.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\bin\Debug\Library_football.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\bin\Debug\SQL_Connection.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\bin\Debug\Response.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\obj\Debug\API.csproj.AssemblyReference.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\obj\Debug\API.csproj.CoreCompileInputs.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\obj\Debug\API.csproj.CopyComplete
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\obj\Debug\Get_response_using_API.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\obj\Debug\Get_response_using_API.pdb

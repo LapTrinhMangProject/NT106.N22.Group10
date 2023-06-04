@@ -166,21 +166,21 @@
       <Project>{a89ae27a-50e4-41a7-a86b-91ced5e23ac3}</Project>
       <Name>Forms</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Server\Get_response_using_API\Get_response_using_API.csproj">
+    <ProjectReference Include="..\Server\Get_response_using_API\API.csproj">
       <Project>{c9f39a9b-f60b-434d-903b-465745aa5840}</Project>
-      <Name>Get_response_using_API</Name>
+      <Name>API</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Server\Server\league\Library Football.csproj">
+    <ProjectReference Include="..\Server\Get_response_using_API\ResponseJsonDataStructure\LibraryFootBall\LibraryFootBall.csproj">
       <Project>{ac82b139-d9fd-4ee0-a17d-0af422372cc3}</Project>
-      <Name>Library Football</Name>
+      <Name>LibraryFootBall</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Server\Server\Response\ResponseJsonDataSructure.csproj">
+    <ProjectReference Include="..\Server\Get_response_using_API\ResponseJsonDataStructure\ResponseJsonDataSructure.csproj">
       <Project>{33e0f8b3-61db-4d33-8195-625549c18f94}</Project>
       <Name>ResponseJsonDataSructure</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Server\SQL Connection\SQL Connection.csproj">
+    <ProjectReference Include="..\Server\Get_response_using_API\SQL Connection\SQLConnection.csproj">
       <Project>{08459c43-9d61-4c2b-82e6-4571a6d91c05}</Project>
-      <Name>SQL Connection</Name>
+      <Name>SQLConnection</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

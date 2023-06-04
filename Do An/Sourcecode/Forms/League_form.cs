@@ -8,8 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using SQL_Connection;
-using Library_football;
+using SQLConnection;
+using LibraryFootBall;
 using Communicate;
 using Newtonsoft.Json;
 

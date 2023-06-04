@@ -1,9 +1,9 @@
 ﻿using communicate_client_server;
-using Get_response_using_API;
-using Library_football;
+using API;
+using LibraryFootBall;
 using Newtonsoft.Json;
 using ResponseDataStructure;
-using SQL_Connection;
+using SQLConnection;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -21,8 +21,8 @@ namespace Communicate
     public class Response
     {
         NetworkStream stream;
-        API api = new API();
-        SQL_user sqlUser = new SQL_user();
+        ApiUser api = new ApiUser();
+        SqlUser sqlUser = new SqlUser();
         string payload = null;
         string jsonData = null;
         public Response(NetworkStream stream)
