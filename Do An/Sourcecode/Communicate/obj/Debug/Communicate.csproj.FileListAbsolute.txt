@@ -134,3 +134,5 @@ E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Co
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Communicate\obj\Debug\Communicate.csproj.CopyComplete
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Communicate\obj\Debug\Communicate.exe
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Communicate\obj\Debug\Communicate.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\obj\Debug\Communicate.csproj.App.config
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\obj\Debug\Communicate.Form_Register.resources
