@@ -77,7 +77,7 @@ namespace Communicate
                 serverCheckHealthProbe.Start();
                 while (true)
                 {
-                    TcpClient client = server.AcceptTcpClient();
+                    TcpClient client = serverCheckHealthProbe.AcceptTcpClient();
                     this.Invoke(new Action(() =>
                     {
                         listBox1.Items.Add("health check OK");
