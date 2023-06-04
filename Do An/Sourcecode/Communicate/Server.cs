@@ -44,7 +44,7 @@ namespace Communicate
             try
             {
                 IPAddress ipAddress = IPAddress.Parse("127.0.0.1");
-                server = new TcpListener(IPAddress.Any, 2509);
+                server = new TcpListener(IPAddress.Any, 80);
                 server.Start();
                 while (true)
                 {
