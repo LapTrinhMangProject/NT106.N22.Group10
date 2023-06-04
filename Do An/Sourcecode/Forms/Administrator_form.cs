@@ -74,6 +74,7 @@ namespace Forms
                     League league = index.league;
                     requestUser.Send("00101", league);
                     MessageBox.Show("sent");
+                    await Task.Delay(5000);
                     return;
                 }
         }

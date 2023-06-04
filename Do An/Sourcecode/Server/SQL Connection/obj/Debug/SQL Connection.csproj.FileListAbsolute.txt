@@ -20,11 +20,25 @@ D:\Code\Do An\Sourcecode\Server\SQL Connection\obj\Debug\SQL Connection.csproj.C
 D:\Code\Do An\Sourcecode\Server\SQL Connection\obj\Debug\SQL Connection.csproj.CopyComplete
 D:\Code\Do An\Sourcecode\Server\SQL Connection\obj\Debug\SQL_Connection.dll
 D:\Code\Do An\Sourcecode\Server\SQL Connection\obj\Debug\SQL_Connection.pdb
-C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\SQL Connection\bin\Debug\System.Configuration.ConfigurationManager.dll
-C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\SQL Connection\bin\Debug\System.Security.AccessControl.dll
-C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\SQL Connection\bin\Debug\System.Security.Permissions.dll
-C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\SQL Connection\bin\Debug\System.Security.Principal.Windows.dll
-C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\SQL Connection\bin\Debug\System.Configuration.ConfigurationManager.xml
-C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\SQL Connection\bin\Debug\System.Security.AccessControl.xml
-C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\SQL Connection\bin\Debug\System.Security.Permissions.xml
-C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\SQL Connection\bin\Debug\System.Security.Principal.Windows.xml
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\SQL Connection\bin\Debug\SQL_Connection.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\SQL Connection\bin\Debug\SQL_Connection.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\SQL Connection\bin\Debug\Library_football.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\SQL Connection\bin\Debug\Response.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\SQL Connection\bin\Debug\Library_football.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\SQL Connection\bin\Debug\Response.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\SQL Connection\obj\Debug\SQL Connection.csproj.AssemblyReference.cache
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\SQL Connection\obj\Debug\SQL Connection.csproj.CoreCompileInputs.cache
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\SQL Connection\obj\Debug\SQL Connection.csproj.CopyComplete
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\SQL Connection\obj\Debug\SQL_Connection.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\SQL Connection\obj\Debug\SQL_Connection.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\SQL Connection\bin\Debug\SQL_Connection.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\SQL Connection\bin\Debug\SQL_Connection.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\SQL Connection\bin\Debug\Library_football.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\SQL Connection\bin\Debug\Response.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\SQL Connection\bin\Debug\Library_football.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\SQL Connection\bin\Debug\Response.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\SQL Connection\obj\Debug\SQL Connection.csproj.AssemblyReference.cache
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\SQL Connection\obj\Debug\SQL Connection.csproj.CoreCompileInputs.cache
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\SQL Connection\obj\Debug\SQL Connection.csproj.CopyComplete
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\SQL Connection\obj\Debug\SQL_Connection.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\SQL Connection\obj\Debug\SQL_Connection.pdb

@@ -28,11 +28,33 @@ C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_respons
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\bin\Debug\SQL_Connection.pdb
 D:\code\Do An\Sourcecode\Server\Get_response_using_API\bin\Debug\SQL_Connection.dll
 D:\code\Do An\Sourcecode\Server\Get_response_using_API\bin\Debug\SQL_Connection.pdb
-C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\bin\Debug\System.Configuration.ConfigurationManager.dll
-C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\bin\Debug\System.Security.AccessControl.dll
-C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\bin\Debug\System.Security.Permissions.dll
-C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\bin\Debug\System.Security.Principal.Windows.dll
-C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\bin\Debug\System.Configuration.ConfigurationManager.xml
-C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\bin\Debug\System.Security.AccessControl.xml
-C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\bin\Debug\System.Security.Permissions.xml
-C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\bin\Debug\System.Security.Principal.Windows.xml
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Get_response_using_API\bin\Debug\Get_response_using_API.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Get_response_using_API\bin\Debug\Get_response_using_API.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Get_response_using_API\bin\Debug\Library_football.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Get_response_using_API\bin\Debug\Newtonsoft.Json.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Get_response_using_API\bin\Debug\Response.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Get_response_using_API\bin\Debug\SQL_Connection.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Get_response_using_API\bin\Debug\Library_football.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Get_response_using_API\bin\Debug\Response.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Get_response_using_API\bin\Debug\SQL_Connection.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Get_response_using_API\bin\Debug\Newtonsoft.Json.xml
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Get_response_using_API\obj\Debug\Get_response_using_API.csproj.AssemblyReference.cache
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Get_response_using_API\obj\Debug\Get_response_using_API.csproj.CoreCompileInputs.cache
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Get_response_using_API\obj\Debug\Get_response_using_API.csproj.CopyComplete
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Get_response_using_API\obj\Debug\Get_response_using_API.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Get_response_using_API\obj\Debug\Get_response_using_API.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Get_response_using_API\bin\Debug\Get_response_using_API.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Get_response_using_API\bin\Debug\Get_response_using_API.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Get_response_using_API\bin\Debug\Library_football.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Get_response_using_API\bin\Debug\Newtonsoft.Json.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Get_response_using_API\bin\Debug\Response.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Get_response_using_API\bin\Debug\SQL_Connection.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Get_response_using_API\bin\Debug\Library_football.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Get_response_using_API\bin\Debug\Response.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Get_response_using_API\bin\Debug\SQL_Connection.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Get_response_using_API\bin\Debug\Newtonsoft.Json.xml
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Get_response_using_API\obj\Debug\Get_response_using_API.csproj.AssemblyReference.cache
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Get_response_using_API\obj\Debug\Get_response_using_API.csproj.CoreCompileInputs.cache
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Get_response_using_API\obj\Debug\Get_response_using_API.csproj.CopyComplete
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Get_response_using_API\obj\Debug\Get_response_using_API.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Get_response_using_API\obj\Debug\Get_response_using_API.pdb
