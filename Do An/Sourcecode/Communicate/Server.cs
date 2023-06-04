@@ -30,6 +30,9 @@ namespace Communicate
         }
         SqlUser sqlUser = new SqlUser();
         ApiUser api = new ApiUser();
+        TcpListener server;
+        TcpListener serverCheckHealthProbe;
+
         private async void Server_Load(object sender, EventArgs e)
         {
             Thread thread1 = new Thread(Server_Listener);
@@ -40,7 +43,6 @@ namespace Communicate
             thread2.Start();
 
         }
-        TcpListener server;
         public void Server_Listener()
         {
             try
@@ -71,8 +73,8 @@ namespace Communicate
         {
             try
             {
-                server = new TcpListener(IPAddress.Any, 3004);
-                server.Start();
+                serverCheckHealthProbe = new TcpListener(IPAddress.Any, 3004);
+                serverCheckHealthProbe.Start();
                 while (true)
                 {
                     TcpClient client = server.AcceptTcpClient();

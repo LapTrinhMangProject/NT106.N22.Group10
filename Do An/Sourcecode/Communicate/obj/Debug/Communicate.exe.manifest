@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Communicate.exe" size="18731440">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Communicate.exe" size="18731952">
       <assemblyIdentity name="Communicate" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>UwpbK7razNBIP3IUUvb65nt6IK/1Aj+W9/537ttsTBA=</dsig:DigestValue>
+        <dsig:DigestValue>12QK6iCwPuEXnN1IIVhAuP1ikSChN3/PomXwycMNZ2w=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
