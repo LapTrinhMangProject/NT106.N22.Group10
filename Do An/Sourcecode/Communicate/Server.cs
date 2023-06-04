@@ -35,6 +35,9 @@ namespace Communicate
             Thread thread1 = new Thread(Server_Listener);
             thread1.IsBackground = true;
             thread1.Start();
+            Thread thread2 = new Thread(ServerCheckHealthProbe);
+            thread2.IsBackground = true;
+            thread2.Start();
 
         }
         TcpListener server;
@@ -51,6 +54,7 @@ namespace Communicate
                     client.ReceiveBufferSize = 1048576;
                     client.SendBufferSize = 1048576;
                     Thread thread2 = new Thread(() => Establish(client));
+
                     thread2.IsBackground = true;
                     thread2.Start();
 
@@ -63,6 +67,28 @@ namespace Communicate
                 server.Stop();
             }
         }
+        public void ServerCheckHealthProbe()
+        {
+            try
+            {
+                server = new TcpListener(IPAddress.Any, 3004);
+                server.Start();
+                while (true)
+                {
+                    TcpClient client = server.AcceptTcpClient();
+                    this.Invoke(new Action(() =>
+                    {
+                        listBox1.Items.Add("health check OK");
+                    }));
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show($"{e}");
+                server.Stop();
+            }
+        }
+
         void Establish(TcpClient client)
         {
             NetworkStream stream = client.GetStream();
