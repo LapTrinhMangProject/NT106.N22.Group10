@@ -103,63 +103,79 @@ namespace Communicate
             }));
             while (client.Connected)
             {
-                int bytes_read = 0;
-                byte[] header = new byte[4];
-                bytes_read += stream.Read(header, 0, 4);
-                int length = BitConverter.ToInt32(header, 0);
-                bytes_read = 0;
-                byte[] buffer = new byte[length];
-                while (bytes_read < length)
-                    bytes_read += stream.Read(buffer, bytes_read, length - bytes_read);
-                string data = Encoding.UTF8.GetString(buffer, 0, length);
-                string jsonData = data.Substring(5);
-                string code = data.Substring(0, 5);
-                //     MessageBox.Show(jsonData);
-                League league = JsonConvert.DeserializeObject<League>(jsonData);
-                this.Invoke(new Action(async () =>
+                try
                 {
-                    switch (code)
-                    {
-                        case "00000":
-                            string result = null;
-                            reponse.Check_Credential(jsonData, ref result, ipRemote);
-                            status_listbox.Items.Add(result);
-                            break;
-                        case "00001":
-                            reponse.Get_All_Players(league);
-                            status_listbox.Items.Add($"{ipRemote} Yêu cầu lấy thông tin danh sách cầu thủ");
-                            status_listbox.Items.Add($"Trả về danh sách cầu thủ giải đấu {league.name}");
-                            break;
-                        case "00011":
-                            reponse.Get_All_Teams_And_venue(league);
-                            status_listbox.Items.Add($"{ipRemote} Yêu cầu lấy thông tin danh sách đội");
-                            status_listbox.Items.Add($"Trả về danh sách danh sách đội cho giải đấu {league.name}");
-                            break;
-                        case "00100":
-                            reponse.Get_Team_Standing(league);
-                            status_listbox.Items.Add($"{ipRemote} Yêu cầu lấy thông tin bảng xếp hạng cho giải đấu");
-                            status_listbox.Items.Add($"Trả về bảng xếp hạng giải đấu {league.name}");
-                            break;
-                        case "00101":
-                            string leagueId = league.id.ToString();
-                            status_listbox.Items.Add($"{ipRemote} yêu cầu Thêm giải {league.name}, request API ");
-                            var temp = await api.Get_all_players_from_league(leagueId);
-                            status_listbox.Items.Add($"Đang cập nhật cầu thủ cho giải đấu {league.name}");
-                            foreach (var index in temp)
-                                foreach (var player in index.response)
-                                    sqlUser.AddPlayers(player);
-                            status_listbox.Items.Add($"Cập nhật xong cầu thủ cho giải đấu {league.name}");
-                            status_listbox.Items.Add($"Đang cập nhật đội cho giải đấu {league.name}");
-                            List<Team> _teams = await api.Get_Teams_from_Leagues(league, true);
-                            foreach (var team in _teams)
-                                sqlUser.AddTeam(team, league.name);
-                            status_listbox.Items.Add($"Cập nhật xong các đội cho giải đấu {league.name}");
+                    int bytes_read = 0;
+                    byte[] header = new byte[4];
+                    bytes_read += stream.Read(header, 0, 4);
+                    int length = BitConverter.ToInt32(header, 0);
+                    bytes_read = 0;
+                    byte[] buffer = new byte[length];
+                    while (bytes_read < length)
+                        bytes_read += stream.Read(buffer, bytes_read, length - bytes_read);
+                    string data = Encoding.UTF8.GetString(buffer, 0, length);
+                    string jsonData = data.Substring(5);
+                    string code = data.Substring(0, 5);
+                    //     MessageBox.Show(jsonData);
+                    League league = JsonConvert.DeserializeObject<League>(jsonData);
 
-                            break;
-                    }
-                    status_listbox.TopIndex = status_listbox.Items.Count - 1;
-                    status_listbox.Refresh();
-                }));
+                    this.Invoke(new Action(async () =>
+                    {
+                        switch (code)
+                        {
+                            case "00000":
+                                string result = null;
+                                reponse.Check_Credential(jsonData, ref result, ipRemote);
+                                status_listbox.Items.Add(result);
+                                break;
+                            case "00001":
+                                reponse.Get_All_Players(league);
+                                status_listbox.Items.Add($"{ipRemote} Yêu cầu lấy thông tin danh sách cầu thủ");
+                                status_listbox.Items.Add($"Trả về danh sách cầu thủ giải đấu {league.name}");
+                                break;
+                            case "00011":
+                                reponse.Get_All_Teams_And_venue(league);
+                                status_listbox.Items.Add($"{ipRemote} Yêu cầu lấy thông tin danh sách đội");
+                                status_listbox.Items.Add($"Trả về danh sách danh sách đội cho giải đấu {league.name}");
+                                break;
+                            case "00100":
+                                reponse.Get_Team_Standing(league);
+                                status_listbox.Items.Add($"{ipRemote} Yêu cầu lấy thông tin bảng xếp hạng cho giải đấu");
+                                status_listbox.Items.Add($"Trả về bảng xếp hạng giải đấu {league.name}");
+                                break;
+                            case "00101":
+                                string leagueId = league.id.ToString();
+                                status_listbox.Items.Add($"{ipRemote} yêu cầu Thêm giải {league.name}, request API ");
+                                var temp = await api.Get_all_players_from_league(leagueId);
+                                status_listbox.Items.Add($"Đang cập nhật cầu thủ cho giải đấu {league.name}");
+                                foreach (var index in temp)
+                                    foreach (var player in index.response)
+                                        sqlUser.AddPlayers(player);
+                                status_listbox.Items.Add($"Cập nhật xong cầu thủ cho giải đấu {league.name}");
+                                status_listbox.Items.Add($"Đang cập nhật đội cho giải đấu {league.name}");
+                                List<Team> _teams = await api.Get_Teams_from_Leagues(league, true);
+                                foreach (var team in _teams)
+                                    sqlUser.AddTeam(team, league.name);
+                                status_listbox.Items.Add($"Cập nhật xong các đội cho giải đấu {league.name}");
+
+                                break;
+                        }
+                        status_listbox.TopIndex = status_listbox.Items.Count - 1;
+                        status_listbox.Refresh();
+                    }));
+                }
+                catch (Exception e)
+                {
+
+                    client.Close();
+                    this.Invoke(new Action(() =>
+                    {
+                        status_listbox.Items.Add($"{ipRemote} Đóng kết nối");
+                    }));
+
+
+                }
+
             }
 
 
