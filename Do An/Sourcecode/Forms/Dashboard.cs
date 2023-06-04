@@ -1,4 +1,4 @@
-﻿using Get_response_using_API;
+﻿using API;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,12 +8,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Get_response_using_API;
+using API;
 using ResponseDataStructure;
 using System.IO;
 using Communicate;
 using System.Net;
-using Library_football;
+using LibraryFootBall;
 using Newtonsoft.Json;
 
 namespace Forms
@@ -40,16 +40,12 @@ namespace Forms
             {
                 standing_listbox.Items.Add(index.Rank + " " + index.Team.Name + "Point: " + index.Points);
             }
-            string urlLogo = responseStanding.League.logo;
-            Display_Photo(urlLogo);
             void Display_Photo(string url)
             {
                 WebClient client = new WebClient();
                 byte[] imageData = client.DownloadData(url);
                 MemoryStream ms = new MemoryStream(imageData);
                 Bitmap image = new Bitmap(ms);
-                logo_picturebox.SizeMode = PictureBoxSizeMode.StretchImage;
-                logo_picturebox.Image = image;
             }
         }
 

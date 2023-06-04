@@ -1,6 +1,5 @@
-﻿using communicate_client_server;
-using Newtonsoft.Json;
-using SQL_Connection;
+﻿using Newtonsoft.Json;
+using SQLConnection;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,10 +14,10 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Forms;
-using Get_response_using_API;
+using API;
 using System.ComponentModel.Design.Serialization;
 using ResponseDataStructure;
-using Library_football;
+using LibraryFootBall;
 using System.Net.Http;
 
 namespace Communicate
@@ -29,8 +28,8 @@ namespace Communicate
         {
             InitializeComponent();
         }
-        SQL_user sqlUser = new SQL_user();
-        API api = new API();
+        SqlUser sqlUser = new SqlUser();
+        ApiUser api = new ApiUser();
         private async void Server_Load(object sender, EventArgs e)
         {
             Thread thread1 = new Thread(Server_Listener);
@@ -136,6 +135,11 @@ namespace Communicate
             }
 
 
+
+        }
+
+        private void status_listbox_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

@@ -1,0 +1,44 @@
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\SQL Connection\bin\Debug\SQL_Connection.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\SQL Connection\bin\Debug\SQL_Connection.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\SQL Connection\bin\Debug\Library_football.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\SQL Connection\bin\Debug\Library_football.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\SQL Connection\obj\Debug\SQL Connection.csproj.AssemblyReference.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\SQL Connection\obj\Debug\SQL Connection.csproj.CoreCompileInputs.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\SQL Connection\obj\Debug\SQL Connection.csproj.CopyComplete
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\SQL Connection\obj\Debug\SQL_Connection.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\SQL Connection\obj\Debug\SQL_Connection.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\SQL Connection\bin\Debug\Response.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\SQL Connection\bin\Debug\Response.pdb
+D:\Code\Do An\Sourcecode\Server\SQL Connection\bin\Debug\SQL_Connection.dll
+D:\Code\Do An\Sourcecode\Server\SQL Connection\bin\Debug\SQL_Connection.pdb
+D:\Code\Do An\Sourcecode\Server\SQL Connection\bin\Debug\Library_football.dll
+D:\Code\Do An\Sourcecode\Server\SQL Connection\bin\Debug\Response.dll
+D:\Code\Do An\Sourcecode\Server\SQL Connection\bin\Debug\Library_football.pdb
+D:\Code\Do An\Sourcecode\Server\SQL Connection\bin\Debug\Response.pdb
+D:\Code\Do An\Sourcecode\Server\SQL Connection\obj\Debug\SQL Connection.csproj.AssemblyReference.cache
+D:\Code\Do An\Sourcecode\Server\SQL Connection\obj\Debug\SQL Connection.csproj.CoreCompileInputs.cache
+D:\Code\Do An\Sourcecode\Server\SQL Connection\obj\Debug\SQL Connection.csproj.CopyComplete
+D:\Code\Do An\Sourcecode\Server\SQL Connection\obj\Debug\SQL_Connection.dll
+D:\Code\Do An\Sourcecode\Server\SQL Connection\obj\Debug\SQL_Connection.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\SQL Connection\bin\Debug\SQL_Connection.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\SQL Connection\bin\Debug\SQL_Connection.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\SQL Connection\bin\Debug\Library_football.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\SQL Connection\bin\Debug\Response.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\SQL Connection\bin\Debug\Library_football.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\SQL Connection\bin\Debug\Response.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\SQL Connection\obj\Debug\SQL Connection.csproj.AssemblyReference.cache
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\SQL Connection\obj\Debug\SQL Connection.csproj.CoreCompileInputs.cache
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\SQL Connection\obj\Debug\SQL Connection.csproj.CopyComplete
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\SQL Connection\obj\Debug\SQL_Connection.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\SQL Connection\obj\Debug\SQL_Connection.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\SQL Connection\bin\Debug\SQL_Connection.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\SQL Connection\bin\Debug\SQL_Connection.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\SQL Connection\bin\Debug\Library_football.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\SQL Connection\bin\Debug\Response.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\SQL Connection\bin\Debug\Library_football.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\SQL Connection\bin\Debug\Response.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\SQL Connection\obj\Debug\SQL Connection.csproj.AssemblyReference.cache
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\SQL Connection\obj\Debug\SQL Connection.csproj.CoreCompileInputs.cache
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\SQL Connection\obj\Debug\SQL Connection.csproj.CopyComplete
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\SQL Connection\obj\Debug\SQL_Connection.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\SQL Connection\obj\Debug\SQL_Connection.pdb

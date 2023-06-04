@@ -1,0 +1,7 @@
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\ResponseJsonDataStructure\LibraryFootBall\bin\Release\Library_football.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\ResponseJsonDataStructure\LibraryFootBall\bin\Release\Library_football.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\ResponseJsonDataStructure\LibraryFootBall\obj\Release\LibraryFootBall.csproj.AssemblyReference.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\ResponseJsonDataStructure\LibraryFootBall\obj\Release\LibraryFootBall.csproj.CoreCompileInputs.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\ResponseJsonDataStructure\LibraryFootBall\obj\Release\LibraryFootBall.csproj.CopyComplete
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\ResponseJsonDataStructure\LibraryFootBall\obj\Release\Library_football.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\ResponseJsonDataStructure\LibraryFootBall\obj\Release\Library_football.pdb

@@ -1,0 +1,54 @@
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Server\Response\bin\Debug\Response.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Server\Response\bin\Debug\Response.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Server\Response\bin\Debug\Library_football.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Server\Response\bin\Debug\Library_football.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Server\Response\obj\Debug\ResponseJsonDataSructure.csproj.AssemblyReference.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Server\Response\obj\Debug\ResponseJsonDataSructure.csproj.CoreCompileInputs.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Server\Response\obj\Debug\ResponseJsonDataSructure.csproj.CopyComplete
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Server\Response\obj\Debug\Response.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Server\Response\obj\Debug\Response.pdb
+D:\code\Do An\Sourcecode\Server\Server\Response\bin\Debug\Response.dll
+D:\code\Do An\Sourcecode\Server\Server\Response\bin\Debug\Response.pdb
+D:\code\Do An\Sourcecode\Server\Server\Response\bin\Debug\Library_football.dll
+D:\code\Do An\Sourcecode\Server\Server\Response\bin\Debug\Library_football.pdb
+D:\code\Do An\Sourcecode\Server\Server\Response\obj\Debug\ResponseJsonDataSructure.csproj.AssemblyReference.cache
+D:\code\Do An\Sourcecode\Server\Server\Response\obj\Debug\ResponseJsonDataSructure.csproj.CoreCompileInputs.cache
+D:\code\Do An\Sourcecode\Server\Server\Response\obj\Debug\ResponseJsonDataSructure.csproj.CopyComplete
+D:\code\Do An\Sourcecode\Server\Server\Response\obj\Debug\Response.dll
+D:\code\Do An\Sourcecode\Server\Server\Response\obj\Debug\Response.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Server\Response\bin\Debug\Response.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Server\Response\bin\Debug\Response.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Server\Response\bin\Debug\Library_football.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Server\Response\bin\Debug\Library_football.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Server\Response\obj\Debug\ResponseJsonDataSructure.csproj.AssemblyReference.cache
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Server\Response\obj\Debug\ResponseJsonDataSructure.csproj.CoreCompileInputs.cache
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Server\Response\obj\Debug\ResponseJsonDataSructure.csproj.CopyComplete
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Server\Response\obj\Debug\Response.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Server\Server\Response\obj\Debug\Response.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Server\Response\bin\Debug\Response.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Server\Response\bin\Debug\Response.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Server\Response\bin\Debug\Library_football.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Server\Response\bin\Debug\Library_football.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Server\Response\obj\Debug\ResponseJsonDataSructure.csproj.AssemblyReference.cache
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Server\Response\obj\Debug\ResponseJsonDataSructure.csproj.CoreCompileInputs.cache
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Server\Response\obj\Debug\ResponseJsonDataSructure.csproj.CopyComplete
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Server\Response\obj\Debug\Response.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Server\Server\Response\obj\Debug\Response.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\ResponseJsonDataStructure\obj\Debug\ResponseJsonDataSructure.csproj.AssemblyReference.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\ResponseJsonDataStructure\obj\Debug\ResponseJsonDataSructure.csproj.CoreCompileInputs.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\ResponseJsonDataStructure\obj\Debug\Response.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\ResponseJsonDataStructure\obj\Debug\Response.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\ResponseJsonDataStructure\bin\Debug\Response.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\ResponseJsonDataStructure\bin\Debug\Response.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\ResponseJsonDataStructure\bin\Debug\Library_football.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\ResponseJsonDataStructure\bin\Debug\Library_football.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\ResponseJsonDataStructure\obj\Debug\ResponseJsonDataSructure.csproj.CopyComplete
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\ResponseJsonDataStructure\bin\Debug\Response.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\ResponseJsonDataStructure\bin\Debug\Response.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\ResponseJsonDataStructure\bin\Debug\Library_football.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\ResponseJsonDataStructure\bin\Debug\Library_football.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\ResponseJsonDataStructure\obj\Debug\ResponseJsonDataSructure.csproj.AssemblyReference.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\ResponseJsonDataStructure\obj\Debug\ResponseJsonDataSructure.csproj.CoreCompileInputs.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\ResponseJsonDataStructure\obj\Debug\ResponseJsonDataSructure.csproj.CopyComplete
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\ResponseJsonDataStructure\obj\Debug\Response.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Server\Get_response_using_API\ResponseJsonDataStructure\obj\Debug\Response.pdb

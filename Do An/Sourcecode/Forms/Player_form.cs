@@ -1,5 +1,5 @@
-﻿using Library_football;
-using SQL_Connection;
+﻿using LibraryFootBall;
+using SQLConnection;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Get_response_using_API;
+using API;
 using ResponseDataStructure;
 using System.Net;
 using System.IO;
@@ -67,7 +67,7 @@ namespace Forms
         public async void Display_All_Statistic_Of_specific()
         {
             {
-                API aPI = new API();
+                ApiUser aPI = new ApiUser();
                 Root_Response_Player_and_Statistic reponsePlayer = new Root_Response_Player_and_Statistic();
                 string id;
                 if (idPlayer != null)

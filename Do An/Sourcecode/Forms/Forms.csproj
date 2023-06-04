@@ -35,8 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Server\Server\bin\Debug\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\Communicate\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -78,8 +77,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Response.cs" />
     <Compile Include="Request.cs" />
+    <Compile Include="Response.cs" />
     <Compile Include="Team_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +119,7 @@
     <EmbeddedResource Include="Topscore_form.resx">
       <DependentUpon>Topscore_form.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -134,21 +134,45 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Server\Get_response_using_API\Get_response_using_API.csproj">
+    <None Include="Resources\Pivot_soccer.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4399246973949_e9f6eb0e3d5193f16dac268c991ce1bd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FC_Barcelona_%28crest%29.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-computer-icons-top-1-game-text-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy %282%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading-load-icon-transparent-png-11639609114lctjenyas8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Server\Get_response_using_API\API.csproj">
       <Project>{c9f39a9b-f60b-434d-903b-465745aa5840}</Project>
-      <Name>Get_response_using_API</Name>
+      <Name>API</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Server\Server\league\Library Football.csproj">
+    <ProjectReference Include="..\Server\Get_response_using_API\ResponseJsonDataStructure\LibraryFootBall\LibraryFootBall.csproj">
       <Project>{ac82b139-d9fd-4ee0-a17d-0af422372cc3}</Project>
-      <Name>Library Football</Name>
+      <Name>LibraryFootBall</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Server\Server\Response\ResponseJsonDataSructure.csproj">
+    <ProjectReference Include="..\Server\Get_response_using_API\ResponseJsonDataStructure\ResponseJsonDataSructure.csproj">
       <Project>{33e0f8b3-61db-4d33-8195-625549c18f94}</Project>
       <Name>ResponseJsonDataSructure</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Server\SQL Connection\SQL Connection.csproj">
+    <ProjectReference Include="..\Server\Get_response_using_API\SQL Connection\SQLConnection.csproj">
       <Project>{08459c43-9d61-4c2b-82e6-4571a6d91c05}</Project>
-      <Name>SQL Connection</Name>
+      <Name>SQLConnection</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

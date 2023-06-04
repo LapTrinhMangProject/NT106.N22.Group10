@@ -1,6 +1,6 @@
 ﻿using communicate_client_server;
 using Forms;
-using Library_football;
+using LibraryFootBall;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -17,7 +17,6 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Forms;
-using Forms;
 using ResponseDataStructure;
 
 namespace Communicate
@@ -102,7 +101,7 @@ namespace Communicate
         {
             ipAddress = IPAddress.Parse("20.24.132.202");
             //  ipAddress = IPAddress.Parse("127.0.0.1");
-            client.Connect(ipAddress, 2509);
+            client.Connect(ipAddress, 80);
             stream = client.GetStream();
             requestUser = new Request(stream);
             Thread thread1 = new Thread(Client_listening);
@@ -115,6 +114,13 @@ namespace Communicate
             {
                 login_button.PerformClick();
             }
+        }
+
+        private void bt_Dangky_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form_Register f3 = new Form_Register();
+            f3.ShowDialog();
         }
     }
 }

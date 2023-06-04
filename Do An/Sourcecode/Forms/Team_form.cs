@@ -1,7 +1,7 @@
-﻿using Get_response_using_API;
-using Library_football;
+﻿using API;
+using LibraryFootBall;
 using ResponseDataStructure;
-using SQL_Connection;
+using SQLConnection;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
