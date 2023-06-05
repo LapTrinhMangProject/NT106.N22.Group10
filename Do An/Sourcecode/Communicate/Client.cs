@@ -27,9 +27,12 @@ namespace Communicate
         NetworkStream stream;
         IPAddress ipAddress;
         Request requestUser;
+        public static List<IPAddress> _ipAddress = new List<IPAddress>();
+        public static int index = 0;
         public Client()
         {
             InitializeComponent();
+            ipAddress = _ipAddress[index];
         }
         private void label1_Click(object sender, EventArgs e)
         {
@@ -45,7 +48,18 @@ namespace Communicate
             {
                 int bytes_read = 0;
                 byte[] header = new byte[4];
-                bytes_read += stream.Read(header, 0, 4);
+                try
+                {
+                    bytes_read += stream.Read(header, 0, 4);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Server chỉnh Hỏng, chuyển sang server phụ");
+                    index++;
+                    Client client = new Client();
+                    this.Close();
+                    client.Show();
+                }
                 int length = BitConverter.ToInt32(header, 0);
                 bytes_read = 0;
                 byte[] buffer = new byte[length];
@@ -99,9 +113,25 @@ namespace Communicate
         }
         private void Client_Load(object sender, EventArgs e)
         {
-            ipAddress = IPAddress.Parse("20.24.132.202");
-            //  ipAddress = IPAddress.Parse("127.0.0.1");
-            client.Connect(ipAddress, 80);
+            try
+            {
+                client.Connect(ipAddress, 80);
+            }
+            catch (SocketException ex)
+            {
+                MessageBox.Show("Lỗi Server chính, chuyển sang Server phụ", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                index++;
+            }
+            try
+            {
+                client.Connect(ipAddress, 80);
+            }
+            catch (SocketException ei)
+            {
+                MessageBox.Show("Không Thể kết nối tới Server, đóng ứng dụng", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                Application.Exit();
+                return;
+            }
             stream = client.GetStream();
             requestUser = new Request(stream);
             Thread thread1 = new Thread(Client_listening);
