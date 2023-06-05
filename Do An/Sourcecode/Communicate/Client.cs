@@ -27,12 +27,25 @@ namespace Communicate
         NetworkStream stream;
         IPAddress ipAddress;
         Request requestUser;
+        public static Dashboard dashboardForm = new Dashboard();
+        public static Team_form teamForm = new Team_form();
+        public static Player_form playerForm = new Player_form();
+        public static Administrator_form administrator = new Administrator_form();
+        public static League_form leagueForm = new League_form();
         public static List<IPAddress> _ipAddress = new List<IPAddress>();
         public static int index = 0;
         public Client()
         {
             InitializeComponent();
-            ipAddress = _ipAddress[index];
+            try
+            {
+                ipAddress = _ipAddress[index];
+            }
+            catch
+            {
+                MessageBox.Show("Không thể kết nối được tới Server, ứng dụng sẽ thoát", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                Application.Exit();
+            }
         }
         private void label1_Click(object sender, EventArgs e)
         {
@@ -54,11 +67,21 @@ namespace Communicate
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Server chỉnh Hỏng, chuyển sang server phụ");
+                    MessageBox.Show("Server chính hỏng, chuyển sang server phụ");
                     index++;
-                    Client client = new Client();
-                    this.Close();
-                    client.Show();
+                    this.Invoke(new Action(() =>
+                    {
+                        Form1.client.Close();
+                        Form1.ReloadClientForm();
+                        administrator.Hide();
+                        teamForm.Hide();
+                        dashboardForm.Hide();
+                        playerForm.Hide();
+                        leagueForm.Hide();
+                        Form1.client.Show();
+
+                    }));
+                    return;
                 }
                 int length = BitConverter.ToInt32(header, 0);
                 bytes_read = 0;
@@ -76,34 +99,34 @@ namespace Communicate
                             Login login = JsonConvert.DeserializeObject<Login>(jsonData);
                             if (login.valid && login.typeUser == "normal")
                             {
-                                League_form leagueForm = new League_form(login._league, requestUser);
-                                this.Hide();
+                                leagueForm = new League_form(login._league, requestUser);
+                                Form1.client.Hide();
                                 leagueForm.Show();
                             }
                             else if (login.valid && login.typeUser == "administrator")
                             {
-                                Administrator_form administrator = new Administrator_form(login, requestUser);
-                                this.Hide();
+                                administrator = new Administrator_form(login, requestUser);
+                                Form1.client.Hide();
                                 administrator.Show();
 
                             }
                             else
-                                MessageBox.Show("Tài khoản hoặc mật khẩu không đúng", "Lỗi đăng nhập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show("Tài khoản hoặc mật khẩu không đúng", "Lỗi đăng nhập", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
                             break;
                         case "00001":
                             List<Player> _player = JsonConvert.DeserializeObject<List<Player>>(jsonData);
-                            Player_form playerForm = new Player_form(_player);
-                            playerForm.ShowDialog();
+                            playerForm = new Player_form(_player);
+                            playerForm.Show();
                             break;
                         case "00011":
                             SQL_BothTeamAndVenue dataGeneral = JsonConvert.DeserializeObject<SQL_BothTeamAndVenue>(jsonData);
                             Team_form teamForm = new Team_form(dataGeneral._teams, dataGeneral.teamAndvenue);
-                            teamForm.ShowDialog();
+                            teamForm.Show();
                             break;
                         case "00100":
                             Root_Reponse_standing responseStanding = JsonConvert.DeserializeObject<Root_Reponse_standing>(jsonData);
-                            Dashboard dashboardForm = new Dashboard(responseStanding, requestUser);
-                            this.Hide();
+                            dashboardForm = new Dashboard(responseStanding, requestUser);
+                            leagueForm.Hide();
                             dashboardForm.Show();
                             break;
 
@@ -115,23 +138,25 @@ namespace Communicate
         {
             try
             {
-                client.Connect(ipAddress, 80);
+                client.Connect(ipAddress, 2509);
             }
             catch (SocketException ex)
             {
                 MessageBox.Show("Lỗi Server chính, chuyển sang Server phụ", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 index++;
+                try
+                {
+                    ipAddress = _ipAddress[index];
+                    client.Connect(ipAddress, 2509);
+                }
+                catch (SocketException ei)
+                {
+                    MessageBox.Show("Không Thể kết nối tới Server, đóng ứng dụng", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    Application.Exit();
+                    return;
+                }
             }
-            try
-            {
-                client.Connect(ipAddress, 80);
-            }
-            catch (SocketException ei)
-            {
-                MessageBox.Show("Không Thể kết nối tới Server, đóng ứng dụng", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                Application.Exit();
-                return;
-            }
+
             stream = client.GetStream();
             requestUser = new Request(stream);
             Thread thread1 = new Thread(Client_listening);

@@ -16,10 +16,11 @@ namespace Communicate
         {
             InitializeComponent();
         }
+        public static Client client;
 
         private void client_button_Click(object sender, EventArgs e)
         {
-            new Client().Show();
+            client.Show();
         }
 
         private void server_button_Click(object sender, EventArgs e)
@@ -31,6 +32,11 @@ namespace Communicate
         {
             Client._ipAddress.Add(IPAddress.Parse("20.24.132.202"));
             Client._ipAddress.Add(IPAddress.Parse("42.116.94.154"));
+            client = new Client();
+        }
+        static public void ReloadClientForm()
+        {
+            client = new Client();
         }
     }
 }
