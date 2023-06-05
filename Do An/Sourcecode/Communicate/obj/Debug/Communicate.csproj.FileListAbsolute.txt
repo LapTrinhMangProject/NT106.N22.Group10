@@ -112,6 +112,7 @@ C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\De
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Debug\Communicate.application
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Debug\Communicate.exe
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Debug\Communicate.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Debug\API.dll
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Debug\Forms.exe
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Debug\Library_football.dll
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Debug\Microsoft.Threading.Tasks.dll
@@ -124,6 +125,7 @@ C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\De
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Debug\System.Net.Http.Primitives.dll
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Debug\Forms.pdb
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Debug\Forms.exe.config
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Debug\API.pdb
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Debug\Library_football.pdb
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Debug\Response.pdb
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Debug\SQL_Connection.pdb
@@ -136,7 +138,7 @@ C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\De
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\obj\Debug\Communicate.csproj.App.config
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\obj\Debug\Communicate.csproj.AssemblyReference.cache
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\obj\Debug\Communicate.csproj.SuggestedBindingRedirects.cache
-C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\obj\Debug\Communicate.g.resources
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\obj\Debug\Communicate.exe.config
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\obj\Debug\Communicate.Client.resources
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\obj\Debug\Communicate.Form1.resources
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\obj\Debug\Communicate.Form_Register.resources
@@ -149,5 +151,3 @@ C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\obj\De
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\obj\Debug\Communicate.csproj.CopyComplete
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\obj\Debug\Communicate.exe
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\obj\Debug\Communicate.pdb
-C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Debug\API.dll
-C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Debug\API.pdb
