@@ -80,6 +80,7 @@ namespace Forms
                 reponsePlayer = await aPI.Get_Specific_player(id, leagueId);
                 infor_player_listbox.Items.Clear();
                 statistic_1_listbox.Items.Clear();
+                statistic2_list_box.Items.Clear();
                 Display_basic_infor();
                 Display_statistic();
 
@@ -98,9 +99,9 @@ namespace Forms
                     Display_photo(reponsePlayer.response[0].Player.photo);
                     async void Display_photo(string url)
                     {
-                     //   WebClient client = new WebClient();
-                       // byte[] imageData = client.DownloadData(url);
-                       HttpClient client = new HttpClient();
+                        //   WebClient client = new WebClient();
+                        // byte[] imageData = client.DownloadData(url);
+                        HttpClient client = new HttpClient();
                         byte[] imageData = await client.GetByteArrayAsync(url);
                         MemoryStream ms = new MemoryStream(imageData);
                         Bitmap image = new Bitmap(ms);
