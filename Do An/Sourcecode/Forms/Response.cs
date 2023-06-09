@@ -91,6 +91,13 @@ namespace Communicate
             payload = "00011" + JsonConvert.SerializeObject(data);
             Send(payload);
         }
+        public async Task<String> Get_Top_Score(string a)
+        {
+            Root_Response_Player_and_Statistic playerAndStat = await api.Get_Top_Score(a);
+            string jsonData = JsonConvert.SerializeObject(playerAndStat);
+            payload = "11111" + jsonData;
+            return payload;
+        }
 
         public void Send(string payload)
         {

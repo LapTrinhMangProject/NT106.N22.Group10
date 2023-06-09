@@ -129,6 +129,11 @@ namespace Communicate
                             leagueForm.Hide();
                             dashboardForm.Show();
                             break;
+                        case "11111":
+                            Root_Response_Player_and_Statistic playerAndStat = JsonConvert.DeserializeObject<Root_Response_Player_and_Statistic>(jsonData);
+                            Topscore_form newForm = new Topscore_form(playerAndStat);
+                            newForm.Show();
+                            break;
 
                     }
                 }));
