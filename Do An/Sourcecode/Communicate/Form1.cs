@@ -30,7 +30,7 @@ namespace Communicate
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Client._ipAddress.Add(IPAddress.Parse("20.24.132.202"));
+            Client._ipAddress.Add(IPAddress.Parse("127.0.0.1"));
             Client._ipAddress.Add(IPAddress.Parse("42.116.94.154"));
             client = new Client();
         }
