@@ -14,6 +14,7 @@ using MailKit;
 using MailKit.Search;
 using System.Threading;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace form
 {
@@ -80,8 +81,16 @@ namespace form
             var row = info.Item.Index;
             var col = info.Item.SubItems.IndexOf(info.SubItem);
             var value = info.Item.SubItems[col].Text;
-            Email email = new Email((UniqueId)listView1.Items[row].Tag, client);
+            if (row == 0 || row >= listView1.Items.Count)
+                return;
+            EmailForm email = new EmailForm((UniqueId)listView1.Items[row].Tag, client);
             email.ShowDialog();
+
+        }
+
+        private void sendmailButton_Click(object sender, EventArgs e)
+        {
+            LoginForm.sendForm.ShowDialog();
         }
     }
 }

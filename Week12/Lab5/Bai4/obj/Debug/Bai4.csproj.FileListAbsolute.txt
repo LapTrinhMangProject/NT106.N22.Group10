@@ -26,7 +26,6 @@ C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week12\Lab5\Bai4\bin\Debug\System.R
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week12\Lab5\Bai4\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week12\Lab5\Bai4\obj\Debug\Bai4.csproj.AssemblyReference.cache
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week12\Lab5\Bai4\obj\Debug\Bai4.csproj.SuggestedBindingRedirects.cache
-C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week12\Lab5\Bai4\obj\Debug\Bai4.LoginForm.resources
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week12\Lab5\Bai4\obj\Debug\Bai4.Properties.Resources.resources
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week12\Lab5\Bai4\obj\Debug\Bai4.csproj.GenerateResource.cache
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week12\Lab5\Bai4\obj\Debug\Bai4.csproj.CoreCompileInputs.cache

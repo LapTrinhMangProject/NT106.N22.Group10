@@ -1,6 +1,6 @@
 ﻿namespace form
 {
-    partial class Email
+    partial class EmailForm
     {
         /// <summary>
         /// Required designer variable.
@@ -53,13 +53,13 @@
             this.body.Size = new System.Drawing.Size(851, 355);
             this.body.TabIndex = 0;
             // 
-            // Email
+            // EmailForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(881, 543);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Email";
+            this.Name = "EmailForm";
             this.Text = "email";
             this.Load += new System.EventHandler(this.email_Load);
             this.groupBox1.ResumeLayout(false);

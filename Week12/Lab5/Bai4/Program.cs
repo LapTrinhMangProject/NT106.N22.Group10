@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using form;
 namespace Bai4
 {
     internal static class Program
@@ -16,7 +16,8 @@ namespace Bai4
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+            LoginForm loginForm = new LoginForm();
+            Application.Run(loginForm);
         }
     }
 }

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,15 +13,15 @@ using System.Windows.Forms;
 
 namespace form
 {
-    public partial class Email : Form
+    public partial class EmailForm : Form
     {
-        public Email()
+        public EmailForm()
         {
             InitializeComponent();
         }
         readonly UniqueId uid;
         readonly ImapClient client;
-        public Email(UniqueId uid, ImapClient client)
+        public EmailForm(UniqueId uid, ImapClient client)
         {
             this.uid = uid;
             this.client = client;
@@ -28,8 +29,23 @@ namespace form
         }
         private void email_Load(object sender, EventArgs e)
         {
+
             var message = client.Inbox.GetMessage(uid);
-            body.DocumentText = message.TextBody.ToString();
+            try
+            {
+                body.DocumentText = message.GetTextBody(MimeKit.Text.TextFormat.Html).ToString();
+            }
+            catch (NullReferenceException ex)
+            {
+                body.DocumentText = message.Body.ToString();
+
+            }
+
+
+
+
+
+
 
         }
 

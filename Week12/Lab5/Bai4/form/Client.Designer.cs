@@ -33,6 +33,7 @@
             this.from = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.subject = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.datetime = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.sendmailButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listView1
@@ -43,9 +44,9 @@
             this.subject,
             this.datetime});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(12, 92);
+            this.listView1.Location = new System.Drawing.Point(12, 163);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1081, 352);
+            this.listView1.Size = new System.Drawing.Size(1081, 281);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -74,11 +75,22 @@
             this.datetime.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.datetime.Width = 210;
             // 
+            // sendmailButton
+            // 
+            this.sendmailButton.Location = new System.Drawing.Point(21, 98);
+            this.sendmailButton.Name = "sendmailButton";
+            this.sendmailButton.Size = new System.Drawing.Size(134, 36);
+            this.sendmailButton.TabIndex = 1;
+            this.sendmailButton.Text = "Gửi mail";
+            this.sendmailButton.UseVisualStyleBackColor = true;
+            this.sendmailButton.Click += new System.EventHandler(this.sendmailButton_Click);
+            // 
             // ClientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1105, 456);
+            this.Controls.Add(this.sendmailButton);
             this.Controls.Add(this.listView1);
             this.Name = "ClientForm";
             this.Text = "Client";
@@ -94,5 +106,6 @@
         private System.Windows.Forms.ColumnHeader from;
         private System.Windows.Forms.ColumnHeader subject;
         private System.Windows.Forms.ColumnHeader datetime;
+        private System.Windows.Forms.Button sendmailButton;
     }
 }
