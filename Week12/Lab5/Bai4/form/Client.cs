@@ -92,5 +92,12 @@ namespace form
         {
             LoginForm.sendForm.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            LoginForm.clientForm.Close();
+            LoginForm.loginForm.Show();
+            client.Disconnect(true);
+        }
     }
 }

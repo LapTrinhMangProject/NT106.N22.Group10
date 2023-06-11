@@ -14,10 +14,9 @@ namespace Bai4
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            LoginForm loginForm = new LoginForm();
-            Application.Run(loginForm);
+            Application.EnableVisualStyles();
+            Application.Run(new LoginForm());
         }
     }
 }

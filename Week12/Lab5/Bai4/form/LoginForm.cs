@@ -24,6 +24,7 @@ namespace form
         public static SendForm sendForm = new SendForm();
         public static string username;
         public static string password;
+        public static LoginForm loginForm = new LoginForm();
         private void LoginForm_Load(object sender, EventArgs e)
         {
 
@@ -38,8 +39,9 @@ namespace form
             client.Authenticate(username, password);
             if (client.IsAuthenticated)
             {
+                LoginForm.loginForm = this;
+                LoginForm.loginForm.Hide();
                 clientForm = new ClientForm(client);
-                this.Hide();
                 clientForm.Show();
                 return;
             }

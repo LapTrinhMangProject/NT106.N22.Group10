@@ -53,5 +53,10 @@ namespace form
         {
 
         }
+
+        private void body_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+
+        }
     }
 }

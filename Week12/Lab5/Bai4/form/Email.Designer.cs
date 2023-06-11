@@ -38,7 +38,7 @@
             this.groupBox1.Controls.Add(this.body);
             this.groupBox1.Location = new System.Drawing.Point(12, 157);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(857, 374);
+            this.groupBox1.Size = new System.Drawing.Size(1396, 630);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
@@ -50,14 +50,15 @@
             this.body.Location = new System.Drawing.Point(3, 16);
             this.body.MinimumSize = new System.Drawing.Size(20, 20);
             this.body.Name = "body";
-            this.body.Size = new System.Drawing.Size(851, 355);
+            this.body.Size = new System.Drawing.Size(1390, 611);
             this.body.TabIndex = 0;
+            this.body.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.body_DocumentCompleted);
             // 
             // EmailForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(881, 543);
+            this.ClientSize = new System.Drawing.Size(1420, 799);
             this.Controls.Add(this.groupBox1);
             this.Name = "EmailForm";
             this.Text = "email";
