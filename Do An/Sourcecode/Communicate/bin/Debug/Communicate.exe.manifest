@@ -61,19 +61,31 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>/Nv7xqz5jSVDbABM1EWHT6ca0wYDwLj9JTNn625Vvmo=</dsig:DigestValue>
+        <dsig:DigestValue>kHSbd8uKegeIhXGV7MIApolPgD5oN2ToGh005OlTr+U=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Forms.exe" size="3470336">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Forms.exe" size="3471360">
       <assemblyIdentity name="Forms" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>d6bW9lo4cupR40nDlhJiMCBSqiNawY9HmK1iuS7GMMU=</dsig:DigestValue>
+        <dsig:DigestValue>hEukqx9ZH2BbiHl/W6+UG+0atRKRkjb/tc28956aSio=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="JellyFinAPI.dll" size="9216">
+      <assemblyIdentity name="JellyFinAPI" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Zqm5feH5VmBuJdJmKYDhueQ2dv6o/DqG0DZdN9TVOAg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

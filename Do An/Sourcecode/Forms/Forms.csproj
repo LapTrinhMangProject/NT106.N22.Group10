@@ -91,6 +91,12 @@
     <Compile Include="Topscore_form.Designer.cs">
       <DependentUpon>Topscore_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Video.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Video.Designer.cs">
+      <DependentUpon>Video.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Administrator_form.resx">
       <DependentUpon>Administrator_form.cs</DependentUpon>
     </EmbeddedResource>
@@ -118,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Topscore_form.resx">
       <DependentUpon>Topscore_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Video.resx">
+      <DependentUpon>Video.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -158,6 +167,10 @@
     <None Include="Resources\loading-load-icon-transparent-png-11639609114lctjenyas8.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\JellyFinAPI\JellyFinAPI.csproj">
+      <Project>{c835b43b-5deb-4326-9f71-bd1de10645c5}</Project>
+      <Name>JellyFinAPI</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Server\Get_response_using_API\API.csproj">
       <Project>{c9f39a9b-f60b-434d-903b-465745aa5840}</Project>
       <Name>API</Name>

@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLConnection", "..\Server\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryFootBall", "..\Server\Get_response_using_API\ResponseJsonDataStructure\LibraryFootBall\LibraryFootBall.csproj", "{AC82B139-D9FD-4EE0-A17D-0AF422372CC3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JellyFinAPI", "..\JellyFinAPI\JellyFinAPI.csproj", "{C835B43B-5DEB-4326-9F71-BD1DE10645C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{AC82B139-D9FD-4EE0-A17D-0AF422372CC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC82B139-D9FD-4EE0-A17D-0AF422372CC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC82B139-D9FD-4EE0-A17D-0AF422372CC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C835B43B-5DEB-4326-9F71-BD1DE10645C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C835B43B-5DEB-4326-9F71-BD1DE10645C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C835B43B-5DEB-4326-9F71-BD1DE10645C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C835B43B-5DEB-4326-9F71-BD1DE10645C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

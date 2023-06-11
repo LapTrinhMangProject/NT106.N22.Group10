@@ -134,3 +134,7 @@ D:\api_fix\NT106.N22.Group10\Do An\Sourcecode\Forms\obj\Debug\Forms.csproj.CoreC
 D:\api_fix\NT106.N22.Group10\Do An\Sourcecode\Forms\obj\Debug\Forms.csproj.CopyComplete
 D:\api_fix\NT106.N22.Group10\Do An\Sourcecode\Forms\obj\Debug\Forms.exe
 D:\api_fix\NT106.N22.Group10\Do An\Sourcecode\Forms\obj\Debug\Forms.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Forms\bin\Debug\JellyFinAPI.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Forms\bin\Debug\JellyFinAPI.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Forms\bin\Debug\JellyFinAPI.dll.config
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Forms\obj\Debug\Forms.Video.resources
