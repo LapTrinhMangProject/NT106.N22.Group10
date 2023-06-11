@@ -40,6 +40,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.logo_picturebox = new System.Windows.Forms.PictureBox();
+            this.highlightButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -183,12 +184,27 @@
             this.logo_picturebox.TabIndex = 6;
             this.logo_picturebox.TabStop = false;
             // 
+            // highlightButton
+            // 
+            this.highlightButton.BackColor = System.Drawing.Color.SandyBrown;
+            this.highlightButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.highlightButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.highlightButton.Location = new System.Drawing.Point(692, 321);
+            this.highlightButton.Margin = new System.Windows.Forms.Padding(2);
+            this.highlightButton.Name = "highlightButton";
+            this.highlightButton.Size = new System.Drawing.Size(123, 71);
+            this.highlightButton.TabIndex = 12;
+            this.highlightButton.Text = "Highlight";
+            this.highlightButton.UseVisualStyleBackColor = false;
+            this.highlightButton.Click += new System.EventHandler(this.highlightButton_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LemonChiffon;
             this.ClientSize = new System.Drawing.Size(836, 494);
+            this.Controls.Add(this.highlightButton);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
@@ -229,5 +245,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox logo_picturebox;
+        private System.Windows.Forms.Button highlightButton;
     }
 }

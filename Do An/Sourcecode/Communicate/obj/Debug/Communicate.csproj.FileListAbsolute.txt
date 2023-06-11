@@ -194,3 +194,8 @@ D:\api_fix\NT106.N22.Group10\Do An\Sourcecode\Communicate\obj\Debug\Communicate.
 D:\api_fix\NT106.N22.Group10\Do An\Sourcecode\Communicate\obj\Debug\Communicate.csproj.CopyComplete
 D:\api_fix\NT106.N22.Group10\Do An\Sourcecode\Communicate\obj\Debug\Communicate.exe
 D:\api_fix\NT106.N22.Group10\Do An\Sourcecode\Communicate\obj\Debug\Communicate.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Debug\JellyFinAPI.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Debug\JellyFinAPI.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Debug\JellyFinAPI.dll.config
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Debug\Interop.WMPLib.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Debug\AxInterop.WMPLib.dll
