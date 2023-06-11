@@ -197,3 +197,5 @@ D:\api_fix\NT106.N22.Group10\Do An\Sourcecode\Communicate\obj\Debug\Communicate.
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Debug\JellyFinAPI.dll
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Debug\JellyFinAPI.pdb
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Debug\JellyFinAPI.dll.config
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Debug\Interop.WMPLib.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Debug\AxInterop.WMPLib.dll

@@ -138,3 +138,9 @@ C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Forms\bin\Debug\Je
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Forms\bin\Debug\JellyFinAPI.pdb
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Forms\bin\Debug\JellyFinAPI.dll.config
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Forms\obj\Debug\Forms.Video.resources
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Forms\obj\Debug\Interop.MediaPlayer.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Forms\obj\Debug\Interop.WMPLib.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Forms\obj\Debug\Forms.csproj.ResolveComReference.cache
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Forms\bin\Debug\Interop.WMPLib.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Forms\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Forms\obj\Debug\AxInterop.WMPLib.dll
