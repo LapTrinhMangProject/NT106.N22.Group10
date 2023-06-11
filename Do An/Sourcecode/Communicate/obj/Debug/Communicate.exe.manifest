@@ -66,26 +66,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Communicate.exe" size="18734000">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Communicate.exe" size="18735024">
       <assemblyIdentity name="Communicate" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>kHSbd8uKegeIhXGV7MIApolPgD5oN2ToGh005OlTr+U=</dsig:DigestValue>
+        <dsig:DigestValue>tgbU/urIoIdAUuMIDGcMwjM+p6Kgb3wrhAGGPcG/Z6Q=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Forms.exe" size="3472896">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Forms.exe" size="3473920">
       <assemblyIdentity name="Forms" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>YNsmD5d/zZyRS3s4/615mQCEhjF2REQaKSpN8+B5w7k=</dsig:DigestValue>
+        <dsig:DigestValue>QQk6mTc3ayUYiGxh8A3Zv50Ygqz+C2Cv+Hep1LUa3Wo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -102,14 +102,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="JellyFinAPI.dll" size="9216">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="JellyFinAPI.dll" size="8704">
       <assemblyIdentity name="JellyFinAPI" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Zqm5feH5VmBuJdJmKYDhueQ2dv6o/DqG0DZdN9TVOAg=</dsig:DigestValue>
+        <dsig:DigestValue>qbcz6pFQV2f0aOQCLO7VGGsp7p77O5vpb3cQV49hkXg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

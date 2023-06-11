@@ -19,6 +19,7 @@ using System.ComponentModel.Design.Serialization;
 using ResponseDataStructure;
 using LibraryFootBall;
 using System.Net.Http;
+using JellyFinAPI;
 
 namespace Communicate
 {
@@ -157,6 +158,11 @@ namespace Communicate
                                 foreach (var team in _teams)
                                     sqlUser.AddTeam(team, league.name);
                                 status_listbox.Items.Add($"Cập nhật xong các đội cho giải đấu {league.name}");
+                                break;
+                            case "00111":
+                                reponse.GetListVideo();
+                                status_listbox.Items.Add($"{ipRemote} Yêu cầu xem highlight");
+
                                 break;
                             case "11111":
                                 var content = await reponse.Get_Top_Score("39");

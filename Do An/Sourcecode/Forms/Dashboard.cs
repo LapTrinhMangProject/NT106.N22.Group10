@@ -67,5 +67,11 @@ namespace Forms
             League league = responseStanding.League;
             request.Send("00011", league);
         }
+
+        private void highlightButton_Click(object sender, EventArgs e)
+        {
+            League league = responseStanding.League;
+            request.Send("00111", league);
+        }
     }
 }

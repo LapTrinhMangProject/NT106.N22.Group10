@@ -11,7 +11,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AxWMPLib;
-using JellyFinAPI;
 using WMPLib;
 
 namespace Forms
@@ -22,18 +21,19 @@ namespace Forms
         {
             InitializeComponent();
         }
+        public Video(Dictionary<string, string> _linkStream)
+        {
+            this._linkStream = _linkStream;
+            InitializeComponent();
+        }
+        Dictionary<string, string> _linkStream = new Dictionary<string, string>();
         private HttpClient _httpClient = new HttpClient();
         private void Video_Load(object sender, EventArgs e)
         {
-            Jellyfin jellyfin = new Jellyfin();
-            jellyfin.GetList();
-            foreach (var index in Jellyfin.requestStreamItems)
+            foreach (var index in _linkStream)
             {
                 listBox1.Items.Add(index.Key);
             }
-
-
-
         }
         public void TestStreaming(string streamUrl)
         {
@@ -41,13 +41,11 @@ namespace Forms
             axWindowsMediaPlayer1.URL = "memory://" + streamUrl;
             var media = axWindowsMediaPlayer1.newMedia(streamUrl);
             axWindowsMediaPlayer1.currentPlaylist.appendItem(media);
-
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            TestStreaming(Jellyfin.requestStreamItems[listBox1.SelectedItems[0].ToString()]);
+            TestStreaming(_linkStream[listBox1.SelectedItems[0].ToString()]);
 
         }
 

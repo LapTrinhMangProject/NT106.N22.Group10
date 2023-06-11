@@ -33,6 +33,7 @@ namespace Communicate
         public static Administrator_form administrator = new Administrator_form();
         public static League_form leagueForm = new League_form();
         public static List<IPAddress> _ipAddress = new List<IPAddress>();
+        public static Video videoForm;
         public static int index = 0;
         public Client()
         {
@@ -124,10 +125,16 @@ namespace Communicate
                             teamForm.Show();
                             break;
                         case "00100":
+
                             Root_Reponse_standing responseStanding = JsonConvert.DeserializeObject<Root_Reponse_standing>(jsonData);
                             dashboardForm = new Dashboard(responseStanding, requestUser);
                             leagueForm.Hide();
                             dashboardForm.Show();
+                            break;
+                        case "00111":
+                            Dictionary<string, string> _linkStream = JsonConvert.DeserializeObject<Dictionary<string, string>>(jsonData);
+                            Client.videoForm = new Video(_linkStream);
+                            Client.videoForm.ShowDialog();
                             break;
                         case "11111":
                             Root_Response_Player_and_Statistic playerAndStat = JsonConvert.DeserializeObject<Root_Response_Player_and_Statistic>(jsonData);

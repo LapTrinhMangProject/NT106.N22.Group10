@@ -39,17 +39,10 @@ namespace JellyFinAPI
             responseJsonStructure = JsonConvert.DeserializeObject<ResponseJsonStructure>(data);
             foreach (var index in responseJsonStructure.items)
             {
-                MessageBox.Show(index.name);
                 string request = $"http://localhost:8096/Items/{index.id}/Download?api_key={api_key}";
                 requestStreamItems[index.name] = request;
             }
-            FileStream file = new FileStream("test.txt", FileMode.Create, FileAccess.Write);
-            StreamWriter writer = new StreamWriter(file);
-            writer.Write(data);
-            writer.Flush();
-            writer.Close();
-            file.Close();
-            MessageBox.Show("Done");
+
         }
 
 
