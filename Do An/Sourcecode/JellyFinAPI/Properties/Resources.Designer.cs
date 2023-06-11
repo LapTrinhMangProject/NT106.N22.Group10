@@ -61,7 +61,7 @@ namespace JellyFinAPI.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to fa25ac862c11486a8b385eae5af3fa2b.
+        ///   Looks up a localized string similar to aa1071b7c4884c0298a57d15b8a94741.
         /// </summary>
         public static string api_key {
             get {

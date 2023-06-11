@@ -79,7 +79,9 @@ namespace Communicate
                         dashboardForm.Hide();
                         playerForm.Hide();
                         leagueForm.Hide();
+                        videoForm.Hide();
                         Form1.client.Show();
+
 
                     }));
                     return;

@@ -160,8 +160,8 @@ namespace Communicate
                                 status_listbox.Items.Add($"Cập nhật xong các đội cho giải đấu {league.name}");
                                 break;
                             case "00111":
-                                reponse.GetListVideo();
                                 status_listbox.Items.Add($"{ipRemote} Yêu cầu xem highlight");
+                                reponse.GetListVideo();
 
                                 break;
                             case "11111":
