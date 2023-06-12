@@ -1,0 +1,34 @@
+version: "3.5"
+services:
+  jellyfin_rclone:
+    image: coolimc/jellyfin-rclone
+    container_name: jellyfin_rclone
+    ports:
+      - 8096:8096
+      - 8920:8920 #optional
+      - 7359:7359/udp #optional
+      - 1900:1900/udp #optional
+    volumes:
+      - ./rclone:/rconfig
+      - ./jellyfin_config:/config
+    security_opt:
+      - apparmor:unconfined
+    cap_add:
+      - SYS_ADMIN
+    environment:
+      - RemotePath=onedrivecloud:testdocker
+      - MountPoint=/mnt/mediaefs
+      - ConfigDir=/rconfig
+      - ConfigName=rclone.conf
+      - MountCommands=--allow-other --allow-non-empty #optional
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+      - UMASK_SET=<022> #optional
+      - JELLYFIN_PublishedServerUrl=192.168.2.1 #optional
+    devices:
+      # FUSE Device
+      - /dev/fuse
+      # GPU Devices
+      
+    restart: unless-stopped

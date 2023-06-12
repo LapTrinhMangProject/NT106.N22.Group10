@@ -49,43 +49,79 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>oMdbmBhW0fwmTYV+gEZKtCKW55rAZAYMuCsbeSVtAgM=</dsig:DigestValue>
+        <dsig:DigestValue>08xeq6LH0uix0zRfb+X5Xaa5xBmywI7nA8/SUCKFh0M=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Communicate.exe" size="18734000">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.WMPLib.dll" size="53760">
+      <assemblyIdentity name="AxInterop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>pFYiqfucIkFbh4xgrrNM2xSV99GsVHHdcL8BRfIVxM8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Communicate.exe" size="18829232">
       <assemblyIdentity name="Communicate" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>/Nv7xqz5jSVDbABM1EWHT6ca0wYDwLj9JTNn625Vvmo=</dsig:DigestValue>
+        <dsig:DigestValue>WwSSHDG/EYyJRUB+PEbHkCzEog10y35i5SN1BWEmnzs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Forms.exe" size="3470336">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Forms.exe" size="3473920">
       <assemblyIdentity name="Forms" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>d6bW9lo4cupR40nDlhJiMCBSqiNawY9HmK1iuS7GMMU=</dsig:DigestValue>
+        <dsig:DigestValue>3RneTh6hneN6LTzzPwuCrI9CBZYnuxtmJDVe/ncJwSs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Library_football.dll" size="22016">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.WMPLib.dll" size="330752">
+      <assemblyIdentity name="Interop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>wiZVjrwqwidv2wiBzP3OYx2sYy2vfUG83JEgKs06/0Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="JellyFinAPI.dll" size="8704">
+      <assemblyIdentity name="JellyFinAPI" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>b2V2gOuccv7XeMnSe7ct3G4WmQHAYUbvm0eonLQk0Bg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Library_football.dll" size="21504">
       <assemblyIdentity name="Library_football" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>U2HdmKW8K5eNQRD/T/qg6SmJOjqf+icIRptnOKziqJU=</dsig:DigestValue>
+        <dsig:DigestValue>auqdoJ+bDZ6Lca2eyhqcaSL38bJuHy/R2asR2DzjV7w=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -145,7 +181,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>WkUZSEcXetH+UrLJKpKXEMKHF/PRZo7HDlurS5DnVrw=</dsig:DigestValue>
+        <dsig:DigestValue>TNt57SYrq4an5Ns6WZWSK8ZG/BA/kYjd7dR1Hatn214=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -157,7 +193,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>XPkwNTws5SIs5aHd38OWwy2Goyb3hGVNkxcjdmmTSWk=</dsig:DigestValue>
+        <dsig:DigestValue>rClrJRJ5SE7ZhjyVWBJcLkL6zGSCuDJjmlxwR3mvZCA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

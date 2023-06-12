@@ -29,14 +29,12 @@ E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug\Communicate.exe
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug\Communicate.pdb
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug\Forms.exe
-E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug\Get_response_using_API.dll
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug\Library_football.dll
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug\Newtonsoft.Json.dll
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug\Response.dll
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug\SQL_Connection.dll
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug\Forms.pdb
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug\Forms.exe.config
-E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug\Get_response_using_API.pdb
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug\Library_football.pdb
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug\Response.pdb
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug\SQL_Connection.pdb
@@ -52,7 +50,6 @@ E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\obj\Debug
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\obj\Debug\Communicate.csproj.CopyComplete
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\obj\Debug\Communicate.exe
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\obj\Debug\Communicate.pdb
-E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug\FireSharp.dll
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug\Microsoft.Threading.Tasks.dll
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
@@ -65,9 +62,6 @@ E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug\System.Net.Http.Primitives.xml
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\obj\Debug\Communicate.csproj.App.config
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\obj\Debug\Communicate.Form_Register.resources
-E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug\MetroFramework.Design.dll
-E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug\MetroFramework.dll
-E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug\MetroFramework.Fonts.dll
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Communicate\bin\Debug\Communicate.exe.config
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Communicate\bin\Debug\Communicate.exe
 E:\A_Tournament_Tracker\NT106.N22.Group10\Do An (register account)\Sourcecode\Communicate\bin\Debug\Communicate.pdb
@@ -194,3 +188,23 @@ D:\api_fix\NT106.N22.Group10\Do An\Sourcecode\Communicate\obj\Debug\Communicate.
 D:\api_fix\NT106.N22.Group10\Do An\Sourcecode\Communicate\obj\Debug\Communicate.csproj.CopyComplete
 D:\api_fix\NT106.N22.Group10\Do An\Sourcecode\Communicate\obj\Debug\Communicate.exe
 D:\api_fix\NT106.N22.Group10\Do An\Sourcecode\Communicate\obj\Debug\Communicate.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Debug\JellyFinAPI.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Debug\JellyFinAPI.pdb
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Debug\JellyFinAPI.dll.config
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Debug\Interop.WMPLib.dll
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\bin\Debug\AxInterop.WMPLib.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug\Communicate.exe.manifest
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug\Communicate.application
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug\API.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug\JellyFinAPI.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug\AxInterop.WMPLib.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug\Interop.WMPLib.dll
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug\JellyFinAPI.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug\JellyFinAPI.dll.config
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\bin\Debug\API.pdb
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\obj\Debug\Communicate.exe.config
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\obj\Debug\Communicate.exe.manifest
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\obj\Debug\Communicate.application
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\obj\Debug\Communicate.Form_FgtPass.resources
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\obj\Debug\Communicate.Form_ResetPass.resources
+E:\A_Tournament_Tracker\NT106.N22.Group10\Do An\Sourcecode\Communicate\obj\Debug\Communicate.Form_Verify.resources
