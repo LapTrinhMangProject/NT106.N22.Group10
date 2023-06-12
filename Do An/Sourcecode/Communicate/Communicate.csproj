@@ -165,6 +165,10 @@
       <Project>{a89ae27a-50e4-41a7-a86b-91ced5e23ac3}</Project>
       <Name>Forms</Name>
     </ProjectReference>
+    <ProjectReference Include="..\JellyFinAPI\JellyFinAPI.csproj">
+      <Project>{c835b43b-5deb-4326-9f71-bd1de10645c5}</Project>
+      <Name>JellyFinAPI</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Server\Get_response_using_API\API.csproj">
       <Project>{c9f39a9b-f60b-434d-903b-465745aa5840}</Project>
       <Name>API</Name>
