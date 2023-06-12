@@ -61,19 +61,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>pFYiqfucIkFbh4xgrrNM2xSV99GsVHHdcL8BRfIVxM8=</dsig:DigestValue>
+        <dsig:DigestValue>w2tfp/KaVIO9riQg3wKhViTKDOphU/U35VwjX5v5nUM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Communicate.exe" size="18735024">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Communicate.exe" size="18833328">
       <assemblyIdentity name="Communicate" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>+PYBwiqEO9fYBkiRavmL8J+jckdx4rwuANByCTpb5xo=</dsig:DigestValue>
+        <dsig:DigestValue>TjAVar0n+ROly5QjyOZBtH1PCDEPFG2hddG/riEhs3Y=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -97,7 +97,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>N1lQ7f42Drp9BK4QHE5KQmKt0/wNmaMFhOIWXIVtnck=</dsig:DigestValue>
+        <dsig:DigestValue>ZRY7ZDEmZuaN41zzIUJGahOQOdDYrMQj7bCwYzWgamY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

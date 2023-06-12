@@ -40,7 +40,7 @@ namespace Communicate
             InitializeComponent();
             try
             {
-                ipAddress = _ipAddress[index];
+                ipAddress = IPAddress.Parse("127.0.0.1");
             }
             catch
             {
@@ -160,7 +160,7 @@ namespace Communicate
                 index++;
                 try
                 {
-                    ipAddress = _ipAddress[index];
+                    ipAddress = IPAddress.Parse("127.0.0.1");
                     client.Connect(ipAddress, 2509);
                 }
                 catch (SocketException ei)
@@ -190,6 +190,13 @@ namespace Communicate
             this.Hide();
             Form_Register f3 = new Form_Register();
             f3.ShowDialog();
+        }
+
+        private void bt_Forget_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form_FgtPass form_FgtPass = new Form_FgtPass();
+            form_FgtPass.ShowDialog();
         }
     }
 }

@@ -34,7 +34,7 @@ namespace Communicate
 
             hostEntry = Dns.GetHostEntry("ngovuminhdat.ddns.net");
 
-            Client._ipAddress.Add(IPAddress.Parse("20.24.132.202"));
+            Client._ipAddress.Add(IPAddress.Parse("127.0.0.1"));
             Client._ipAddress.Add(IPAddress.Parse(hostEntry.AddressList[0].ToString()));
 
             client = new Client();
