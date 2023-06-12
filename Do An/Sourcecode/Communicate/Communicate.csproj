@@ -111,11 +111,29 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_FgtPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_FgtPass.Designer.cs">
+      <DependentUpon>Form_FgtPass.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Register.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form_Register.Designer.cs">
       <DependentUpon>Form_Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ResetPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ResetPass.Designer.cs">
+      <DependentUpon>Form_ResetPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Verify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Verify.Designer.cs">
+      <DependentUpon>Form_Verify.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -125,6 +143,7 @@
     <Compile Include="Server.Designer.cs">
       <DependentUpon>Server.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShareVariable.cs" />
     <Compile Include="User.cs" />
     <EmbeddedResource Include="Client.resx">
       <DependentUpon>Client.cs</DependentUpon>
@@ -132,8 +151,17 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_FgtPass.resx">
+      <DependentUpon>Form_FgtPass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_Register.resx">
       <DependentUpon>Form_Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ResetPass.resx">
+      <DependentUpon>Form_ResetPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Verify.resx">
+      <DependentUpon>Form_Verify.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -164,6 +192,10 @@
     <ProjectReference Include="..\Forms\Forms.csproj">
       <Project>{a89ae27a-50e4-41a7-a86b-91ced5e23ac3}</Project>
       <Name>Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JellyFinAPI\JellyFinAPI.csproj">
+      <Project>{c835b43b-5deb-4326-9f71-bd1de10645c5}</Project>
+      <Name>JellyFinAPI</Name>
     </ProjectReference>
     <ProjectReference Include="..\Server\Get_response_using_API\API.csproj">
       <Project>{c9f39a9b-f60b-434d-903b-465745aa5840}</Project>
@@ -238,6 +270,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %285%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />

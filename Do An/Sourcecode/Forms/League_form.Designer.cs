@@ -60,7 +60,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Forms.Properties.Resources.loading_load_icon_transparent_png_11639609114lctjenyas8;
+            this.pictureBox2.Image = global::Forms.Properties.Resources.Loading_icon;
             this.pictureBox2.Location = new System.Drawing.Point(77, 196);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(52, 46);
