@@ -192,11 +192,6 @@ namespace Communicate
 
 
         }
-
-        private void status_listbox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
 

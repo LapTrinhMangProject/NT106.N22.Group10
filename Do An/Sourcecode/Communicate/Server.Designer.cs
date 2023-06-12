@@ -42,7 +42,6 @@
             this.status_listbox.Name = "status_listbox";
             this.status_listbox.Size = new System.Drawing.Size(323, 134);
             this.status_listbox.TabIndex = 0;
-            this.status_listbox.SelectedIndexChanged += new System.EventHandler(this.status_listbox_SelectedIndexChanged);
             // 
             // label1
             // 
