@@ -48,8 +48,7 @@ namespace Communicate
                     {
                         MessageBox.Show("Reset password successfully. Please back to log in!");
                         this.Hide();
-                        Client cl = new Client();
-                        cl.Show();
+                        Form1.client.Show();
                     }
                     else
                     {
@@ -57,6 +56,11 @@ namespace Communicate
                     }
                 }
             }
+        }
+
+        private void Form_ResetPass_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -251,3 +251,6 @@ C:\Users\acer\Documents\NT106.N22.Group10.git\Do An\Sourcecode\Communicate\obj\D
 C:\Users\acer\Documents\NT106.N22.Group10.git\Do An\Sourcecode\Communicate\obj\Debug\Communicate.Form_FgtPass.resources
 C:\Users\acer\Documents\NT106.N22.Group10.git\Do An\Sourcecode\Communicate\obj\Debug\Communicate.Form_ResetPass.resources
 C:\Users\acer\Documents\NT106.N22.Group10.git\Do An\Sourcecode\Communicate\obj\Debug\Communicate.Form_Verify.resources
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\obj\Debug\Communicate.Form_FgtPass.resources
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\obj\Debug\Communicate.Form_ResetPass.resources
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Communicate\obj\Debug\Communicate.Form_Verify.resources
