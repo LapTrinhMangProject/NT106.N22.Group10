@@ -1,0 +1,34 @@
+C:\Users\acer\Desktop\Bài 2\Bài 2\bin\Debug\Bài 2.exe.config
+C:\Users\acer\Desktop\Bài 2\Bài 2\bin\Debug\Bài 2.exe
+C:\Users\acer\Desktop\Bài 2\Bài 2\bin\Debug\Bài 2.pdb
+C:\Users\acer\Desktop\Bài 2\Bài 2\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\acer\Desktop\Bài 2\Bài 2\bin\Debug\MailKit.dll
+C:\Users\acer\Desktop\Bài 2\Bài 2\bin\Debug\MimeKit.dll
+C:\Users\acer\Desktop\Bài 2\Bài 2\bin\Debug\OpenPop.dll
+C:\Users\acer\Desktop\Bài 2\Bài 2\bin\Debug\System.Buffers.dll
+C:\Users\acer\Desktop\Bài 2\Bài 2\bin\Debug\System.Memory.dll
+C:\Users\acer\Desktop\Bài 2\Bài 2\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\acer\Desktop\Bài 2\Bài 2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\acer\Desktop\Bài 2\Bài 2\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\acer\Desktop\Bài 2\Bài 2\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\acer\Desktop\Bài 2\Bài 2\bin\Debug\MailKit.pdb
+C:\Users\acer\Desktop\Bài 2\Bài 2\bin\Debug\MailKit.xml
+C:\Users\acer\Desktop\Bài 2\Bài 2\bin\Debug\MailKit.dll.config
+C:\Users\acer\Desktop\Bài 2\Bài 2\bin\Debug\MimeKit.pdb
+C:\Users\acer\Desktop\Bài 2\Bài 2\bin\Debug\MimeKit.xml
+C:\Users\acer\Desktop\Bài 2\Bài 2\bin\Debug\MimeKit.dll.config
+C:\Users\acer\Desktop\Bài 2\Bài 2\bin\Debug\OpenPop.xml
+C:\Users\acer\Desktop\Bài 2\Bài 2\bin\Debug\System.Buffers.xml
+C:\Users\acer\Desktop\Bài 2\Bài 2\bin\Debug\System.Memory.xml
+C:\Users\acer\Desktop\Bài 2\Bài 2\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\acer\Desktop\Bài 2\Bài 2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\acer\Desktop\Bài 2\Bài 2\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\acer\Desktop\Bài 2\Bài 2\obj\Debug\Bài 2.csproj.AssemblyReference.cache
+C:\Users\acer\Desktop\Bài 2\Bài 2\obj\Debug\Bài 2.csproj.SuggestedBindingRedirects.cache
+C:\Users\acer\Desktop\Bài 2\Bài 2\obj\Debug\Bài_2.Form1.resources
+C:\Users\acer\Desktop\Bài 2\Bài 2\obj\Debug\Bài_2.Properties.Resources.resources
+C:\Users\acer\Desktop\Bài 2\Bài 2\obj\Debug\Bài 2.csproj.GenerateResource.cache
+C:\Users\acer\Desktop\Bài 2\Bài 2\obj\Debug\Bài 2.csproj.CoreCompileInputs.cache
+C:\Users\acer\Desktop\Bài 2\Bài 2\obj\Debug\Bài 2.csproj.CopyComplete
+C:\Users\acer\Desktop\Bài 2\Bài 2\obj\Debug\Bài 2.exe
+C:\Users\acer\Desktop\Bài 2\Bài 2\obj\Debug\Bài 2.pdb
