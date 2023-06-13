@@ -15,6 +15,7 @@ using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using JellyFinAPI;
 
 namespace Communicate
 {
@@ -89,6 +90,24 @@ namespace Communicate
             Root_teams_and_venue teamAndVenue = await api.Get_Teams_from_Leagues(league);
             SQL_BothTeamAndVenue data = new SQL_BothTeamAndVenue(_teams, teamAndVenue);
             payload = "00011" + JsonConvert.SerializeObject(data);
+            Send(payload);
+        }
+        public async Task<String> Get_Top_Score(string a)
+        {
+            Root_Response_Player_and_Statistic playerAndStat = await api.Get_Top_Score(a);
+            string jsonData = JsonConvert.SerializeObject(playerAndStat);
+            payload = "11111" + jsonData;
+            return payload;
+        }
+        public void GetListVideo()
+        {
+            Dictionary<string, string> _linkStream = new Dictionary<string, string>();
+            Jellyfin jellyfin = new Jellyfin();
+            jellyfin.GetList();
+            foreach (var index in Jellyfin.requestStreamItems)
+                _linkStream[index.Key] = index.Value;
+            string jsonData = JsonConvert.SerializeObject(_linkStream);
+            payload = "00111" + jsonData;
             Send(payload);
         }
 
