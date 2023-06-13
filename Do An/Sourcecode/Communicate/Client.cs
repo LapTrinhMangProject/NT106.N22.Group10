@@ -25,8 +25,8 @@ namespace Communicate
     {
         TcpClient client = new TcpClient();
         NetworkStream stream;
-        IPAddress ipAddress;
         Request requestUser;
+        IPAddress ipAddress;
         public static Dashboard dashboardForm = new Dashboard();
         public static Team_form teamForm = new Team_form();
         public static Player_form playerForm = new Player_form();
@@ -40,7 +40,7 @@ namespace Communicate
             InitializeComponent();
             try
             {
-                ipAddress = IPAddress.Parse("127.0.0.1");
+                ipAddress = _ipAddress[index];
             }
             catch
             {
@@ -160,7 +160,7 @@ namespace Communicate
                 index++;
                 try
                 {
-                    ipAddress = IPAddress.Parse("127.0.0.1");
+                    ipAddress = _ipAddress[index];
                     client.Connect(ipAddress, 2509);
                 }
                 catch (SocketException ei)
