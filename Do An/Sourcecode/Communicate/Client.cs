@@ -25,8 +25,8 @@ namespace Communicate
     {
         TcpClient client = new TcpClient();
         NetworkStream stream;
-        IPAddress ipAddress;
         Request requestUser;
+        IPAddress ipAddress;
         public static Dashboard dashboardForm = new Dashboard();
         public static Team_form teamForm = new Team_form();
         public static Player_form playerForm = new Player_form();
@@ -190,6 +190,13 @@ namespace Communicate
             this.Hide();
             Form_Register f3 = new Form_Register();
             f3.ShowDialog();
+        }
+
+        private void bt_Forget_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form_FgtPass form_FgtPass = new Form_FgtPass();
+            form_FgtPass.ShowDialog();
         }
     }
 }
