@@ -31,3 +31,4 @@ C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week12\Lab5\Bai4\form\obj\Debug\for
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week12\Lab5\Bai4\form\obj\Debug\form.EmailForm.resources
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week12\Lab5\Bai4\form\obj\Debug\form.SendForm.resources
 C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week12\Lab5\Bai4\form\obj\Debug\form.LoginForm.resources
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Week12\Lab5\Bai4\form\obj\Debug\form.replyForm.resources

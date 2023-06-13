@@ -40,13 +40,6 @@ namespace form
                 body.DocumentText = message.Body.ToString();
 
             }
-
-
-
-
-
-
-
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -57,6 +50,12 @@ namespace form
         private void body_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
 
+        }
+
+        private void replyButton_Click(object sender, EventArgs e)
+        {
+            replyForm replyForm = new replyForm(uid, client);
+            replyForm.ShowDialog();
         }
     }
 }

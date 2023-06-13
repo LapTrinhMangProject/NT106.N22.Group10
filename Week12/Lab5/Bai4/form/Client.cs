@@ -49,7 +49,7 @@ namespace form
             }
             void LoadEmail()
             {
-                client.Inbox.Open(FolderAccess.ReadOnly);
+                client.Inbox.Open(FolderAccess.ReadWrite);
                 var uids = client.Inbox.Search(SearchQuery.NotSeen);
                 int number = 1;
                 foreach (var uid in uids)

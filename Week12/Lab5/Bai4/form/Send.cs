@@ -47,7 +47,7 @@ namespace form
                 client.Send(message);
                 client.Disconnect(true);
             }
-            MessageBox.Show("Done");
+            MessageBox.Show("Sent");
 
         }
 
