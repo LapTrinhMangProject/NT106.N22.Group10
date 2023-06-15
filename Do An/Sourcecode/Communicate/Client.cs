@@ -33,7 +33,7 @@ namespace Communicate
         public static Administrator_form administrator = new Administrator_form();
         public static League_form leagueForm = new League_form();
         public static List<IPAddress> _ipAddress = new List<IPAddress>();
-        public static Video videoForm;
+        public static Video videoForm = new Video();
         public static int index = 0;
         public Client()
         {
@@ -68,11 +68,10 @@ namespace Communicate
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Server chính hỏng, chuyển sang server phụ");
                     index++;
                     this.Invoke(new Action(() =>
                     {
-                        Form1.client.Close();
+                        Form1.client = new Client();
                         Form1.ReloadClientForm();
                         administrator.Hide();
                         teamForm.Hide();
@@ -84,6 +83,7 @@ namespace Communicate
 
 
                     }));
+                    MessageBox.Show("Server chính hỏng, chuyển sang server phụ");
                     return;
                 }
                 int length = BitConverter.ToInt32(header, 0);
