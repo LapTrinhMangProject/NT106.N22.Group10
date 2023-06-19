@@ -222,3 +222,5 @@ D:\Project\NT106.N22.Group10\Do An\Sourcecode\Forms\obj\Debug\Forms.exe
 D:\Project\NT106.N22.Group10\Do An\Sourcecode\Forms\obj\Debug\Forms.pdb
 D:\Project\NT106.N22.Group10\Do An\Sourcecode\Forms\obj\Debug\Forms.Assist_Form.resources
 D:\Project\NT106.N22.Group10\Do An\Sourcecode\Forms\obj\Debug\Forms.RedCards_Form.resources
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Forms\obj\Debug\Forms.Assist_Form.resources
+C:\Users\ngovu\OneDrive\Code\NT106_code\Nhom\Do An\Sourcecode\Forms\obj\Debug\Forms.RedCards_Form.resources

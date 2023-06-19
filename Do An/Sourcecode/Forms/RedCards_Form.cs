@@ -24,7 +24,7 @@ namespace Forms
         public RedCards_Form(Root_Response_Player_and_Statistic playerAndStat)
         {
             InitializeComponent();
-            this._topAssist = playerAndStat.response;
+            this._topRed = playerAndStat.response;
             foreach (var index in _topRed)
             {
                 redcards_listbox.Items.Add($"{index.Statistics[0].Cards.Red}            {index.Player.name}");
