@@ -90,6 +90,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Name = "Form_FgtPass";
             this.Text = "Form_FgtPass";
+            this.Load += new System.EventHandler(this.Form_FgtPass_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
