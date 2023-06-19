@@ -121,6 +121,9 @@
   <data name="download (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\download (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="6705462" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6705462.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="z4399246973949_e9f6eb0e3d5193f16dac268c991ce1bd" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\z4399246973949_e9f6eb0e3d5193f16dac268c991ce1bd.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -133,13 +136,16 @@
   <data name="png-transparent-computer-icons-top-1-game-text-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\png-transparent-computer-icons-top-1-game-text-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="loading-load-icon-transparent-png-11639609114lctjenyas8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loading-load-icon-transparent-png-11639609114lctjenyas8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Pivot_soccer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pivot_soccer.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FC_Barcelona_(crest).svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FC_Barcelona_(crest).svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="loading-load-icon-transparent-png-11639609114lctjenyas8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\loading-load-icon-transparent-png-11639609114lctjenyas8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
