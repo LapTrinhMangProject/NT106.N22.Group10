@@ -137,18 +137,6 @@ namespace Communicate
                                 status_listbox.Items.Add($"{ipRemote} Yêu cầu lấy thông tin bảng xếp hạng cho giải đấu");
                                 status_listbox.Items.Add($"Trả về bảng xếp hạng giải đấu {league.name}");
                                 break;
-                            case "10000":
-                                var content_assist = await response.Get_Assist(league.id.ToString());
-                                response.Send(content_assist);
-                                status_listbox.Items.Add($"{ipRemote} Yêu cầu lấy thông tin bảng xếp hạng hỗ trợ");
-                                status_listbox.Items.Add($"Trả về bảng xếp hạng hỗ trợ {league.name}");
-                                break;
-                            case "10001":
-                                var content_red_cards = await response.Get_RedCards(league.id.ToString());
-                                response.Send(content_red_cards);
-                                status_listbox.Items.Add($"{ipRemote} Yêu cầu lấy thông tin bảng xếp hạng thẻ đỏ");
-                                status_listbox.Items.Add($"Trả về bảng xếp hạng thẻ đỏ {league.name}");
-                                break;
                         }
                         status_listbox.TopIndex = status_listbox.Items.Count - 1;
                         status_listbox.Refresh();

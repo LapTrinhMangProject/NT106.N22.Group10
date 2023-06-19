@@ -73,17 +73,5 @@ namespace Forms
             League league = responseStanding.League;
             request.Send("00111", league);
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            League league = responseStanding.League;
-            request.Send("10000", league);
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            League league = responseStanding.League;
-            request.Send("10001", league);
-        }
     }
 }

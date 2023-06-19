@@ -56,12 +56,6 @@
     <Compile Include="Administrator_form.Designer.cs">
       <DependentUpon>Administrator_form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Assist_Form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Assist_Form.Designer.cs">
-      <DependentUpon>Assist_Form.cs</DependentUpon>
-    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,12 +77,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RedCards_Form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RedCards_Form.Designer.cs">
-      <DependentUpon>RedCards_Form.cs</DependentUpon>
-    </Compile>
     <Compile Include="Request.cs" />
     <Compile Include="Response.cs" />
     <Compile Include="Team_form.cs">
@@ -112,9 +100,6 @@
     <EmbeddedResource Include="Administrator_form.resx">
       <DependentUpon>Administrator_form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Assist_Form.resx">
-      <DependentUpon>Assist_Form.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,9 +119,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="RedCards_Form.resx">
-      <DependentUpon>RedCards_Form.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Team_form.resx">
       <DependentUpon>Team_form.cs</DependentUpon>
     </EmbeddedResource>
@@ -242,12 +224,6 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\6705462.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\images.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

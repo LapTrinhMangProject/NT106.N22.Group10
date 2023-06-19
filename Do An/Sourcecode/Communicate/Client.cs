@@ -143,17 +143,6 @@ namespace Communicate
                             Topscore_form newForm = new Topscore_form(playerAndStat);
                             newForm.Show();
                             break;
-                        case "10000":
-                            Root_Response_Player_and_Statistic playerAndStatAssists = JsonConvert.DeserializeObject<Root_Response_Player_and_Statistic>(jsonData);
-                            Assist_Form AssistForm = new Assist_Form(playerAndStatAssists);
-                            AssistForm.Show();
-                            break;
-                        case "10001":
-                            Root_Response_Player_and_Statistic playerAndStatRedCards = JsonConvert.DeserializeObject<Root_Response_Player_and_Statistic>(jsonData);
-                            RedCards_Form RedCardsForm = new RedCards_Form(playerAndStatRedCards);
-                            RedCardsForm.Show();
-                            break;
-
 
                     }
                 }));

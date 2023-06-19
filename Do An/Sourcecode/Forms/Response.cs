@@ -99,20 +99,6 @@ namespace Communicate
             payload = "11111" + jsonData;
             return payload;
         }
-        public async Task<String> Get_Assist(string a)
-        {
-            Root_Response_Player_and_Statistic playerAndStat = await api.Get_Top_Assists(a);
-            string jsonData = JsonConvert.SerializeObject(playerAndStat);
-            payload = "10000" + jsonData;
-            return payload;
-        }
-        public async Task<String> Get_RedCards(string a)
-        {
-            Root_Response_Player_and_Statistic playerAndStat = await api.Get_Top_Red_Cards(a);
-            string jsonData = JsonConvert.SerializeObject(playerAndStat);
-            payload = "10001" + jsonData;
-            return payload;
-        }
         public void GetListVideo()
         {
             Dictionary<string, string> _linkStream = new Dictionary<string, string>();
