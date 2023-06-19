@@ -19,7 +19,7 @@ namespace Communicate
     {
         string randomCode;
         public static string to;
-        string stringConnection = @"Data Source=databaselaptrinhmang.database.windows.net;Initial Catalog=API_football;User ID=laptrinhmang;Password=BJo8RxhgQvkD2jSBDK3S3LNvUpAH9n";
+        string connectionString = SQL_Connection.Properties.Resources.SqlKey;
         Request requestUser;
         SqlConnection connection;
         SqlCommand command;
@@ -34,7 +34,7 @@ namespace Communicate
             else
             {
                 string email = tb_Email.Text;
-                connection = new SqlConnection(stringConnection);
+                connection = new SqlConnection(connectionString);
                 connection.Open();
                 string queryCheck = "SELECT COUNT(*) FROM users WHERE email = @email";
                 command = new SqlCommand(queryCheck, connection);
@@ -85,6 +85,11 @@ namespace Communicate
 
                 }
             }
+        }
+
+        private void Form_FgtPass_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

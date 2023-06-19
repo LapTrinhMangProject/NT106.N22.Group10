@@ -16,7 +16,7 @@ namespace Communicate
 {
     public partial class Form_Register : Form
     {
-        string stringConnection = @"Data Source=databaselaptrinhmang.database.windows.net;Initial Catalog=API_football;User ID=laptrinhmang;Password=BJo8RxhgQvkD2jSBDK3S3LNvUpAH9n";
+        string connectionString = SQL_Connection.Properties.Resources.SqlKey;
         Request requestUser;
         SqlConnection connection;
         SqlCommand command;
@@ -39,7 +39,7 @@ namespace Communicate
                 string typeUser = "normal";
                 string email = email_textbox.Text;
                 string query = "Insert into users values ('" + tentk + "','" + mk + "', '" + typeUser + "', '" + email + "')";
-                connection = new SqlConnection(stringConnection);
+                connection = new SqlConnection(connectionString);
                 connection.Open();
                 string queryCheck = "SELECT COUNT(*) FROM users WHERE username = @username";
                 command = new SqlCommand(queryCheck, connection);

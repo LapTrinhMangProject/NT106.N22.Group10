@@ -93,6 +93,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form_Verify";
             this.Text = "Form_Verify";
+            this.Load += new System.EventHandler(this.Form_Verify_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

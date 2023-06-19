@@ -35,5 +35,10 @@ namespace Communicate
                 }
             }
         }
+
+        private void Form_Verify_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

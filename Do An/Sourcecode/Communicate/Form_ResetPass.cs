@@ -15,7 +15,8 @@ namespace Communicate
 {
     public partial class Form_ResetPass : Form
     {
-        string stringConnection = @"Data Source=databaselaptrinhmang.database.windows.net;Initial Catalog=API_football;User ID=laptrinhmang;Password=BJo8RxhgQvkD2jSBDK3S3LNvUpAH9n";
+        string connectionString = SQL_Connection.Properties.Resources.SqlKey;
+
         Request requestUser;
         SqlConnection connection;
         SqlCommand command;
@@ -36,7 +37,7 @@ namespace Communicate
             }
             else
             {
-                connection = new SqlConnection(stringConnection);
+                connection = new SqlConnection(connectionString);
                 connection.Open();
                 string query = "UPDATE Users SET password = @password WHERE email = @email";
                 using (SqlCommand command = new SqlCommand(query, connection))
