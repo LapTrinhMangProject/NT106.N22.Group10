@@ -39,29 +39,19 @@ namespace Communicate
             Thread thread1 = new Thread(Server_Listener);
             thread1.IsBackground = true;
             thread1.Start();
-            Thread thread2 = new Thread(ServerCheckHealthProbe);
-            thread2.IsBackground = true;
-            thread2.Start();
-
         }
         public void Server_Listener()
         {
             try
             {
-                IPAddress ipAddress = IPAddress.Parse("127.0.0.1");
                 server = new TcpListener(IPAddress.Any, 2509);
                 server.Start();
                 while (true)
                 {
                     TcpClient client = server.AcceptTcpClient();
-                    client.ReceiveBufferSize = 1048576;
-                    client.SendBufferSize = 1048576;
                     Thread thread2 = new Thread(() => Establish(client));
-
                     thread2.IsBackground = true;
                     thread2.Start();
-
-
                 }
             }
             catch (Exception e)
@@ -70,32 +60,10 @@ namespace Communicate
                 server.Stop();
             }
         }
-        public void ServerCheckHealthProbe()
-        {
-            try
-            {
-                serverCheckHealthProbe = new TcpListener(IPAddress.Any, 3004);
-                serverCheckHealthProbe.Start();
-                while (true)
-                {
-                    TcpClient client = serverCheckHealthProbe.AcceptTcpClient();
-                    this.Invoke(new Action(() =>
-                    {
-                        listBox1.Items.Add("health check OK");
-                    }));
-                }
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show($"{e}");
-                server.Stop();
-            }
-        }
-
         void Establish(TcpClient client)
         {
             NetworkStream stream = client.GetStream();
-            Response reponse = new Response(stream);
+            Response response = new Response(stream);
             IPEndPoint remoteEndPoint = (IPEndPoint)client.Client.RemoteEndPoint;
             string ipRemote = remoteEndPoint.Address.ToString();
             this.Invoke(new Action(() =>
@@ -117,7 +85,6 @@ namespace Communicate
                     string data = Encoding.UTF8.GetString(buffer, 0, length);
                     string jsonData = data.Substring(5);
                     string code = data.Substring(0, 5);
-                    //     MessageBox.Show(jsonData);
                     League league = JsonConvert.DeserializeObject<League>(jsonData);
 
                     this.Invoke(new Action(async () =>
@@ -126,21 +93,21 @@ namespace Communicate
                         {
                             case "00000":
                                 string result = null;
-                                reponse.Check_Credential(jsonData, ref result, ipRemote);
+                                response.Check_Credential(jsonData, ref result, ipRemote);
                                 status_listbox.Items.Add(result);
                                 break;
                             case "00001":
-                                reponse.Get_All_Players(league);
+                                response.Get_All_Players(league);
                                 status_listbox.Items.Add($"{ipRemote} Yêu cầu lấy thông tin danh sách cầu thủ");
                                 status_listbox.Items.Add($"Trả về danh sách cầu thủ giải đấu {league.name}");
                                 break;
                             case "00011":
-                                reponse.Get_All_Teams_And_venue(league);
+                                response.Get_All_Teams_And_venue(league);
                                 status_listbox.Items.Add($"{ipRemote} Yêu cầu lấy thông tin danh sách đội");
                                 status_listbox.Items.Add($"Trả về danh sách danh sách đội cho giải đấu {league.name}");
                                 break;
                             case "00100":
-                                reponse.Get_Team_Standing(league);
+                                response.Get_Team_Standing(league);
                                 status_listbox.Items.Add($"{ipRemote} Yêu cầu lấy thông tin bảng xếp hạng cho giải đấu");
                                 status_listbox.Items.Add($"Trả về bảng xếp hạng giải đấu {league.name}");
                                 break;
@@ -161,12 +128,12 @@ namespace Communicate
                                 break;
                             case "00111":
                                 status_listbox.Items.Add($"{ipRemote} Yêu cầu xem highlight");
-                                reponse.GetListVideo();
+                                response.GetListVideo();
 
                                 break;
                             case "11111":
-                                var content = await reponse.Get_Top_Score("39");
-                                reponse.Send(content);
+                                var content = await response.Get_Top_Score("39");
+                                response.Send(content);
                                 status_listbox.Items.Add($"{ipRemote} Yêu cầu lấy thông tin bảng xếp hạng cho giải đấu");
                                 status_listbox.Items.Add($"Trả về bảng xếp hạng giải đấu {league.name}");
                                 break;

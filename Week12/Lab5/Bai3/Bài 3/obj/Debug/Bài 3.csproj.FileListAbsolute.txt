@@ -1,0 +1,32 @@
+C:\Users\acer\Desktop\Bài 3\Bài 3\bin\Debug\Bài 3.exe.config
+C:\Users\acer\Desktop\Bài 3\Bài 3\bin\Debug\Bài 3.exe
+C:\Users\acer\Desktop\Bài 3\Bài 3\bin\Debug\Bài 3.pdb
+C:\Users\acer\Desktop\Bài 3\Bài 3\obj\Debug\Bài 3.csproj.AssemblyReference.cache
+C:\Users\acer\Desktop\Bài 3\Bài 3\obj\Debug\Bài 3.csproj.SuggestedBindingRedirects.cache
+C:\Users\acer\Desktop\Bài 3\Bài 3\obj\Debug\Bài_3.Form1.resources
+C:\Users\acer\Desktop\Bài 3\Bài 3\obj\Debug\Bài_3.Properties.Resources.resources
+C:\Users\acer\Desktop\Bài 3\Bài 3\obj\Debug\Bài 3.csproj.GenerateResource.cache
+C:\Users\acer\Desktop\Bài 3\Bài 3\obj\Debug\Bài 3.csproj.CoreCompileInputs.cache
+C:\Users\acer\Desktop\Bài 3\Bài 3\obj\Debug\Bài 3.csproj.CopyComplete
+C:\Users\acer\Desktop\Bài 3\Bài 3\obj\Debug\Bài 3.exe
+C:\Users\acer\Desktop\Bài 3\Bài 3\obj\Debug\Bài 3.pdb
+C:\Users\acer\Desktop\Bài 3\Bài 3\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\acer\Desktop\Bài 3\Bài 3\bin\Debug\MailKit.dll
+C:\Users\acer\Desktop\Bài 3\Bài 3\bin\Debug\MimeKit.dll
+C:\Users\acer\Desktop\Bài 3\Bài 3\bin\Debug\System.Buffers.dll
+C:\Users\acer\Desktop\Bài 3\Bài 3\bin\Debug\System.Memory.dll
+C:\Users\acer\Desktop\Bài 3\Bài 3\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\acer\Desktop\Bài 3\Bài 3\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\acer\Desktop\Bài 3\Bài 3\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\acer\Desktop\Bài 3\Bài 3\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\acer\Desktop\Bài 3\Bài 3\bin\Debug\MailKit.pdb
+C:\Users\acer\Desktop\Bài 3\Bài 3\bin\Debug\MailKit.xml
+C:\Users\acer\Desktop\Bài 3\Bài 3\bin\Debug\MailKit.dll.config
+C:\Users\acer\Desktop\Bài 3\Bài 3\bin\Debug\MimeKit.pdb
+C:\Users\acer\Desktop\Bài 3\Bài 3\bin\Debug\MimeKit.xml
+C:\Users\acer\Desktop\Bài 3\Bài 3\bin\Debug\MimeKit.dll.config
+C:\Users\acer\Desktop\Bài 3\Bài 3\bin\Debug\System.Buffers.xml
+C:\Users\acer\Desktop\Bài 3\Bài 3\bin\Debug\System.Memory.xml
+C:\Users\acer\Desktop\Bài 3\Bài 3\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\acer\Desktop\Bài 3\Bài 3\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\acer\Desktop\Bài 3\Bài 3\bin\Debug\System.Threading.Tasks.Extensions.xml
