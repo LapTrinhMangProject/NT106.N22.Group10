@@ -37,6 +37,7 @@ namespace Communicate
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.bt_Forget = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -67,7 +68,7 @@ namespace Communicate
             this.login_button.BackColor = System.Drawing.Color.SandyBrown;
             this.login_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.login_button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.login_button.Location = new System.Drawing.Point(197, 329);
+            this.login_button.Location = new System.Drawing.Point(208, 378);
             this.login_button.Margin = new System.Windows.Forms.Padding(2);
             this.login_button.Name = "login_button";
             this.login_button.Size = new System.Drawing.Size(118, 46);
@@ -81,7 +82,7 @@ namespace Communicate
             this.bt_Dangky.BackColor = System.Drawing.Color.SandyBrown;
             this.bt_Dangky.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Dangky.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bt_Dangky.Location = new System.Drawing.Point(55, 329);
+            this.bt_Dangky.Location = new System.Drawing.Point(43, 378);
             this.bt_Dangky.Margin = new System.Windows.Forms.Padding(2);
             this.bt_Dangky.Name = "bt_Dangky";
             this.bt_Dangky.Size = new System.Drawing.Size(119, 46);
@@ -120,12 +121,27 @@ namespace Communicate
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
+            // bt_Forget
+            // 
+            this.bt_Forget.BackColor = System.Drawing.Color.SandyBrown;
+            this.bt_Forget.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Forget.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bt_Forget.Location = new System.Drawing.Point(169, 327);
+            this.bt_Forget.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_Forget.Name = "bt_Forget";
+            this.bt_Forget.Size = new System.Drawing.Size(188, 38);
+            this.bt_Forget.TabIndex = 16;
+            this.bt_Forget.Text = "Quên mật khẩu";
+            this.bt_Forget.UseVisualStyleBackColor = false;
+            this.bt_Forget.Click += new System.EventHandler(this.bt_Forget_Click);
+            // 
             // Client
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LemonChiffon;
-            this.ClientSize = new System.Drawing.Size(368, 395);
+            this.ClientSize = new System.Drawing.Size(368, 435);
+            this.Controls.Add(this.bt_Forget);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
@@ -153,5 +169,6 @@ namespace Communicate
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button bt_Forget;
     }
 }

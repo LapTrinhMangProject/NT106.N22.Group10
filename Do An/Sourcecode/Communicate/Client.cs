@@ -25,14 +25,15 @@ namespace Communicate
     {
         TcpClient client = new TcpClient();
         NetworkStream stream;
-        IPAddress ipAddress;
         Request requestUser;
+        IPAddress ipAddress;
         public static Dashboard dashboardForm = new Dashboard();
         public static Team_form teamForm = new Team_form();
         public static Player_form playerForm = new Player_form();
         public static Administrator_form administrator = new Administrator_form();
         public static League_form leagueForm = new League_form();
         public static List<IPAddress> _ipAddress = new List<IPAddress>();
+        public static Video videoForm = new Video();
         public static int index = 0;
         public Client()
         {
@@ -67,20 +68,22 @@ namespace Communicate
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Server chính hỏng, chuyển sang server phụ");
                     index++;
                     this.Invoke(new Action(() =>
                     {
-                        Form1.client.Close();
+                        Form1.client = new Client();
                         Form1.ReloadClientForm();
                         administrator.Hide();
                         teamForm.Hide();
                         dashboardForm.Hide();
                         playerForm.Hide();
                         leagueForm.Hide();
+                        videoForm.Hide();
                         Form1.client.Show();
 
+
                     }));
+                    MessageBox.Show("Server chính hỏng, chuyển sang server phụ");
                     return;
                 }
                 int length = BitConverter.ToInt32(header, 0);
@@ -124,10 +127,21 @@ namespace Communicate
                             teamForm.Show();
                             break;
                         case "00100":
+
                             Root_Reponse_standing responseStanding = JsonConvert.DeserializeObject<Root_Reponse_standing>(jsonData);
                             dashboardForm = new Dashboard(responseStanding, requestUser);
                             leagueForm.Hide();
                             dashboardForm.Show();
+                            break;
+                        case "00111":
+                            Dictionary<string, string> _linkStream = JsonConvert.DeserializeObject<Dictionary<string, string>>(jsonData);
+                            Client.videoForm = new Video(_linkStream);
+                            Client.videoForm.ShowDialog();
+                            break;
+                        case "11111":
+                            Root_Response_Player_and_Statistic playerAndStat = JsonConvert.DeserializeObject<Root_Response_Player_and_Statistic>(jsonData);
+                            Topscore_form newForm = new Topscore_form(playerAndStat);
+                            newForm.Show();
                             break;
 
                     }
@@ -176,6 +190,13 @@ namespace Communicate
             this.Hide();
             Form_Register f3 = new Form_Register();
             f3.ShowDialog();
+        }
+
+        private void bt_Forget_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form_FgtPass form_FgtPass = new Form_FgtPass();
+            form_FgtPass.ShowDialog();
         }
     }
 }
