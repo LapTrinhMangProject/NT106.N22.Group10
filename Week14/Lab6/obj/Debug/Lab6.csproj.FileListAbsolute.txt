@@ -1,0 +1,16 @@
+C:\Code\Week14\Lab6\bin\Debug\Lab6.exe.config
+C:\Code\Week14\Lab6\bin\Debug\Lab6.exe
+C:\Code\Week14\Lab6\bin\Debug\Lab6.pdb
+C:\Code\Week14\Lab6\bin\Debug\Forms.exe
+C:\Code\Week14\Lab6\bin\Debug\FluentFTP.dll
+C:\Code\Week14\Lab6\bin\Debug\Forms.pdb
+C:\Code\Week14\Lab6\bin\Debug\Forms.exe.config
+C:\Code\Week14\Lab6\bin\Debug\FluentFTP.xml
+C:\Code\Week14\Lab6\obj\Debug\Lab6.csproj.AssemblyReference.cache
+C:\Code\Week14\Lab6\obj\Debug\Lab6.csproj.SuggestedBindingRedirects.cache
+C:\Code\Week14\Lab6\obj\Debug\Lab6.Properties.Resources.resources
+C:\Code\Week14\Lab6\obj\Debug\Lab6.csproj.GenerateResource.cache
+C:\Code\Week14\Lab6\obj\Debug\Lab6.csproj.CoreCompileInputs.cache
+C:\Code\Week14\Lab6\obj\Debug\Lab6.csproj.CopyComplete
+C:\Code\Week14\Lab6\obj\Debug\Lab6.exe
+C:\Code\Week14\Lab6\obj\Debug\Lab6.pdb

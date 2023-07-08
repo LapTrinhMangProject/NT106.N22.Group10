@@ -1,0 +1,15 @@
+C:\Code\Week14\Forms\bin\Debug\Forms.exe.config
+C:\Code\Week14\Forms\bin\Debug\Forms.exe
+C:\Code\Week14\Forms\bin\Debug\Forms.pdb
+C:\Code\Week14\Forms\bin\Debug\FluentFTP.dll
+C:\Code\Week14\Forms\bin\Debug\FluentFTP.xml
+C:\Code\Week14\Forms\obj\Debug\Forms.csproj.AssemblyReference.cache
+C:\Code\Week14\Forms\obj\Debug\Forms.csproj.SuggestedBindingRedirects.cache
+C:\Code\Week14\Forms\obj\Debug\Forms.Dashboard.resources
+C:\Code\Week14\Forms\obj\Debug\Forms.Login.resources
+C:\Code\Week14\Forms\obj\Debug\Forms.Properties.Resources.resources
+C:\Code\Week14\Forms\obj\Debug\Forms.csproj.GenerateResource.cache
+C:\Code\Week14\Forms\obj\Debug\Forms.csproj.CoreCompileInputs.cache
+C:\Code\Week14\Forms\obj\Debug\Forms.csproj.CopyComplete
+C:\Code\Week14\Forms\obj\Debug\Forms.exe
+C:\Code\Week14\Forms\obj\Debug\Forms.pdb
