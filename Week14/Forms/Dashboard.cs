@@ -88,5 +88,10 @@ namespace Forms
         {
 
         }
+
+        private void downloadButton_Click(object sender, EventArgs e)
+        {
+            DownloadDirectory._DownloadDirectory();
+        }
     }
 }

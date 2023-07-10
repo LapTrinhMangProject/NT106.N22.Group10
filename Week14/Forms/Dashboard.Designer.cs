@@ -80,6 +80,7 @@
             this.downloadButton.TabIndex = 3;
             this.downloadButton.Text = "Download";
             this.downloadButton.UseVisualStyleBackColor = true;
+            this.downloadButton.Click += new System.EventHandler(this.downloadButton_Click);
             // 
             // uploadButton
             // 
