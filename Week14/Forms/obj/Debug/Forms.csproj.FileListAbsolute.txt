@@ -13,3 +13,5 @@ C:\Code\Week14\Forms\obj\Debug\Forms.csproj.CoreCompileInputs.cache
 C:\Code\Week14\Forms\obj\Debug\Forms.csproj.CopyComplete
 C:\Code\Week14\Forms\obj\Debug\Forms.exe
 C:\Code\Week14\Forms\obj\Debug\Forms.pdb
+C:\Code\Week14\Forms\bin\Debug\System.Numerics.Vectors.dll
+C:\Code\Week14\Forms\bin\Debug\System.Numerics.Vectors.xml
