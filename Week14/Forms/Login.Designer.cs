@@ -68,6 +68,7 @@
             // 
             this.passwordTextbox.Location = new System.Drawing.Point(75, 81);
             this.passwordTextbox.Name = "passwordTextbox";
+            this.passwordTextbox.PasswordChar = '*';
             this.passwordTextbox.Size = new System.Drawing.Size(104, 20);
             this.passwordTextbox.TabIndex = 8;
             // 
@@ -84,7 +85,7 @@
             this.serverTextbox.Name = "serverTextbox";
             this.serverTextbox.Size = new System.Drawing.Size(127, 20);
             this.serverTextbox.TabIndex = 6;
-            this.serverTextbox.Text = "ngovuminhdat.ddns.net";
+            this.serverTextbox.Text = "192.168.1.120";
             // 
             // button1
             // 

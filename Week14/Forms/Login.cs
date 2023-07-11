@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FluentFTP;
+using FluentFTP.Exceptions;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Forms
@@ -26,22 +27,23 @@ namespace Forms
         private void button1_Click(object sender, EventArgs e)
         {
             client = new FtpClient(serverTextbox.Text, usernameTextbox.Text, passwordTextbox.Text, 21);
-            /*   if (!client.IsConnected)
-               {
-                   MessageBox.Show("Server Không tồn tại");
-                   return;
-               }
-               if (!client.IsAuthenticated)
-               {
-                   MessageBox.Show("Tài khoản hoặc mật khẩu không đúng");
-                   return;
-               }
-               client.Connect();*/
+            try
+            {
+                client.Connect();
+            }
+            catch (FtpAuthenticationException ex)
+            {
+                MessageBox.Show("Tài khoản hoặc mật khẩu không đúng", "Lỗi đăng nhập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            catch (TimeoutException ex)
+            {
+                MessageBox.Show("Server không phản hổi hoặc không tồn tại", "Lỗi tìm Server", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             this.Hide();
             Dashboard dashboardForm = new Dashboard();
             dashboardForm.Show();
-
-
         }
     }
 }
