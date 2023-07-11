@@ -5,6 +5,7 @@ using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Numerics;
 using System.Reflection;
@@ -21,14 +22,12 @@ namespace Forms
             InitializeComponent();
         }
         List<string> remoteSite = new List<string>();
-        string previousPath = "/";
+        public string previousPath = "/";
         private void Dashboard_Load(object sender, EventArgs e)
         {
             remoteSite.Add(previousPath);
             LoadFile();
         }
-
-
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -87,6 +86,38 @@ namespace Forms
         private void listView_SelectedIndexChanged_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void downloadButton_Click(object sender, EventArgs e)
+        {
+            var tempData = listView.SelectedItems[0];
+            string selectedItem = tempData.SubItems[0].Text;
+            string user = Environment.UserName;
+            FolderBrowserDialog folderPath = new FolderBrowserDialog();
+            DialogResult dialogResult = folderPath.ShowDialog();
+            string pathSelected;
+            if (dialogResult == DialogResult.OK && !string.IsNullOrWhiteSpace(folderPath.SelectedPath))
+            {
+                pathSelected = folderPath.SelectedPath;
+                string fileSaveTo = pathSelected + "\\" + selectedItem;
+                string remoteSelectedItemPath = remoteSite.Last() + "/" + selectedItem;
+                Login.client.DownloadFile(fileSaveTo, remoteSelectedItemPath, FtpLocalExists.Overwrite, FtpVerify.Retry);
+                MessageBox.Show($"Download thành công {selectedItem} ở đường dãn {pathSelected}");
+            }
+        }
+
+        private void uploadButton_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string localFilePath = openFileDialog.FileName;
+                string fileName = Path.GetFileName(localFilePath);
+                string remoteFilePath = remoteSite.Last() + "/" + fileName;
+                Login.client.UploadFile(localFilePath, remoteFilePath, (FtpRemoteExists)FtpVerify.Retry);
+                LoadFile();
+                MessageBox.Show("Upload thành công");
+            }
         }
     }
 }

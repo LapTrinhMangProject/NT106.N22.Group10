@@ -80,6 +80,7 @@
             this.downloadButton.TabIndex = 3;
             this.downloadButton.Text = "Download";
             this.downloadButton.UseVisualStyleBackColor = true;
+            this.downloadButton.Click += new System.EventHandler(this.downloadButton_Click);
             // 
             // uploadButton
             // 
@@ -89,6 +90,7 @@
             this.uploadButton.TabIndex = 4;
             this.uploadButton.Text = "Upload";
             this.uploadButton.UseVisualStyleBackColor = true;
+            this.uploadButton.Click += new System.EventHandler(this.uploadButton_Click);
             // 
             // Dashboard
             // 

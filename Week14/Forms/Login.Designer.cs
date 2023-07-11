@@ -68,6 +68,7 @@
             // 
             this.passwordTextbox.Location = new System.Drawing.Point(75, 81);
             this.passwordTextbox.Name = "passwordTextbox";
+            this.passwordTextbox.PasswordChar = '*';
             this.passwordTextbox.Size = new System.Drawing.Size(104, 20);
             this.passwordTextbox.TabIndex = 8;
             // 
@@ -84,7 +85,7 @@
             this.serverTextbox.Name = "serverTextbox";
             this.serverTextbox.Size = new System.Drawing.Size(127, 20);
             this.serverTextbox.TabIndex = 6;
-            this.serverTextbox.Text = "ngovuminhdat.ddns.net";
+            this.serverTextbox.Text = "192.168.1.120";
             // 
             // button1
             // 
@@ -100,7 +101,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(265, 158);
+            this.ClientSize = new System.Drawing.Size(221, 158);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
