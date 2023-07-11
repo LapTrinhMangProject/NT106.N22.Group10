@@ -5,6 +5,7 @@ using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Numerics;
 using System.Reflection;
@@ -21,7 +22,7 @@ namespace Forms
             InitializeComponent();
         }
         List<string> remoteSite = new List<string>();
-        string previousPath = "/";
+        public string previousPath = "/";
         private void Dashboard_Load(object sender, EventArgs e)
         {
             remoteSite.Add(previousPath);
@@ -91,6 +92,7 @@ namespace Forms
 
         private void downloadButton_Click(object sender, EventArgs e)
         {
+            DownloadDirectory.setpath(previousPath);
             DownloadDirectory._DownloadDirectory();
         }
     }
