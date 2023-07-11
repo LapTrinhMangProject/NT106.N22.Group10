@@ -92,8 +92,21 @@ namespace Forms
 
         private void downloadButton_Click(object sender, EventArgs e)
         {
-            DownloadDirectory.setpath(previousPath);
-            DownloadDirectory._DownloadDirectory();
+            var tempData = listView.SelectedItems[0];
+            string selectedItem = tempData.SubItems[0].Text;
+            string user = Environment.UserName;
+            FolderBrowserDialog folderpath = new FolderBrowserDialog();
+            DialogResult dialogResult = folderpath.ShowDialog();
+            string pathSelected;
+            if (dialogResult == DialogResult.OK && !string.IsNullOrWhiteSpace(folderpath.SelectedPath))
+            {
+                pathSelected = folderpath.SelectedPath;
+                string fileSaveTo = pathSelected + "\\" + selectedItem;
+                string remoteSelectedItemPath = remoteSite.Last() + "/" + selectedItem;
+                Login.client.DownloadFile(fileSaveTo, remoteSelectedItemPath, FtpLocalExists.Overwrite, FtpVerify.Retry);
+                MessageBox.Show($"Download thành công {selectedItem} ở đường dãn {pathSelected}");
+            }
+
         }
     }
 }
